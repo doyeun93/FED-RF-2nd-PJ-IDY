@@ -1,0 +1,42 @@
+1. 메인 페이지
+
+Baskin Robbins 로고
+Menu
+BR Play
+BR Story
+Delivery/Store
+
+------------
+(1) menu
+이달의 맛 -> https://youtu.be/4-pb7OMgmwk?si=JjzCj93dY3NwQykL
+아이스크림
+블록팩/레디팩
+아이스크림 케이크
+디저트
+음료
+커피
+
+(2)BR Play
+- 이벤트
+프로모션
+제휴혜택
+- BR Play
+배라광장
+BR레시피
+마이플레이버리스트
+
+(3)BR Story
+브랜드 스토리
+이달의 맛 히스토리
+Be Better
+
+(4)Delivery/Store
+- Store
+매장 찾기
+100flavor 플래그십스토어
+Flow 매장
+점포개설문의
+- Delivery
+배달주문
+단체주문
+
