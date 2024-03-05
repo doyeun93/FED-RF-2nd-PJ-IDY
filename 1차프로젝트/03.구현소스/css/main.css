@@ -13,16 +13,17 @@ body * {
   background-color:  #ffe4ea;
 }
 
-/* <!-- 1. 인트로영역 --> */
+/* 1. 인트로영역 
 .intro-area{
  height: 120px;
 }
-/* <!-- 2. 상단영역 --> */
+*/
+/* <!-- 1. 상단영역 --> */
 .top-area{
   height: 90px;
   
 }
-/* <!-- 3. 메인영역 --> */
+/* <!-- 2. 메인영역 --> */
 .main-area{
   height: 800px;
 }
@@ -30,23 +31,23 @@ body * {
 .spart-menu{
  height: 68px;
 }
-/* <!-- 4. 프로모션영역 --> */
+/* <!-- 3. 프로모션영역 --> */
 .pro-area{
  height: 600px;
 }
-/* <!-- 5. 뉴아이템영역 --> */
+/* <!-- 4. 뉴아이템영역 --> */
 .newitem-area{
   height: 600px;
 }
-/* <!-- 6. be benefit영역 --> */
+/* <!-- 5. be benefit영역 --> */
 .benefit-area{
   height: 600px;
 }
-/* <!-- 7. 배너 영역 --> */
+/* <!-- 6. 배너 영역 --> */
 .ban-area{
   height: 600px;
 }
-/* <!-- 8. 하단영역 --> */
+/* <!-- 7. 하단영역 --> */
 .footer-area{
   height: 600px;
 }
