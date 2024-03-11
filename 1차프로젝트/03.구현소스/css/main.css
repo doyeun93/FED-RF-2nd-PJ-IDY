@@ -21,7 +21,6 @@ body * {
 /* <!-- 1. 상단영역 --> */
 .top-area{
   height: 90px;
-  display: flex;
 }
 /* <!-- 2. 메인영역 --> */
 .main-area{
