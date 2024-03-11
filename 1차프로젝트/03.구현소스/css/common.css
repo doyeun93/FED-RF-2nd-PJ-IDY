@@ -16,7 +16,7 @@
   padding:  18px 40px;
   font-weight: bold;
 }
-.smenu{
+/* .smenu{
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -24,7 +24,7 @@
   
   
   
-}
+} */
 .smenu ol{
   display: flex;
 }

@@ -17,6 +17,13 @@
     font-family: 'Nanum Gothic', sans-serif;
 */
 
+html{
+  font-size: 10px;
+}
+body{
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
 /******************** 공통 클래스 ********************/
 /* 임시표시타이틀 */
 .temp-tit{
@@ -32,6 +39,4 @@
   margin: 0 auto;
   
 }
-.cont-box{
-  height: 100%;
-}
+
