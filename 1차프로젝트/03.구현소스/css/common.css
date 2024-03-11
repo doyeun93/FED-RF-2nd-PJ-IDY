@@ -8,28 +8,22 @@
   margin-top: 10px;
 }
 
+.gnb a{
+  display: block;
+}
 .gnb ul{
   display: flex;
+  white-space: nowrap;
 }
 .gnb ul > li{
   position: relative;
-  padding:  18px 40px;
+  padding:  20px 10px;
   font-weight: bold;
 }
-/* .smenu{
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-top: 26px
-  
-  
-  
-} */
 .smenu ol{
   display: flex;
 }
-.gnb ul>li:hover .smenu{
-  
-}
+
+
 /************* 2. 메인영역 *************/
 /************* 3. 하단영역 ************/
