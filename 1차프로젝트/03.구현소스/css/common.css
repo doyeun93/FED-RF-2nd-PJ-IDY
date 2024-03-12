@@ -5,6 +5,7 @@
 
 /************* 1. 상단영역 *************/
 .top-area-logo img{
+  width: 100%;
   margin-top: 10px;
 }
 
