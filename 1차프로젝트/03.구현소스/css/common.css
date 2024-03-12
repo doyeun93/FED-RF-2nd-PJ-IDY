@@ -4,31 +4,49 @@
 /* 공유기능 요소 셋팅 */
 
 /************* 1. 상단영역 *************/
-.top-area-logo img{
-  width: 100%;
-  margin-top: 10px;
+#top-area{
+transition: all .6s ease-in-out;
 }
 
-.gnb a{
-  display: block;
+#top-area:hover{
+  background-color:#ff98ae;
 }
-.gnb ul{
+.logo img{
+
+}
+.gnb{
   display: flex;
+  height: 90px;
+  overflow: hidden;
+  text-align: center;
   white-space: nowrap;
-}
-.gnb ul > li{
-  position: relative;
-  padding:  20px 10px;
-  font-weight: bold;
-}
-.smenu ol{
-  display: flex;
+  transition: all .6s ease-in-out;
 }
 
+#top-area:hover .gnb{
+  height: 360px;
+  
+}
+#top-area:hover .gnb dd{
+  background-color: #fff;
+}
+/* 메뉴 박스 */
+.gnb dl{
+  padding: 10px;
+}
+
+/* 상위메뉴 dt */
+.gnb dt{
+  line-height: 69px;
+}
+/* 상위메뉴 dd */
+.gnb dd{
+  line-height: 45px;
+}
 
 /************* 2. 메인영역 *************/
-.main-area{
+/* .main-area{
   background: url(../images/main_bn.png) no-repeat center /100% 100%;
 
-}
+} */
 /************* 3. 하단영역 ************/

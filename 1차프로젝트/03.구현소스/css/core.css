@@ -18,7 +18,7 @@
 */
 
 html{
-  font-size: 10px;
+  /* font-size: 10px; */
 }
 body{
   font-family: 'Nanum Gothic', sans-serif;
@@ -38,9 +38,4 @@ body{
   /* 블록박스 중앙정렬 -> 마.영.오! */
   margin: 0 auto;
   
-}
-ul::after,ol::after{
-  content: '';
-  display: block;
-  clear: both;
 }
