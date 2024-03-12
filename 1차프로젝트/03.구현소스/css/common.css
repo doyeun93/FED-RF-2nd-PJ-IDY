@@ -26,4 +26,8 @@
 
 
 /************* 2. 메인영역 *************/
+.main-area{
+  background: url(../images/main_bn.png) no-repeat center /100% 100%;
+
+}
 /************* 3. 하단영역 ************/
