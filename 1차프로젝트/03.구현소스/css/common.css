@@ -11,7 +11,10 @@ transition: all .6s ease-in-out;
 #top-area:hover{
   background-color:#ff98ae;
 }
-.logo img{
+.logo-part{
+  background: url(../images/main_logo.png) no-repeat center;
+  position: relative;
+  z-index: 10;
  
 }
 .gnb{
@@ -46,23 +49,16 @@ transition: all .6s ease-in-out;
 }
 
 /************* 2. 메인영역 *************/
-.main-area{
+/* .main-area{
   background: url(../images/main_bn.png) no-repeat center /100% 100%;
 
+} */
+.main-photo img{
+  position: relative;
+  left: 0;
+  transition: .5s ease-out;
 }
-.main-img{
-  z-index: 1;
-}
-.main-img li:nth-child(1){
-  background: url(../images/main_img1.jpg) no-repeat center/cover;
-  order: 1;
-}
-.main-img li:nth-child(2){
-  background: url(../images/main_img2.jpg) no-repeat center/cover;
-  order: 2;
-}
-.main-img li:nth-child(3){
-  background: url(../images/main_img3.jpg) no-repeat center/cover;
-  order: 3;
+#scene{
+  height: 100%;
 }
 /************* 3. 하단영역 ************/
