@@ -23,7 +23,8 @@
 /* 컨텐트 박스 
 -> 플렉스 박스는 싸고 있는 부모를 설정함*/
 
-.top-box{
+
+.cont-box{
   display: flex;
   height: 100%;
  }
