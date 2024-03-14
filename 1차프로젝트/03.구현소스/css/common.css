@@ -32,7 +32,6 @@
 }
 #top-area:hover .gnb{
   height: 400px;
-  
 }
 #top-area:hover .gnb dd{
   background-color: #fff;
@@ -56,6 +55,21 @@
 .gnb dd a:hover{
  color: red;
 } 
+
+/* 기타파트 */
+.search{
+  display: flex;
+  padding-top: 20px;
+}
+
+.search li:hover{
+  display: none;
+}
+
+.search img{
+  height: 32px;
+}
+
 /************* 2. 메인영역 *************/
 .mslide-box{
   width: 100%;
