@@ -27,6 +27,9 @@
 
 }
 
+.gnb dl>dt a{
+  font-size: 1.1rem;
+}
 #top-area:hover .gnb{
   height: 400px;
   
@@ -43,21 +46,30 @@
 .gnb dt{
   line-height: 78px;
 }
+.gnb dt a:hover{
+  color: #fff;
+}
 /* 상위메뉴 dd */
 .gnb dd{
   line-height: 65px;
 }
-
+.gnb dd a:hover{
+ color: red;
+} 
 /************* 2. 메인영역 *************/
-.main-photo{
-  /* background: url(../images/main_bn.png) no-repeat center /cover; 
-  position: absolute; */
 
-}
 
-#scene{
+#scene:nth-child(1){
  width: 100%;
- margin-top: 74px;
+ height: 100%;
+ position: relative;
+ top: 0;
+}
+#scene:nth-child(2){
+ width: 100%;
+ position: absolute;
+ z-index: -1;
+ top: 0;
 }
 
 /************* 3. 하단영역 ************/
