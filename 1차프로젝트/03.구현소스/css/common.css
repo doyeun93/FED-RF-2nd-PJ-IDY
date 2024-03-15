@@ -60,7 +60,7 @@
 /*********************** 기타파트 ***********************/
 .search{
   display: flex;
-  padding-top: 20px;
+  padding: 20px 87px;
 }
 .search img{
   height: 32px;
@@ -123,8 +123,9 @@
 }
 
 /* 액자 이미지 삽입 */
-.main-area{
-  background:url();
+.main-area::after{
+  position: absolute;
+  background: url(../images/main_bn.png) no-repeat center/cover;
 }
 
 /************* 3. 하단영역 ************/
