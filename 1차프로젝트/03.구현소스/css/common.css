@@ -56,7 +56,8 @@
  color: red;
 } 
 
-/* 기타파트 */
+
+/*********************** 기타파트 ***********************/
 .search{
   display: flex;
   padding-top: 20px;
@@ -119,6 +120,11 @@
 }
 .snum-3{
   background-image: url(../images/main_img3.jpg);
+}
+
+/* 액자 이미지 삽입 */
+.main-area{
+  background:url();
 }
 
 /************* 3. 하단영역 ************/
