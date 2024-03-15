@@ -33,6 +33,22 @@
 #top-area:hover .gnb{
   height: 400px;
 }
+#top-area .gnb::before{
+  content: '';
+  position: absolute;
+  top: 85px;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background: white;
+  z-index: -1;
+  transition: all .6s ease-in-out;
+
+}
+#top-area:hover .gnb::before{
+  height: 327px;
+}
+
 #top-area:hover .gnb dd{
   background-color: #fff;
 }
