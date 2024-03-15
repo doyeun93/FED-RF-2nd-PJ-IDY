@@ -61,13 +61,28 @@
   display: flex;
   padding-top: 20px;
 }
+.search img{
+  height: 32px;
+  padding-left: 32px;
+}
 
-.search li:hover{
+/* 각 사진의 2번째 이미지 숨기기 */
+.search li img:nth-child(2){
   display: none;
 }
 
-.search img{
-  height: 32px;
+/* 사진의 1번째 이미지 보이기 */
+.search li:nth-child(1)~li img:nth-child(1){
+  display: inline;
+}
+
+/* 최상위 박스 오버시 첫번째 이미지 숨기기 */
+#top-area:hover .search li img:nth-child(1){
+  display: none;
+}
+/* 최상위 박스 오버시 첫번째 이미지 숨기기 */
+#top-area:hover .search li img:nth-child(2){
+  display: inline;
 }
 
 /************* 2. 메인영역 *************/
@@ -100,7 +115,7 @@
   background-image: url(../images/main_img1.jpg);
 }
 .snum-2{
-  background-image: url(../images/main_img2.jpg);
+  background-image: url(../images/main_img2.png);
 }
 .snum-3{
   background-image: url(../images/main_img3.jpg);
