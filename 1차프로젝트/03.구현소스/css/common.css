@@ -1,5 +1,10 @@
 @charset "utf-8";
 
+
+@import url("https://fonts.googleapis.com/css2?family=Poor+Story&display=swap");
+
+/*   font-family: "Poor Story", system-ui; */
+
 /* 도깨비 PJ : 공통 모듈 CSS - common.css */
 /* 공유기능 요소 셋팅 */
 
@@ -29,6 +34,7 @@
 
 .gnb dl>dt a{
   font-size: 1.1rem;
+  font-weight: bold;
 }
 #top-area:hover .gnb{
   height: 400px;
@@ -70,6 +76,7 @@
 }
 .gnb dd a:hover{
  color: red;
+ font-weight: bold;
 } 
 
 
@@ -139,9 +146,52 @@
 }
 
 /* 액자 이미지 삽입 */
-.main-area::after{
-  position: absolute;
+.main-area::before{
+  position: fixed;
   background: url(../images/main_bn.png) no-repeat center/cover;
 }
 
 /************* 3. 하단영역 ************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***************** 하단영역 TOP버튼 추가 *****************/
+.btn-top{
+  position: fixed;
+  bottom: 1vw;
+  right: 1vw;
+  width: 7vw;
+  height: 7vw;
+  border-radius: 50%;
+  border: 5px outset #fff;
+  background-color: #ccc;
+  z-index: 100;
+}
+
+.btn-top a{
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #000;
+  font: 2.5vw/6vw 'Poor Story';
+}
+.btn-top:hover{
+  border-style: inset;
+}
+
+.btn-top:hover a{
+  color: pink;
+}
+
