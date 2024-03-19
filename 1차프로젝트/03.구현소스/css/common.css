@@ -147,7 +147,6 @@
 
 /* 액자 이미지 삽입 */
 .main-area::before{
-  position: fixed;
   background: url(../images/main_bn.png) no-repeat center/cover;
 }
 
