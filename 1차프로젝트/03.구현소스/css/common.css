@@ -153,11 +153,21 @@
 /************* 3. 하단영역 ************/
 
 
+/* 하단영역 상단부분 */
+.footer-top {
+  display: flex; 
+}
+
+.footer-top a{
+  font-size: 0.8rem;
+  padding: 0 8px;
+}
 
 
 
-
-
+.footer-cont{
+  background: url(../images/h_logo_2.png) no-repeat left/15%;
+}
 
 
 
