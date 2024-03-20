@@ -5,7 +5,7 @@
 
 /*   font-family: "Poor Story", system-ui; */
 
-/* 도깨비 PJ : 공통 모듈 CSS - common.css */
+/* 공통 모듈 CSS - common.css */
 /* 공유기능 요소 셋팅 */
 
 /************* 1. 상단영역 *************/
@@ -129,7 +129,7 @@
 .mslide-box{
   width: 101.1%;
   height: 92%;
-  border-radius: min(166px, 9.7vw);
+  border-radius: min(166px, 10.7vw);
   margin: 0 auto;
   margin-top: 4.5%;
   margin-left: -0.4%;
@@ -151,19 +151,19 @@
   1의 의미는 자동으로 부모크기에 맞춰 줄어듦
   0의 의미는 설정된 크기만큼 늘어남 */
   
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: cover; */
 }
 
 .snum-1{
-  background-image: url(../images/main_img1.jpg);
+  background: url(../images/main_img1.jpg) no-repeat center/cover;
 }
 .snum-2{
-  background-image: url(../images/main_img2.png);
+  background: url(../images/main_img2.jpg) no-repeat center/100% 95%; 
 }
 .snum-3{
-  background-image: url(../images/main_img3.jpg);
+  background: url(../images/3.jpg) no-repeat center/100% 95%;
 }
 
 
@@ -186,11 +186,6 @@
 .footer-cont{
   background: url(../images/h_logo_2.png) no-repeat left/15%;
 }
-
-
-
-
-
 
 
 
