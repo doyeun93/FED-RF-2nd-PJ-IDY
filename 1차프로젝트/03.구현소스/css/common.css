@@ -228,6 +228,20 @@
   display: inline-block;
 }
 
-
+.cbtn{
+  position: absolute;
+  top: 90%;
+  right: 2%;
+  width: 10%;
+  height: 50px;
+  border: none;
+  color: #fff;
+  background-color: pink;
+  font-size: 1.2rem;
+  /* font-weight: bold; */
+  /* border-radius: 50%; */
+  cursor: pointer;
+  line-height: 50px;
+}
 
 
