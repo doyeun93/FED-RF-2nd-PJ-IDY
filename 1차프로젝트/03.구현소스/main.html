@@ -253,8 +253,28 @@
     <!-- 홈페이지 영상 삽입 -->
     <div class="intro">
       <video src="./images/intro_mv.mp4" autoplay muted></video>
+      <button class="cbtn">×</button>
     </div>
     <script>
+      
+      //let intro = mv.querySelector(".intro");
+      let cbtn = mv.querySelector(".cbtn");
+      cbtn.style.cssText = `
+      position: absolute;
+      top: 0;
+      right: 10px;
+      width: 50px;
+      height: 50px;
+      border: none;
+      color : #fff;
+      background-color : blue;
+      font-size : 40px;
+      font-weight : bold;
+      border-radius: 50%;
+      cursor : pointer;
+      line-height : 50px;
+      `;
+      //intro.onclick = function(){ mv.remove();} 
       document.querySelector('.intro').onclick = function(){
         this.remove();
       }
