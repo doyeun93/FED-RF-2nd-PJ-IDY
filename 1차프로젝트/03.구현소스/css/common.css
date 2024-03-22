@@ -65,6 +65,7 @@
 
 /* 상위메뉴 dt */
 .gnb dt{
+  padding: 0 50px;
   line-height: 78px;
 }
 .gnb dt a:hover{
@@ -127,9 +128,9 @@
 
 /* 액자이미지 삽입하여 기존 슬라이드 이미지 세팅 */
 .mslide-box{
-  width: 101.1%;
+  width: 100.1%;
   height: 92%;
-  border-radius: min(166px, 10.7vw);
+  border-radius: min(187px, 10.7vw);
   margin: 0 auto;
   margin-top: 4.5%;
   margin-left: -0.4%;
@@ -241,20 +242,31 @@ justify-content: space-between;
   display: inline-block;
 }
 
+/* 홈페이지 인트로 닫기 버튼 설정 */
 .cbtn{
-  position: fixed;
+  position: absolute;
   top: 18%;
   right: 7%;
   width: 5vw;
-  height: 8vh;
+  height: 9vh;
   border: none;
   color: #fff;
   background-color: lightpink;
-  font-size: 1.2vw;
-  font-weight: bold;
+  /* border: 1px dotted white; */
   border-radius: 50%;
   cursor: pointer;
-  line-height: 50px;
+  background: url(../images/spoon.png) no-repeat center / 50%;
 }
 
-
+/* 마우스 포인터 설정 
+.pointer{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  background: url(../images/spoon.png) no-repeat center;
+  transition: .3s ease-out;
+  
+}
+*/
