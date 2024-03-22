@@ -163,7 +163,7 @@
   background: url(../images/main_img2.jpg) no-repeat center/100% 95%; 
 }
 .snum-3{
-  background: url(../images/3.jpg) no-repeat center/100% 95%;
+  background: url(../images/main_img3.jpg) no-repeat center/100% 95%;
 }
 
 
@@ -244,7 +244,7 @@ justify-content: space-between;
 .cbtn{
   position: fixed;
   top: 18%;
-  right: 8%;
+  right: 7%;
   width: 5vw;
   height: 8vh;
   border: none;
