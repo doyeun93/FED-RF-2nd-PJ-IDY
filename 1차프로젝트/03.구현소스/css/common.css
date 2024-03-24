@@ -174,7 +174,7 @@
 
 /* 하단영역 상단부분 */
 .footer-cont{
-  padding: 23px 0px 20px;
+  padding: 65px 0px 20px;
   
 }
 .footer-top {
@@ -187,21 +187,35 @@
 }
 
 .cont-box-foot{
+padding-top: 50px;
 display: flex;
-justify-content: space-between;
+
 }
   
 
-
+.footer-info-logo{
+  width: 200px;
+  height: 300px;
+}
 .footer-info-logo img{
-  background-size: cover;
+  padding: 40px 30px;
+  width: 100%;
 }
 .footer-text{
   display: flex;
+  padding: 80px 50px;
+  font-size: 1.1rem;
 }
 
+/***************** 프로모션 영역 *****************/
+/* 프로모션 영역 상단 */
 
-
+.pro-header-text-top{
+ color: #ff5484;
+ font-size: 50px;
+ text-align: center;
+ line-height: 1;
+}
 
 /***************** 하단영역 TOP버튼 추가 *****************/
 .btn-top{

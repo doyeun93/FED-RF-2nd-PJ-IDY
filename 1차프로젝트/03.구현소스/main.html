@@ -12,6 +12,8 @@
     <script src="./js/main.js"defer></script>
   </head>
   <body>
+    <!-- 마우스 오버 전체 싸기 -->
+    <div class="wrap">
     <!-- 1. 상단영역 -->
     <div id="top-area">
       <header class="top-area inbox">
@@ -157,9 +159,13 @@
     <!-- 3. 프로모션 영역 -->
     <div id="pro-area">
       <section class="pro-area inbox">
-        <h2 class="temp-tit">프로모션영역</h2>
         <div class="cont-box">
           <!-- <div class="col-12"></div> -->
+          <div class="pro-header">
+            <h2 class="pro-header-text">
+              <span class="pro-header-text-top">PROMOTION</span>
+            </h2>
+          </div>
         </div>
       </section>
     </div>
@@ -230,10 +236,9 @@
                   <a href="#">거래희망회사 사전등록</a>
                 </li> 
               </ul> 
-          </div>
-          </div>
+        </div>
           <div class="cont-box-foot">
-            <div class="footer-info">
+            <!-- <div class="footer-info"> -->
             <h2 class="footer-info-logo">
               <a href="#">
                 <img src="./images/h_logo_2.png" alt="footer_logo">
@@ -256,8 +261,11 @@
                   <li>
                     <a href="#">개인정보관리책임자 : 조성희/상무보</a>
                   </li>
+                  <li>
+                    <a href="#">Copyright © 2023 BRKOREA Company. All Rights Reserved.</a>
+                  </li>
                 </ul>
-            </div>
+            <!-- </div> -->
           </div>
 
           <!-- <div class="col-8"></div>
@@ -282,5 +290,6 @@
         this.remove();
       }
     </script>
+    </div>
   </body>
 </html>

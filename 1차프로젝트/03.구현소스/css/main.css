@@ -68,6 +68,6 @@ body{
 }
 /* <!-- 7. 하단영역 --> */
 .footer-area{
-  /* max-width: 1652px; */
+  max-width: 1600px;
   height: 500px;
 }
