@@ -318,8 +318,9 @@ display: flex;
 }
 .footer-text{
   display: flex;
-  padding: 80px 50px;
+  padding: 65px 70px;
   font-size: 1.1rem;
+  line-height: 2;
 }
 
 /***************** 하단영역 TOP버튼 추가 *****************/
