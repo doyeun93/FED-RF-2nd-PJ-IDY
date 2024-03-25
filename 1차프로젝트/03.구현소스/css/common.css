@@ -210,11 +210,40 @@ display: flex;
 /***************** 프로모션 영역 *****************/
 /* 프로모션 영역 상단 */
 
-.pro-header-text-top{
- color: #ff5484;
- font-size: 50px;
- text-align: center;
- line-height: 1;
+.pro-header {
+  padding-top: 50px;
+}
+
+h2.pro-header-text {
+  font-family: "Poor Story";
+  color: #ff5484;
+  font-size: 4rem;
+  line-height: 1;
+  text-align: center;
+}
+p{
+  font-size: 15px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+/*  프로모션 영역 하단(이미지 슬라이드) */
+.proslide-box{
+  width: 100%;
+  height: 100%;
+  padding-top: 60px;
+}
+.proslider{
+  position: relative;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.proslider li{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 /***************** 하단영역 TOP버튼 추가 *****************/

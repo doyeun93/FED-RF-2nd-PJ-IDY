@@ -52,18 +52,22 @@ body{
 }
 /* <!-- 3. 프로모션영역 --> */
 .pro-area{
+  max-width: 1652px;
  height: 600px;
 }
 /* <!-- 4. 뉴아이템영역 --> */
 .newitem-area{
+  max-width: 1652px;
   height: 600px;
 }
 /* <!-- 5. be benefit영역 --> */
 .benefit-area{
+  max-width: 1652px;
   height: 600px;
 }
 /* <!-- 6. 배너 영역 --> */
 .ban-area{
+  max-width: 1652px;
   height: 600px;
 }
 /* <!-- 7. 하단영역 --> */
