@@ -275,6 +275,15 @@ p{
   line-height: 1.2;
   text-align: center;
 }
+
+.ban-first-box {
+  position: relative;
+  left: -5%;
+}
+
+.ban-first-box img{
+  padding-top: 45px;
+}
 /**************************** 7. 하단영역 ***************************/
 
 
@@ -312,6 +321,7 @@ display: flex;
   padding: 80px 50px;
   font-size: 1.1rem;
 }
+
 /***************** 하단영역 TOP버튼 추가 *****************/
 .btn-top{
   position: fixed;
@@ -355,7 +365,7 @@ display: flex;
 .cbtn{
   position: absolute;
   top: 18%;
-  right: 7%;
+  right: 6.8%;
   width: 5vw;
   height: 9vh;
   border: none;
