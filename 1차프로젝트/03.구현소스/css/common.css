@@ -178,7 +178,7 @@
   padding-top: 50px;
 }
 
-h2.pro-header-text {
+.pro-header-text {
   font-family: "Poor Story";
   color: #ff5484;
   font-size: 5rem;
@@ -217,7 +217,7 @@ p{
   /* padding-top: 30px; */
 }
 
-h2.new-header-text {
+.new-header-text {
   font-family: "Poor Story";
   color: #ff5484;
   font-size: 5rem;
@@ -233,7 +233,7 @@ h2.new-header-text {
   padding-top: 50px;
 }
 
-h2.be-header-text {
+.be-header-text {
   font-family: "Poor Story";
   color: #ff5484;
   font-size: 5rem;
@@ -263,8 +263,18 @@ h2.be-header-text {
 
 /**************************** 6. 배너영역 ****************************/
 
+.ban-box{
+  display: flex;
+  justify-content: space-around;
+}
 
-
+.ban-first-text {
+  font-family: "Poor Story";
+  color: #ff5484;
+  font-size: 5rem;
+  line-height: 1.2;
+  text-align: center;
+}
 /**************************** 7. 하단영역 ***************************/
 
 
