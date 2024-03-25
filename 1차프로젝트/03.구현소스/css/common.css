@@ -318,9 +318,20 @@ display: flex;
 }
 .footer-text{
   display: flex;
-  padding: 65px 70px;
+  padding: 65px 100px;
   font-size: 1.1rem;
   line-height: 2;
+}
+
+
+/* 하단 영역 소셜네트워크 */
+.footer-social {
+  width: 38%;
+}
+.footer-social-list{
+  display: flex;
+  justify-content: space-between;
+  padding: 151px 50px;
 }
 
 /***************** 하단영역 TOP버튼 추가 *****************/
