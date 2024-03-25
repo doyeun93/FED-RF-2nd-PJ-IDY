@@ -272,7 +272,7 @@ display: flex;
   background: url(../images/spoon.png) no-repeat center / 50%;
 }
 
-/* 마우스 포인터 설정 
+/* 마우스 포인터 설정 */
 .pointer{
   position: absolute;
   top:0;
@@ -283,4 +283,4 @@ display: flex;
   transition: .3s ease-out;
   
 }
-*/
+
