@@ -68,10 +68,10 @@ body{
 /* <!-- 6. 배너 영역 --> */
 .ban-area{
   max-width: 1652px;
-  height: 600px;
+  height: 500px;
 }
 /* <!-- 7. 하단영역 --> */
 .footer-area{
-  max-width: 1600px;
+  max-width: 1652px;
   height: 500px;
 }
