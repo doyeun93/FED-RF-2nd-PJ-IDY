@@ -10,18 +10,18 @@ const addEvt =
 addEvt(window,"DOMContentLoaded", loadFn);
 
 
-// 1. 대상선정 :
-// 1-1. 이벤트 대상 : 전체화면
-const wrap = document.querySelector(".wrap");
-const moving = document.querySelector(".pointer");
-
-wrap.onmousemove = (e) => {
-  moving.style.top = e.pageY + "px";
-  moving.style.left = e.pageX + "px";
-}; 
 
 
 function loadFn(){
- 
+  // 1. 대상선정 :
+  // 1-1. 이벤트 대상 : 전체화면
+  const wrap = document.querySelector(".wrap");
+  const moving = document.querySelector(".pointer");
+  
+  wrap.onmousemove = (e) => {
+    moving.style.top = e.pageY + "px";
+    moving.style.left = e.pageX + "px";
+  }; 
+  
 }
 
