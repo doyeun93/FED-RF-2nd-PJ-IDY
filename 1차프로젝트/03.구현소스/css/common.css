@@ -225,6 +225,14 @@ p{
   text-align: center;
 }
 
+.new-first-slider{
+  display: flex;
+}
+
+.new-second-slider{
+  display: flex;
+  flex-direction: row-reverse;
+}
 
 
 
