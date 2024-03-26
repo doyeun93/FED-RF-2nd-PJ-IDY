@@ -71,12 +71,15 @@ body{
 /* <!-- 7. 하단영역 --> */
 .footer-area{
   max-width: 1652px;
-  height: 500px;
+  height: 450px;
 }
 #footer-area{
   background-color: black;
 }
 
 #newitem-area{
+  background-color: #ffe4ea;
+}
+#pro-area, #benefit-area, #ban-area{
   background-color: #fff;
 }

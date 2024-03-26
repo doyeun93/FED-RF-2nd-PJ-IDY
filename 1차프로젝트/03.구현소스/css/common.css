@@ -195,7 +195,7 @@ p{
 .proslide-box{
   width: 100%;
   height: 100%;
-  padding-top: 60px;
+  padding-top: 50px;
 }
 .proslider{
   position: relative;
@@ -277,6 +277,9 @@ p{
   background-size: cover;
 
 }
+.beslider li img{
+  clip-path: polygon(49.8% 3%, 83.8% 16.2%, 98.8% 44%, 99.6% 100.4%, 66.8% 100%, 32.8% 100%, 0.2% 100%, 0.8% 44%, 15.8% 16%);
+}
 
 /**************************** 6. 배너영역 ****************************/
 
@@ -306,7 +309,7 @@ p{
 
 /* 하단영역 상단부분 */
 .footer-cont{
-  padding: 65px 0px 20px;
+  padding: 60px 0px 20px;
   
 }
 .footer-top {
@@ -336,7 +339,7 @@ display: flex;
 }
 .footer-text{
   display: flex;
-  padding: 65px 110px;
+  padding: 50px 110px;
   font-size: 1.1rem;
   line-height: 2;
   color: #fff;
@@ -353,14 +356,14 @@ display: flex;
   
   display: flex;
   justify-content: space-between;
-  padding: 71px 50px;
+  padding: 55px 50px;
 }
 
 /* 하단 영역 spc아이콘 */
 .footer-icon-list{
   display: flex;
   justify-content: space-between;
-  padding: 71px 45px;
+  padding: 55px 45px;
 }
 
 /***************** 하단영역 TOP버튼 추가 *****************/
