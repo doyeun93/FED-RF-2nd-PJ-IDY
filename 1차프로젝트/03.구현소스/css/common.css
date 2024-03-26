@@ -225,15 +225,24 @@ p{
   text-align: center;
 }
 
+
+/* 뉴아이템 이미지 구역 */
 .new-first-slider{
+ 
   display: flex;
+  gap: 0 25px;
 }
 
 .new-second-slider{
+ 
   display: flex;
   flex-direction: row-reverse;
+  gap: 0 25px;
 }
 
+.slide-info{
+  text-align: center;
+}
 
 
 /***************** 5. 비베네핏 영역 *****************/
@@ -307,6 +316,7 @@ p{
 .footer-top a{
   font-size: 1rem;
   padding: 0 8px;
+  color: #fff;
 }
 
 .cont-box-foot{
@@ -326,20 +336,31 @@ display: flex;
 }
 .footer-text{
   display: flex;
-  padding: 65px 100px;
+  padding: 65px 110px;
   font-size: 1.1rem;
   line-height: 2;
+  color: #fff;
 }
 
-
-/* 하단 영역 소셜네트워크 */
-.footer-social {
-  width: 38%;
+.footer-wrap{
+  position: relative;
+  width:40%;
 }
+
+/* 하단 영역 소셜네트워크 */ 
+
 .footer-social-list{
+  
   display: flex;
   justify-content: space-between;
-  padding: 151px 50px;
+  padding: 71px 50px;
+}
+
+/* 하단 영역 spc아이콘 */
+.footer-icon-list{
+  display: flex;
+  justify-content: space-between;
+  padding: 71px 45px;
 }
 
 /***************** 하단영역 TOP버튼 추가 *****************/

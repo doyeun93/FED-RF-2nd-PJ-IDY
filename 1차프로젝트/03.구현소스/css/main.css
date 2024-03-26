@@ -46,10 +46,6 @@ body{
   aspect-ratio: 1.8;
   
 }
-/* <!-- 서브파트메뉴 --> */
-.spart-menu{
- height: 68px;
-}
 /* <!-- 3. 프로모션영역 --> */
 .pro-area{
   max-width: 1652px;
@@ -58,8 +54,10 @@ body{
 /* <!-- 4. 뉴아이템영역 --> */
 .newitem-area{
   max-width: 1652px;
-  height: 700px;
+  height: 1140px;
 }
+
+
 /* <!-- 5. be benefit영역 --> */
 .benefit-area{
   max-width: 1652px;
@@ -74,4 +72,11 @@ body{
 .footer-area{
   max-width: 1652px;
   height: 500px;
+}
+#footer-area{
+  background-color: black;
+}
+
+#newitem-area{
+  background-color: #fff;
 }
