@@ -68,7 +68,7 @@ function goSlide(evt,sts=true){
       proslider.style.left = "0";
       proslider.style.transition = ".4s ease-in-out";
     }, 0);
-  }
+  } /////// else문  //////
 
 } //////////////////////// goSlide 함수 ////////////////////
 
