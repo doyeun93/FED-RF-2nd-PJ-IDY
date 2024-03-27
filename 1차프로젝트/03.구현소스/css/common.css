@@ -197,26 +197,31 @@ p{
   height: 100%;
   padding-top: 40px;
 }
-.proslider{
+#proslider{
   position: relative;
   left: 0%;
   display: flex;
-  gap: 0 25px;
+  gap: 0 36px;
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
-.proslider li{
+#proslider li{
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
+#proslider li img {
+  border-radius: 25px;
+  object-fit: cover;
+}
 
 /* 프로모션 이동버튼 */
 /*이동버튼*/
 .abtn {
   position: absolute;
-  bottom: -39%;
+  bottom: -36%;
   /* transform: translateY(-50%); */
   /*Y축 중앙이동*/
 }
@@ -449,6 +454,6 @@ display: flex;
   height: 100px;
   background: url(../images/spoon.png) no-repeat center;
   transition: .3s ease-out;
-  
+  /* opacity: 0; */
 }
 
