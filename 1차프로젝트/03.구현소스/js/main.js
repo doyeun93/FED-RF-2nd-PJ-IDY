@@ -10,7 +10,7 @@ const addEvt =
 addEvt(window,"DOMContentLoaded", loadFn);
 
 
-
+/**************************** 마우스 효과 ****************************/
 
 function loadFn(){
   // 1. 대상선정 :
@@ -32,6 +32,18 @@ function loadFn(){
     moving.style.opacity = 0;
   }
 }  ///////////// loadFn 함수 ////////////
+
+
+/****************************** 메인영역 슬라이드  ******************************/
+function mainSlide(){
+  const slide = qs(".slider");
+
+  for(let i = 0; i < 3; i++){
+    slide.innerHTML += `
+    <li data-seq="${i}" class="snum-0${i+1}"></li>
+    `;
+  }
+}
 
 
 /*********************** 프로모션 구역 슬라이드 함수 ***********************/
@@ -70,6 +82,21 @@ function goSlide(evt,sts=true){
     }, 0);
   } /////// else문  //////
 
+
+  // 2. 블릿 구현
+  let seq = slide.querySelectorAll('li')[isRbtn? 1 : 0]
+    .getAttribute('data-seq');
+    console.log('블릿이 읽어올 순번:',seq,'데이터형:',typeof seq);
+   
+  // 2-1. 블릿 변경하기
+  indic.forEach((ele,idx)=>{
+      if(idx == seq){
+        ele.classList.add('on');
+      }
+      else{
+        ele.classList.remove('on');
+      }
+  });
 } //////////////////////// goSlide 함수 ////////////////////
 
 let autoI;

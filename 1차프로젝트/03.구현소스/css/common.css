@@ -157,13 +157,13 @@
   background-size: cover; */
 }
 
-.snum-1{
+.snum-01{
   background: url(../images/main_img1.jpg) no-repeat center/cover;
 }
-.snum-2{
+.snum-02{
   background: url(../images/main_img2.jpg) no-repeat center/100% 95%; 
 }
-.snum-3{
+.snum-03{
   background: url(../images/main_img3.jpg) no-repeat center/100% 95%;
 }
 
@@ -322,6 +322,9 @@ p{
   clip-path: polygon(49.8% 3%, 83.8% 16.2%, 98.8% 44%, 99.6% 100.4%, 66.8% 100%, 32.8% 100%, 0.2% 100%, 0.8% 44%, 15.8% 16%);
 }
 
+.beslider li img:hover{
+  transition: ;
+}
 /**************************** 6. 배너영역 ****************************/
 
 .ban-box{
