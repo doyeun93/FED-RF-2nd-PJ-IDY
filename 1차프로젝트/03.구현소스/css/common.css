@@ -193,9 +193,12 @@ p{
 
 /*  프로모션 영역 하단(이미지 슬라이드) */
 .proslide-box{
+  position: relative;
+  /* 부모자격 */
   width: 100%;
   height: 100%;
   padding-top: 40px;
+  overflow: hidden;
 }
 #proslider{
   position: relative;
@@ -205,7 +208,7 @@ p{
   gap: 0 36px;
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 #proslider li{
   background-repeat: no-repeat;
@@ -222,8 +225,8 @@ p{
 /*이동버튼*/
 .abtn {
   position: absolute;
-  bottom: -36%;
-  /* transform: translateY(-50%); */
+  top: 50%;
+  transform: translateY(-50%);
   /*Y축 중앙이동*/
 }
 
@@ -269,9 +272,25 @@ p{
 
 /* 뉴아이템 이미지 구역 */
 .new-first-slider{
- 
+  position: relative;
   display: flex;
-  gap: 0 25px;
+  /* gap: 0 25px; */
+  left: calc(50% - 356px/2);
+  transition: 2s ease-in-out;
+}
+.new-first-slider.on{
+  left: 0;
+}
+.new-first-slider li:first-child{
+  position: relative;
+  z-index: 1;
+}
+.new-first-slider li+li{
+  margin-left: -14.4%;
+  transition: 2s ease-in-out;
+}
+.new-first-slider.on li+li{
+  margin-right: 5%;
 }
 
 .new-second-slider{
@@ -453,7 +472,8 @@ display: flex;
 /* 홈페이지 인트로 닫기 버튼 설정 */
 .cbtn{
   position: absolute;
-  top: 18%;
+  top: 50%;
+  transform: translateY(-19vw);
   right: 6.8%;
   width: 5vw;
   height: 9vh;
@@ -462,7 +482,7 @@ display: flex;
   background-color: lightpink;
   /* border: 1px dotted white; */
   border-radius: 50%;
-  cursor: pointer;
+  cursor: pointer;  
   background: url(../images/spoon.png) no-repeat center / 50%;
 }
 
@@ -476,5 +496,6 @@ display: flex;
   background: url(../images/spoon.png) no-repeat center;
   transition: .3s ease-out;
   /* opacity: 0; */
+  pointer-events: none;
 }
 
