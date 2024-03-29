@@ -45,6 +45,15 @@ function mainSlide(){
   }
 }
 
+let mautoI;
+let mautoT;
+mainSlide();
+
+function mautoSlide(){
+  mautoI = setInterval(() => {
+    mainSlide();
+  }, 3000);
+}
 
 /*********************** 프로모션 구역 슬라이드 함수 ***********************/
 function goSlide(evt,sts=true){
@@ -83,7 +92,7 @@ function goSlide(evt,sts=true){
   } /////// else문  //////
 
 
-  // 2. 블릿 구현
+ /*  // 2. 블릿 구현
   let seq = slide.querySelectorAll('li')[isRbtn? 1 : 0]
     .getAttribute('data-seq');
     console.log('블릿이 읽어올 순번:',seq,'데이터형:',typeof seq);
@@ -96,7 +105,8 @@ function goSlide(evt,sts=true){
       else{
         ele.classList.remove('on');
       }
-  });
+  }); */
+
 } //////////////////////// goSlide 함수 ////////////////////
 
 let autoI;
