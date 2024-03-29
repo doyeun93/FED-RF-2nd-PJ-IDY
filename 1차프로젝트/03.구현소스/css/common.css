@@ -278,6 +278,10 @@ p{
   left: calc(50% - 356px/2);
   transition: 2s ease-in-out;
 }
+.new-first-slider li{
+  transition: 2s ease-in-out;
+
+}
 .new-first-slider.on{
   left: 0;
 }
@@ -287,10 +291,9 @@ p{
 }
 .new-first-slider li+li{
   margin-left: -14.4%;
-  transition: 2s ease-in-out;
 }
-.new-first-slider.on li+li{
-  margin-right: 5%;
+.new-first-slider.on li{
+  margin-right: 18%;
 }
 
 .new-second-slider{
