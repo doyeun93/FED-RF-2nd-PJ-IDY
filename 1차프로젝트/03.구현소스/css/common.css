@@ -270,7 +270,7 @@ p{
 }
 
 
-/* 뉴아이템 이미지 구역 */
+/* 뉴아이템 이미지 구역 트랜지션*/
 .new-first-slider{
   position: relative;
   display: flex;
@@ -296,20 +296,43 @@ p{
   margin-right: 18%;
 }
 
-.new-second-slider{
- 
-  display: flex;
-  flex-direction: row-reverse;
-  gap: 0 25px;
-}
-
+/* 이미지 밑에 설명 숨기고 오버시 나타내기 */
 .slide-info{
   text-align: center;
+  display: none;
 }
 
-.new-first-slider li img:hover{
-  transition: 2s;
+.new-first-slider ul>li:hover .slide-info ol>li{
+  display: block;
 }
+
+/* 두번째 이미지 슬라이드 수정하기 */
+.new-second-slider{
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  left: calc(50% - 356px/2);
+  transition: 2s ease-in-out;
+}
+.new-second-slider li{
+  transition: 2s ease-in-out;
+
+}
+.new-second-slider.on{
+  right: 0;
+}
+.new-second-slider li:first-child{
+  position: relative;
+  z-index: 1;
+}
+.new-second-slider li+li{
+  margin-right: 14.4%;
+}
+.new-second-slider.on li{
+  margin-left: -18%;
+}
+
+
 /***************** 5. 비베네핏 영역 *****************/
 .be-header {
   padding-top: 50px;

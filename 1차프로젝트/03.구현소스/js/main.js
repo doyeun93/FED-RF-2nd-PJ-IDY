@@ -41,28 +41,6 @@ function loadFn(){
   }
 }  ///////////// loadFn 함수 ////////////
 
-
-/****************************** 메인영역 슬라이드  ******************************/
-function mainSlide(){
-  const slide = qs(".slider");
-
-  for(let i = 0; i < 3; i++){
-    slide.innerHTML += `
-    <li data-seq="${i}" class="snum-0${i+1}"></li>
-    `;
-  }
-}
-
-let mautoI;
-let mautoT;
-mainSlide();
-
-function mautoSlide(){
-  mautoI = setInterval(() => {
-    mainSlide();
-  }, 3000);
-}
-
 /*********************** 프로모션 구역 슬라이드 함수 ***********************/
 function goSlide(evt,sts=true){
 
