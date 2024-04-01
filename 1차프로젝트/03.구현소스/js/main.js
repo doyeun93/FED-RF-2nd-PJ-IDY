@@ -118,6 +118,8 @@ console.log('화면1/3:', winH);
 // New Item
 const newItem = qs('.new-cont-box');
 const showTg = qs('.new-first-slider');
+const showTg2 = qs('.new-second-slider');
+
 
 // 윈도우 스크롤 이벤트 설정하기
 window.addEventListener('scroll',()=>{
@@ -130,7 +132,14 @@ window.addEventListener('scroll',()=>{
   else{
     showTg.classList.remove('on');
   }
+  if(getBCR(newItem) < winH){
+    showTg2.classList.add('on');
+  }
+  else{
+    showTg2.classList.remove('on');
+  }
 
+  
 }); /////// scroll /////////////////
 
 
