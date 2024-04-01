@@ -305,8 +305,9 @@ p{
   display: none;
 }
 
-.new-first-slider ul>li:hover .slide-info ol>li{
-  display: block;
+.new-first-slider:hover,
+.slide-info li{
+  transition: .2s ease-in-out;
 }
 
 /* 두번째 이미지 슬라이드 수정하기 */
@@ -415,7 +416,7 @@ p{
 }
 
 .cont-box-foot{
-padding-top: 50px;
+padding-top: 40px;
 display: flex;
 
 }
@@ -431,7 +432,7 @@ display: flex;
 }
 .footer-text{
   display: flex;
-  padding: 50px 110px;
+  padding: 40px 110px;
   font-size: 1.1rem;
   line-height: 2;
   color: #fff;
