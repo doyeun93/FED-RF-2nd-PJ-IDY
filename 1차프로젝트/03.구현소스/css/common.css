@@ -1,6 +1,5 @@
 @charset "utf-8";
 
-
 @import url("https://fonts.googleapis.com/css2?family=Poor+Story&display=swap");
 
 /*   font-family: "Poor Story", system-ui; */
@@ -9,38 +8,37 @@
 /* 공유기능 요소 셋팅 */
 
 /************* 1. 상단영역 *************/
-#top-area{
+#top-area {
   position: relative;
-  transition: all .6s ease-in-out;
+  transition: all 0.6s ease-in-out;
   z-index: 10;
 }
 
-#top-area:hover{
-  background-color:#ff98ae;
+#top-area:hover {
+  background-color: #ff98ae;
 }
-.logo-part{
+.logo-part {
   background: url(../images/main_logo.png) no-repeat center;
 }
 
-.gnb{
+.gnb {
   display: flex;
   height: 75px;
   overflow: hidden;
   text-align: center;
   white-space: nowrap;
-  transition: all .6s ease-in-out;
-
+  transition: all 0.6s ease-in-out;
 }
 
-.gnb dl>dt a{
+.gnb dl > dt a {
   font-size: 1.1rem;
   font-weight: bold;
 }
-#top-area:hover .gnb{
+#top-area:hover .gnb {
   height: 400px;
 }
-#top-area .gnb::before{
-  content: '';
+#top-area .gnb::before {
+  content: "";
   position: absolute;
   top: 85px;
   left: 0;
@@ -48,78 +46,76 @@
   height: 0;
   background: white;
   z-index: -1;
-  transition: all .6s ease-in-out;
-
+  transition: all 0.6s ease-in-out;
 }
-#top-area:hover .gnb::before{
+#top-area:hover .gnb::before {
   height: 327px;
 }
 
-#top-area:hover .gnb dd{
+#top-area:hover .gnb dd {
   background-color: #fff;
 }
 /* 메뉴 박스 */
-.gnb dl{
+.gnb dl {
   padding: 2px;
 }
 
 /* 상위메뉴 dt */
-.gnb dt{
+.gnb dt {
   padding: 0 50px;
   line-height: 78px;
 }
-.gnb dt a:hover{
+.gnb dt a:hover {
   color: #fff;
 }
 /* 상위메뉴 dd */
-.gnb dd{
+.gnb dd {
   line-height: 65px;
 }
-.gnb dd a:hover{
- color: red;
- font-weight: bold;
-} 
-
+.gnb dd a:hover {
+  color: red;
+  font-weight: bold;
+}
 
 /*********************** 기타파트 ***********************/
-.search{
+.search {
   display: flex;
   padding: 20px 87px;
 }
-.search img{
+.search img {
   height: 32px;
   padding-left: 32px;
 }
 
 /* 각 사진의 2번째 이미지 숨기기 */
-.search li img:nth-child(2){
+.search li img:nth-child(2) {
   display: none;
 }
 
 /* 사진의 1번째 이미지 보이기 */
-.search li:nth-child(1)~li img:nth-child(1){
+.search li:nth-child(1) ~ li img:nth-child(1) {
   display: inline;
 }
 
 /* 최상위 박스 오버시 첫번째 이미지 숨기기 */
-#top-area:hover .search li img:nth-child(1){
+#top-area:hover .search li img:nth-child(1) {
   display: none;
 }
 /* 최상위 박스 오버시 첫번째 이미지 숨기기 */
-#top-area:hover .search li img:nth-child(2){
+#top-area:hover .search li img:nth-child(2) {
   display: inline;
 }
 
 /************* 2. 메인영역 *************/
 
 /* 메인 배너 액자이미지 삽입 세팅 */
-.cont-banner{
+.cont-banner {
   position: relative;
 }
 
 /* 메인 배너 액자이미지 삽입 */
 .cont-banner::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
@@ -127,7 +123,7 @@
 }
 
 /* 액자이미지 삽입하여 기존 슬라이드 이미지 세팅 */
-.mslide-box{
+.mslide-box {
   width: 100.1%;
   height: 92%;
   border-radius: min(187px, 11.3vw);
@@ -137,7 +133,7 @@
   overflow: hidden;
 }
 
-.slider{
+.slider {
   position: relative;
   left: 0;
   display: flex;
@@ -145,34 +141,30 @@
   height: 100%;
 }
 
-.slider li{
+.slider li {
   flex-basis: 100%;
   flex-shrink: 0;
-   /* 부모크기만큼 옆으로 나가게하려면 flex-shrink 기본값 1을 0으로 변경한다
+  /* 부모크기만큼 옆으로 나가게하려면 flex-shrink 기본값 1을 0으로 변경한다
   1의 의미는 자동으로 부모크기에 맞춰 줄어듦
   0의 의미는 설정된 크기만큼 늘어남 */
-  
+
   /* background-repeat: no-repeat;
   background-position: center;
   background-size: cover; */
 }
 
-.snum-01{
+.snum-01 {
   background: url(../images/main_img1.jpg) no-repeat center/cover;
 }
-.snum-02{
-  background: url(../images/main_img2.jpg) no-repeat center/100% 95%; 
+.snum-02 {
+  background: url(../images/main_img2.jpg) no-repeat center/100% 95%;
 }
-.snum-03{
+.snum-03 {
   background: url(../images/main_img3.jpg) no-repeat center/100% 95%;
 }
-.snum-04{
+.snum-04 {
   background: url(../images/main_img4.jpg) no-repeat center/100% 95%;
 }
-
-
-
-
 
 /***************** 3. 프로모션 영역 *****************/
 /* 프로모션 영역 상단 */
@@ -188,22 +180,22 @@
   line-height: 1.2;
   text-align: center;
 }
-p{
+p {
   font-size: 15px;
   text-align: center;
   line-height: 1.5;
 }
 
 /*  프로모션 영역 하단(이미지 슬라이드) */
-.proslide-box{
+.proslide-box {
   position: relative;
   /* 부모자격 */
   width: 100%;
   height: 100%;
-  padding-top: 40px;
+  padding-top: 60px;
   overflow: hidden;
 }
-#proslider{
+#proslider {
   position: relative;
   left: 0%;
   display: flex;
@@ -213,7 +205,7 @@ p{
   height: 100%;
   /* overflow: hidden; */
 }
-#proslider li{
+#proslider li {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -227,40 +219,43 @@ p{
 /* 프로모션 이동버튼 */
 /*이동버튼*/
 .abtn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  
+  position: relative;
+  top: 115%;
   /*Y축 중앙이동*/
+  transform: translateY(-50%);  
+}
+.abtn img {
+  height: 100px;
 }
 
 /*왼쪽버튼*/
 .ab1 {
-  left: 11%;
+  left: 43%;
 }
 
 /*오른쪽버튼*/
 .ab2 {
-  right: 11%;
+  right: -52%;
 }
 
 /* 프로모션 이동 하단 부분 */
-.indic{
+.indic {
   display: flex;
   position: absolute;
-  left: 46%;
-  padding-top: 1%;
-  margin: 0 10px;
+  left: 47.2%;
+  margin: -75px 10px;
   gap: 13px;
 }
-.indic .circle img{
+.indic .circle img {
   width: 20px;
   height: 20px;
   padding-top: 14px;
 }
 
-.indic .iceicon img{
+.indic .iceicon img {
   width: 50px;
-  height: 50px;;
+  height: 50px;
 }
 /***************** 4. 뉴아이템 영역 *****************/
 
@@ -272,72 +267,69 @@ p{
   text-align: center;
 }
 
-
 /* 뉴아이템 이미지 구역 트랜지션*/
-.new-first-slider{
+.new-first-slider {
   position: relative;
   display: flex;
   /* gap: 0 25px; */
-  left: calc(50% - 356px/2);
+  left: calc(50% - 356px / 2);
   transition: 2s ease-in-out;
 }
-.new-first-slider li{
+.new-first-slider li {
   transition: 2s ease-in-out;
-
 }
-.new-first-slider.on{
+.new-first-slider.on {
   left: 0;
 }
-.new-first-slider li:first-child{
+.new-first-slider li:first-child {
   position: relative;
   z-index: 1;
 }
-.new-first-slider li+li{
+.new-first-slider li + li {
   margin-left: -14.4%;
 }
-.new-first-slider.on li{
+.new-first-slider.on li {
   margin-right: 18%;
 }
 
 /* 이미지 밑에 설명 숨기고 오버시 나타내기 */
-.slide-info{
+.slide-info {
   text-align: center;
   display: none;
 }
 
 .new-first-slider:hover,
-.slide-info li{
-  transition: .2s ease-in-out;
+.slide-info li {
+  transition: 0.2s ease-in-out;
 }
 
 /* 두번째 이미지 슬라이드 수정하기 */
-.new-second-slider{
+.new-second-slider {
   position: relative;
   display: flex;
   flex-direction: row-reverse;
-  right: calc(50% - 356px/2);
+  right: calc(50% - 356px / 2);
   transition: 3.5s ease-in-out;
 }
-.new-second-slider li{
+.new-second-slider li {
   transition: 3.5s ease-in-out;
-
 }
-.new-second-slider.on{
+.new-second-slider.on {
   right: 0;
 }
-.new-second-slider li:first-child{
+.new-second-slider li:first-child {
   position: relative;
   z-index: 1;
 }
-.new-second-slider li+li{
+.new-second-slider li + li {
   margin-right: 14.4%;
 }
-.new-second-slider.on li{
+.new-second-slider.on li {
   margin-left: -11%;
 }
 
-
 /***************** 5. 비베네핏 영역 *****************/
+/* 비베네핏 상단영역 */
 .be-header {
   padding-top: 50px;
 }
@@ -350,12 +342,13 @@ p{
   text-align: center;
 }
 
-.beslide-box{
+/*  비베네핏 이미지 영역 */
+.beslide-box {
   width: 100%;
   height: 100%;
   padding-top: 60px;
 }
-.beslider{
+.beslider {
   position: relative;
   left: -8%;
   display: flex;
@@ -363,20 +356,28 @@ p{
   width: 100%;
   height: 100%;
 }
-.beslider li{
+.beslider li {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
 }
-.beslider li img{
-  clip-path: polygon(49.8% 3%, 83.8% 16.2%, 98.8% 44%, 99.6% 100.4%, 66.8% 100%, 32.8% 100%, 0.2% 100%, 0.8% 44%, 15.8% 16%);
+.beslider li img {
+  clip-path: polygon(
+    49.8% 3%,
+    83.8% 16.2%,
+    98.8% 44%,
+    99.6% 100.4%,
+    66.8% 100%,
+    32.8% 100%,
+    0.2% 100%,
+    0.8% 44%,
+    15.8% 16%
+  );
 }
-
 
 /**************************** 6. 배너영역 ****************************/
 
-.ban-box{
+.ban-box {
   display: flex;
   justify-content: space-around;
 }
@@ -394,43 +395,39 @@ p{
   left: -5%;
 }
 
-.ban-first-box img{
+.ban-first-box img {
   padding-top: 45px;
 }
 /**************************** 7. 하단영역 ***************************/
 
-
 /* 하단영역 상단부분 */
-.footer-cont{
+.footer-cont {
   padding: 60px 0px 20px;
-  
 }
 .footer-top {
-  display: flex; 
+  display: flex;
   justify-content: space-between;
 }
-.footer-top a{
+.footer-top a {
   font-size: 1rem;
   padding: 0 8px;
   color: #fff;
 }
 
-.cont-box-foot{
-padding-top: 40px;
-display: flex;
-
+.cont-box-foot {
+  padding-top: 40px;
+  display: flex;
 }
-  
 
-.footer-info-logo{
+.footer-info-logo {
   width: 200px;
   height: 300px;
 }
-.footer-info-logo img{
+.footer-info-logo img {
   padding: 40px 30px;
   width: 100%;
 }
-.footer-text{
+.footer-text {
   display: flex;
   padding: 40px 110px;
   font-size: 1.1rem;
@@ -438,29 +435,28 @@ display: flex;
   color: #fff;
 }
 
-.footer-wrap{
+.footer-wrap {
   position: relative;
-  width:40%;
+  width: 40%;
 }
 
-/* 하단 영역 소셜네트워크 */ 
+/* 하단 영역 소셜네트워크 */
 
-.footer-social-list{
-  
+.footer-social-list {
   display: flex;
   justify-content: space-between;
   padding: 55px 50px;
 }
 
 /* 하단 영역 spc아이콘 */
-.footer-icon-list{
+.footer-icon-list {
   display: flex;
   justify-content: space-between;
   padding: 55px 45px;
 }
 
 /***************** 하단영역 TOP버튼 추가 *****************/
-.btn-top{
+.btn-top {
   position: fixed;
   bottom: 2vw;
   right: 2vw;
@@ -472,12 +468,12 @@ display: flex;
   z-index: 100;
 }
 /*  a요소 확장 */
-.btn-top a{
+.btn-top a {
   display: block;
   width: 100%;
   height: 100%;
   color: #000;
-  font: 2vw/6.5vw 'Poor Story';
+  font: 2vw/6.5vw "Poor Story";
 }
 
 /* 오버시 설정 */
@@ -485,9 +481,9 @@ display: flex;
   border-style: inset;
 } */
 
-.btn-top:hover a{
+.btn-top:hover a {
   font-weight: bold;
-  color:rgb(255, 105, 155);
+  color: rgb(255, 105, 155);
 }
 /* top버튼 가상요소로 화살표 넣기 */
 .btn-top::after {
@@ -495,12 +491,12 @@ display: flex;
   margin-left: -9%;
   margin-top: -100%;
   font-size: 2vw;
-  content: '↑';
+  content: "↑";
   display: inline-block;
 }
 
 /* 홈페이지 인트로 닫기 버튼 설정 */
-.cbtn{
+.cbtn {
   position: absolute;
   top: 50%;
   transform: translateY(-19vw);
@@ -512,20 +508,19 @@ display: flex;
   background-color: lightpink;
   /* border: 1px dotted white; */
   border-radius: 50%;
-  cursor: pointer;  
+  cursor: pointer;
   background: url(../images/spoon.png) no-repeat center / 50%;
 }
 
 /* 마우스 포인터 설정 */
-.pointer{
+.pointer {
   position: absolute;
-  top:0;
+  top: 0;
   left: 0;
   width: 100px;
   height: 100px;
   background: url(../images/spoon.png) no-repeat center;
-  transition: .3s ease-out;
+  transition: 0.3s ease-out;
   /* opacity: 0; */
   pointer-events: none;
 }
-

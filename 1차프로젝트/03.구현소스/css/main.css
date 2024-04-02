@@ -49,18 +49,18 @@ body{
 /* <!-- 3. 프로모션영역 --> */
 .pro-area{
   max-width: 1652px;
- height: 600px;
+ height: 700px;
 }
 /* <!-- 4. 뉴아이템영역 --> */
 .newitem-area{
-  max-width: 1652px;
+  max-width: 1652px; 
   height: 1140px;
 }
 
 
 /* <!-- 5. be benefit영역 --> */
 .benefit-area{
-  max-width: 1652px;
+  max-width: 1600px;
   height: 600px;
 }
 /* <!-- 6. 배너 영역 --> */
