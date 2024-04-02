@@ -9,7 +9,7 @@
 
 /* 공사중 표시 */
 body * {
-  outline: 2px dashed #ccc;
+  /* outline: 2px dashed #ccc; */
   /* background-color:  #ffe4ea; */
 }
 
@@ -54,7 +54,7 @@ body{
 /* <!-- 4. 뉴아이템영역 --> */
 .newitem-area{
   max-width: 1652px; 
-  height: 1140px;
+  height: 1150px;
 }
 
 

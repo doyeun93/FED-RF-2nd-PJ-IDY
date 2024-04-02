@@ -17,10 +17,14 @@
 #top-area:hover {
   background-color: #ff98ae;
 }
-.logo-part {
+/* .logo-part {
   background: url(../images/main_logo.png) no-repeat center;
-}
+} */
 
+.logo img{
+  width: 90%;
+  padding: 4px 10px;
+}
 .gnb {
   display: flex;
   height: 75px;
@@ -217,46 +221,28 @@ p {
 }
 
 /* 프로모션 이동버튼 */
-/*이동버튼*/
 .abtn {
-  
   position: relative;
   top: 115%;
   /*Y축 중앙이동*/
   transform: translateY(-50%);  
 }
+
 .abtn img {
   height: 100px;
 }
 
 /*왼쪽버튼*/
 .ab1 {
-  left: 43%;
+  left: 42%;
 }
 
 /*오른쪽버튼*/
 .ab2 {
-  right: -52%;
+  right: -46%;
 }
 
-/* 프로모션 이동 하단 부분 */
-.indic {
-  display: flex;
-  position: absolute;
-  left: 47.2%;
-  margin: -75px 10px;
-  gap: 13px;
-}
-.indic .circle img {
-  width: 20px;
-  height: 20px;
-  padding-top: 14px;
-}
 
-.indic .iceicon img {
-  width: 50px;
-  height: 50px;
-}
 /***************** 4. 뉴아이템 영역 *****************/
 
 .new-header-text {
@@ -267,7 +253,11 @@ p {
   text-align: center;
 }
 
-/* 뉴아이템 이미지 구역 트랜지션*/
+/* 뉴아이템 이미지 구역 */
+.new-first-slider img, .new-second-slider img{
+  border-radius: 20px;
+}
+
 .new-first-slider {
   position: relative;
   display: flex;
@@ -295,17 +285,19 @@ p {
 
 /* 이미지 밑에 설명 숨기고 오버시 나타내기 */
 .slide-info {
+  padding-top: 5%;
   text-align: center;
-  display: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  /* color: #ff5484; */
+ 
 }
 
-.new-first-slider:hover,
-.slide-info li {
-  transition: 0.2s ease-in-out;
-}
+
 
 /* 두번째 이미지 슬라이드 수정하기 */
 .new-second-slider {
+  padding-top: 5px;
   position: relative;
   display: flex;
   flex-direction: row-reverse;
@@ -351,18 +343,18 @@ p {
 }
 .beslider {
   position: relative;
-  left: -8%;
+  left: 0%;
   display: flex;
-  gap: 0 25px;
-  width: 100%;
-  height: 100%;
+  gap: 0 34px;
+  
 }
 .beslider li {
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  
 }
 .beslider li img {
+  width: 105%;
   clip-path: polygon(
     49.8% 3%,
     83.8% 16.2%,
@@ -373,7 +365,12 @@ p {
     0.2% 100%,
     0.8% 44%,
     15.8% 16%
-  );
+    );
+  }
+  
+.beslider:hover  liimg {
+  transition: scale(1.1);
+
 }
 
 /**************************** 6. 배너영역 ****************************/
@@ -459,8 +456,8 @@ p {
 /***************** 하단영역 TOP버튼 추가 *****************/
 .btn-top {
   position: fixed;
-  bottom: 2vw;
-  right: 2vw;
+  bottom: 2.5vw;
+  right: 3vw;
   width: 5vw;
   height: 5vw;
   border-radius: 50%;
