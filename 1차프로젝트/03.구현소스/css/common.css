@@ -290,6 +290,7 @@ p {
 }
 .new-first-slider.on li {
   margin-right: 18%;
+  /* transform: scale(1.1); */
 }
 
 /* 이미지 밑에 설명 숨기고 오버시 나타내기 */
