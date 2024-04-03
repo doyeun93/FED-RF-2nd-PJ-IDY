@@ -43,6 +43,11 @@ function loadFn(){
 
 /*********************** 프로모션 구역 슬라이드 함수 ***********************/
 function goSlide(evt,sts=true){
+  const abtn = qsa(".abtn");
+
+  for (let x of abtn){
+    x.onclick = goSlide;
+  }
 
   // 1. 오른쪽 버튼인 .ab2인가?
   let isRbtn = 
@@ -66,7 +71,9 @@ function goSlide(evt,sts=true){
 
   }/////// if문 //////
   else{
-    let list = proslider.querySelectorAll(li);
+    //  하위 li 수집
+    let list = proslider.querySelectorAll("li");
+    // 맨 뒤 요소 li 맨 앞으로 이동하기
     proslider.insertBefore(list[list.length - 1], list[0]);
     proslider.style.left = "-20%";
     proslider.style.transition = "none";
@@ -76,22 +83,6 @@ function goSlide(evt,sts=true){
       proslider.style.transition = ".4s ease-in-out";
     }, 0);
   } /////// else문  //////
-
-
-//  // 2. 블릿 구현
-//   let seq = proslider.querySelectorAll('li')[isRbtn? 1 : 0]
-//     .getAttribute('data-seq');
-//     console.log('블릿이 읽어올 순번:',seq,'데이터형:',typeof seq);
-   
-//   // 2-1. 블릿 변경하기
-//   indic.forEach((ele,idx)=>{
-//       if(idx == seq){
-//         ele.classList.add('on');
-//       }
-//       else{
-//         ele.classList.remove('on');
-//       }
-//   }); 
 
 } //////////////////////// goSlide 함수 ////////////////////
 
@@ -108,6 +99,9 @@ function autoSlide(){
 } //////////////////////// autoSlide 함수 //////////////////
 
 
+
+
+/*************************** 뉴아이템 영역 ***************************/
 // 위치값 함수 (화면상단에서의 top위치값)
 const getBCR = (x) => x.getBoundingClientRect().top;
 // 화면기준값(높이의 2/3)
