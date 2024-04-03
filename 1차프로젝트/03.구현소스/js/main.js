@@ -78,20 +78,20 @@ function goSlide(evt,sts=true){
   } /////// else문  //////
 
 
- /*  // 2. 블릿 구현
-  let seq = slide.querySelectorAll('li')[isRbtn? 1 : 0]
-    .getAttribute('data-seq');
-    console.log('블릿이 읽어올 순번:',seq,'데이터형:',typeof seq);
+//  // 2. 블릿 구현
+//   let seq = proslider.querySelectorAll('li')[isRbtn? 1 : 0]
+//     .getAttribute('data-seq');
+//     console.log('블릿이 읽어올 순번:',seq,'데이터형:',typeof seq);
    
-  // 2-1. 블릿 변경하기
-  indic.forEach((ele,idx)=>{
-      if(idx == seq){
-        ele.classList.add('on');
-      }
-      else{
-        ele.classList.remove('on');
-      }
-  }); */
+//   // 2-1. 블릿 변경하기
+//   indic.forEach((ele,idx)=>{
+//       if(idx == seq){
+//         ele.classList.add('on');
+//       }
+//       else{
+//         ele.classList.remove('on');
+//       }
+//   }); 
 
 } //////////////////////// goSlide 함수 ////////////////////
 
