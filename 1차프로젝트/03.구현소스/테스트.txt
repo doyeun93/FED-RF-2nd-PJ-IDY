@@ -19,3 +19,6 @@
 - sub1 : 4등분(  상단 /메뉴 / 메인 / 신제품 / 하단)
 
 - sub2 : 3등분 (메뉴 / 메인 / 하단)
+
+
+menu-area(30px) main-new(1964px) sub-new(418px)

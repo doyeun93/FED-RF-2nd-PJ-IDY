@@ -83,3 +83,26 @@ body{
 #pro-area, #benefit-area, #ban-area{
   background-color: #fff;
 }
+
+
+
+/*  서브페이지 1 */
+#menu-area{
+  max-width: 1652px;
+  height: 30px;
+}
+#main-new{
+  max-width: 1652px;
+  height: 1900px;
+}
+#sub-new{
+  max-width: 1652px;
+  height: 418px;
+}
+
+
+/* 서브페이지 2 */
+#main-cont{
+  max-width: 1652px;
+  height: 1950px;
+}
