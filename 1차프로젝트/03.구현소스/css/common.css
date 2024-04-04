@@ -304,6 +304,7 @@ p {
   transition: 3.5s ease-in-out;
 }
 .new-second-slider li {
+  margin-left: -29%;
   transition: 3.5s ease-in-out;
 }
 .new-second-slider.on {
