@@ -7,13 +7,13 @@
 @media screen and (max-width: 1300px) {
   .new-first-slider.on {
     left: 1%;
-}
+  }
   .new-first-slider.on li {
     margin-right: 16.2%;
   }
   .new-second-slider.on {
     right: 1%;
-}
+  }
   .new-second-slider.on li {
     margin-left: -12.6%;
   }
@@ -29,7 +29,6 @@
   .beslider li img {
     width: 100%;
   }
-
 
   .btn-top {
     bottom: 13vw;
