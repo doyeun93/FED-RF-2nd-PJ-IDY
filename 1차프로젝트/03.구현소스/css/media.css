@@ -4,35 +4,43 @@
 
 /********************  최대 1300px ********************/
 
-@media screen and (max-width:1300px){ 
-    
+@media screen and (max-width: 1300px) {
+  .new-first-slider.on li {
+    margin-right: 16.7%;
+  }
+  .new-second-slider.on li {
+    margin-left: -12.1%;
+  }
+
+  .beslider {
+    gap: 0 15px;
+  }
+  .beslider li img {
+    width: 100%;
+  }
+
+  
+  .btn-top {
+    bottom: 13vw;
+    right: 1vw;
+  }
 }
 /********************  최대 1300px 미디어쿼리 종료********************/
 
-
 /********************  최대 768px ********************/
 
-@media screen and (max-width:768x){ 
-    
+@media screen and (max-width: 768x) {
 }
 /********************  최대 768px 미디어쿼리 종료 ********************/
 
-
-
-
 /********************  최대 480px ********************/
 
-@media screen and (max-width:480x){ 
-    
+@media screen and (max-width: 480x) {
 }
 /********************  최대 480px 미디어쿼리 종료 ********************/
 
-
-
-
 /********************  최대 480px ********************/
 
-@media screen and (max-width:480x){ 
-    
+@media screen and (max-width: 480x) {
 }
 /********************  최대 480px 미디어쿼리 종료 ********************/
