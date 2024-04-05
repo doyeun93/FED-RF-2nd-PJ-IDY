@@ -5,11 +5,22 @@
 /********************  최대 1300px ********************/
 
 @media screen and (max-width: 1300px) {
+  .new-first-slider.on {
+    left: 1%;
+}
   .new-first-slider.on li {
-    margin-right: 16.7%;
+    margin-right: 16.2%;
   }
+  .new-second-slider.on {
+    right: 1%;
+}
   .new-second-slider.on li {
-    margin-left: -12.1%;
+    margin-left: -12.6%;
+  }
+
+  .beslide-box {
+    width: 98%;
+    margin-left: 1%;
   }
 
   .beslider {
@@ -19,7 +30,7 @@
     width: 100%;
   }
 
-  
+
   .btn-top {
     bottom: 13vw;
     right: 1vw;
