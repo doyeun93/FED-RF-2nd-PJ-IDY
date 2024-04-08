@@ -17,9 +17,6 @@
 #top-area:hover {
   background-color: #ff98ae;
 }
-/* .logo-part {
-  background: url(../images/main_logo.png) no-repeat center;
-} */
 
 .logo img{
   width: 90%;
@@ -79,7 +76,6 @@
 .gnb dd a:hover {
   color: red;
   font-weight: bold;
-  
 }
 
 /*********************** 기타파트 ***********************/

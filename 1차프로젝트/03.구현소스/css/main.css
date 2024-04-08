@@ -10,12 +10,10 @@
 /* 공사중 표시 */
 body * {
   /* outline: 2px dashed #ccc; */
-  /* background-color:  #ffe4ea; */
-  
 }
 
 body{
-  /* width: 100vw; */
+  width: 100vw;
   /* height: 100vw; */
   background: url(../images/bg_hero.jpg);
 }
@@ -35,41 +33,42 @@ body{
   object-fit: contain;
 }
 
-/* <!-- 1. 상단영역 --> */
+/*  1. 상단영역  */
 .top-area{
   max-width: 1652px;
   height: 90px;
+ 
 }
-/* <!-- 2. 메인영역 --> */
+/*  2. 메인영역  */
+
 .main-area{
   max-width: 1652px;
   margin: 0 auto;
   aspect-ratio: 1.8;
-  
 }
-/* <!-- 3. 프로모션영역 --> */
+/*  3. 프로모션영역  */
 .pro-area{
   max-width: 1652px;
  height: 700px;
 }
-/* <!-- 4. 뉴아이템영역 --> */
+/*  4. 뉴아이템영역  */
 .newitem-area{
   max-width: 1652px; 
   height: 1150px;
 }
 
 
-/* <!-- 5. be benefit영역 --> */
+/*  5. be benefit영역  */
 .benefit-area{
   max-width: 1600px;
   height: 600px;
 }
-/* <!-- 6. 배너 영역 --> */
+/*  6. 배너 영역 */
 .ban-area{
   max-width: 1652px;
   height: 500px;
 }
-/* <!-- 7. 하단영역 --> */
+/*  7. 하단영역  */
 .footer-area{
   max-width: 1652px;
   height: 450px;

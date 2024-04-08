@@ -5,12 +5,20 @@
 /********************  최대 1300px ********************/
 
 @media screen and (max-width: 1300px) {
+  body{
+    width: auto;
+  }
+  #proslider {
+    padding-left: 21px;
+     gap: 0 21px;
+  }  
   .new-first-slider.on {
     left: 1%;
   }
   .new-first-slider.on li {
     margin-right: 16.2%;
   }
+  
   .new-second-slider.on {
     right: 1%;
   }
@@ -22,7 +30,6 @@
     width: 98%;
     margin-left: 1%;
   }
-
   .beslider {
     gap: 0 15px;
   }
@@ -30,9 +37,30 @@
     width: 100%;
   }
 
+  .ban-first-box{
+    left: 3%;
+  }
+  .ban-first-box img{
+    width: 90%;
+  }
+  .ban-second-box img{
+    width: 90%;
+  }
+
+  .footer-info-logo img {
+    padding: 20px 30px;
+  }
+  .footer-top a {
+    font-size: 0.8rem;
+    padding: 0 9px; 
+  }
+  .footer-text{
+    padding: 10px 110px;
+    font-size: 1rem;
+  }
   .btn-top {
-    bottom: 13vw;
-    right: 1vw;
+    bottom: 10vw;
+    right: 2vw;
   }
 }
 /********************  최대 1300px 미디어쿼리 종료********************/
