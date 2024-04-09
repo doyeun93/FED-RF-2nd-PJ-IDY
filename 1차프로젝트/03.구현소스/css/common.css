@@ -155,13 +155,13 @@
 }
 
 .snum-01 {
-  background: url(../images/main_img1.jpg) no-repeat center/cover;
+  background: url(../images/main_img1.jpg) no-repeat center/100% 95%;
 }
 .snum-02 {
   background: url(../images/main_img2.jpg) no-repeat center/100% 95%;
 }
 .snum-03 {
-  background: url(../images/main_img3.jpg) no-repeat center/cover;
+  background: url(../images/main_img3.jpg) no-repeat center/100% 95%;
 }
 .snum-04 {
   background: url(../images/main_img4.jpg) no-repeat center/100% 95%;
@@ -518,4 +518,31 @@ p {
   transition: 0.3s ease-out;
   /* opacity: 0; */
   pointer-events: none;
+}
+
+
+/***************************** 서브페이지1 *****************************/
+/*********************** 메뉴영역 ***********************/
+#menu-area{
+  padding-top: 20px;
+}
+
+.menu-list{
+  display: flex;
+  justify-content: center;
+  gap: 0 35px;
+  width: 1500px;
+  margin: 0 auto;
+}
+.menu-list-first a{
+  font-size: 1.8rem;
+  font-family: "Poor Story";
+  color: #ff5484;
+  font-weight: bold;
+}
+
+.menu-list-item a{
+  font-size: 1.2rem;
+  font-family: "Poor Story";
+  /* color:#f986bd; */
 }

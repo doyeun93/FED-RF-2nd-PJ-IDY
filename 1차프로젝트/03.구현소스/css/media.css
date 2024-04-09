@@ -103,6 +103,10 @@
   }
  
 /* 프로모션 영역  */
+ #proslider {
+   padding-left: 55px;
+   gap: 0 55px;
+ }  
 
 /* 뉴아이템 영역 */
 
