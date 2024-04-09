@@ -66,8 +66,11 @@
 /********************  최대 1300px 미디어쿼리 종료********************/
 
 /********************  최대 768px ********************/
-@media screen and (max-width: 768x) {
-
+@media screen and (max-width: 768px) {
+  /*  탑영역  */
+  [class*='col-'] {
+    padding: 7px 0px;
+  }
    /* 레이아웃구성 */
    .col-2nd-1 {width: 8.33%;}
    .col-2nd-2 {width: 16.66%;}
@@ -81,24 +84,62 @@
    .col-2nd-10 {width: 83.33%;}
    .col-2nd-11 {width: 91.66%;}
    .col-2nd-12 {width: 100%;}
-   
+  
+  .logo img {
+    width: 86%;
+    padding: 8px 6px;
+  }
+  .gnb dl {
+    padding: 0px;
+  }
+  .gnb dt {
+    padding: 0;
+  }
+  .gnb dd a{
+    font-size: 0.88rem;
+  }
+  .search {
+    padding: 20px;
+  }
+ 
+/* 프로모션 영역  */
 
-   /* 숨길 박스 */
-   .col-2nd-none{display: none;}
+/* 뉴아이템 영역 */
 
-   /* 보일 박스 */
-   .col-2nd-block{display: block;}
-
-  .mslide-box { 
-    border-radius: min(187px, 12.5vw);
-  } 
-
+/* 하단영역 */
+  .cont-box-foot {
+    padding-top: 30px;
+  }
+  .footer-cont {
+    padding: 50px 4px 20px;
 }
+  .footer-top {
+   flex-wrap: nowrap;
+  }
+  .footer-top a {
+    padding: 0px; 
+  }
+  .footer-info-logo img {
+    padding: 45px 20px;
+    width: 120%;
+    }
+    .footer-text {
+      padding: 0px 59px;
+      font-size: 0.9rem;
+    }
+    .footer-social-list {
+      padding: 55px 25px;
+  }
+  .footer-icon-list {
+    padding: 55px 0px;
+    margin-left: -16px;
+}
+  }
 /********************  최대 768px 미디어쿼리 종료 ********************/
 
 /********************  최대 480px ********************/
 
-@media screen and (max-width: 480x) {
+@media screen and (max-width: 480px) {
 
 
 
