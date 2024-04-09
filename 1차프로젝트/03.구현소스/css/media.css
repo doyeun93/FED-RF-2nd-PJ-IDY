@@ -67,6 +67,28 @@
 
 /********************  최대 768px ********************/
 @media screen and (max-width: 768x) {
+
+   /* 레이아웃구성 */
+   .col-2nd-1 {width: 8.33%;}
+   .col-2nd-2 {width: 16.66%;}
+   .col-2nd-3 {width: 25%;}
+   .col-2nd-4 {width: 33.33%;}
+   .col-2nd-5 {width: 41.66%;}
+   .col-2nd-6 {width: 50%;}
+   .col-2nd-7 {width: 58.33%;}
+   .col-2nd-8 {width: 66.66%;}
+   .col-2nd-9 {width: 75%;}
+   .col-2nd-10 {width: 83.33%;}
+   .col-2nd-11 {width: 91.66%;}
+   .col-2nd-12 {width: 100%;}
+   
+
+   /* 숨길 박스 */
+   .col-2nd-none{display: none;}
+
+   /* 보일 박스 */
+   .col-2nd-block{display: block;}
+
   .mslide-box {
     border-radius: min(187px, 12.5vw);
   }
@@ -77,11 +99,11 @@
 /********************  최대 480px ********************/
 
 @media screen and (max-width: 480x) {
+
+
+
+
+  
 }
 /********************  최대 480px 미디어쿼리 종료 ********************/
 
-/********************  최대 480px ********************/
-
-@media screen and (max-width: 480x) {
-}
-/********************  최대 480px 미디어쿼리 종료 ********************/
