@@ -5,9 +5,9 @@
 /********************  최대 1300px ********************/
 
 @media screen and (max-width: 1300px) {
-  /* body{
+  body{
     width: auto;
-  } */
+  }
   #proslider {
     padding-left: 21px;
      gap: 0 21px;
@@ -20,7 +20,7 @@
   }
   
   .new-second-slider.on {
-    right: 2%;
+    right: 1%;
   }
   .new-second-slider.on li {
     margin-left: -12.6%;
