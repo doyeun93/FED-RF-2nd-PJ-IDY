@@ -5,9 +5,9 @@
 /********************  최대 1300px ********************/
 
 @media screen and (max-width: 1300px) {
-  body{
+  /* body{
     width: auto;
-  }
+  } */
   #proslider {
     padding-left: 21px;
      gap: 0 21px;
@@ -20,7 +20,7 @@
   }
   
   .new-second-slider.on {
-    right: 1%;
+    right: 2%;
   }
   .new-second-slider.on li {
     margin-left: -12.6%;
@@ -89,9 +89,9 @@
    /* 보일 박스 */
    .col-2nd-block{display: block;}
 
-  .mslide-box {
+  .mslide-box { 
     border-radius: min(187px, 12.5vw);
-  }
+  } 
 
 }
 /********************  최대 768px 미디어쿼리 종료 ********************/
@@ -103,7 +103,7 @@
 
 
 
-  
+
 }
 /********************  최대 480px 미디어쿼리 종료 ********************/
 
