@@ -9,21 +9,26 @@
     width: auto;
   }
   #proslider {
-    padding-left: 21px;
-     gap: 0 21px;
+    padding-left: 24px;
+     gap: 0 24px;
   }  
   .new-first-slider.on {
-    left: 1%;
+    left: 2%;
   }
   .new-first-slider.on li {
-    margin-right: 16.2%;
+    margin-right: 17.2%;
   }
-  
+  .new-first-slider li + li {
+    margin-left: -15.5%;
+  }
+  .new-second-slider li + li {
+    margin-right: 13.5%;
+  }
   .new-second-slider.on {
-    right: 1%;
+    right: 2%;
   }
   .new-second-slider.on li {
-    margin-left: -12.6%;
+    margin-left: -11.8%;
   }
 
   .beslide-box {
