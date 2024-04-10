@@ -23,5 +23,5 @@
 
 - sub2 : 3등분 (메뉴 / 메인 / 하단)
 
-
+vertical-align: middle;
 menu-area(30px) main-new(1964px) sub-new(418px)

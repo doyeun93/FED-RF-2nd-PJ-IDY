@@ -98,6 +98,10 @@ body{
   max-width: 1652px;
   height: 418px;
 }
+.main-new-container,.main-new-content,.sub-new-main{
+  width: 1034px;
+  margin: 0 auto;
+}
 
 
 /* 서브페이지 2 */

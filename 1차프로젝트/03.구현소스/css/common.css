@@ -546,3 +546,82 @@ p {
   font-family: "Poor Story";
   /* color:#f986bd; */
 }
+
+.main-new-top{
+  padding-top: 60px;
+  text-align: center;
+  font-size: 6rem;
+  font-family: "Poor Story";
+  color: #ff5484;
+  font-weight: bold; 
+}
+
+.main-new-part{
+  margin: 80px auto 0;
+}
+.main-new-box{
+  padding: 60px 0 50px;
+  border: 1px solid #d4d4d4;
+  text-align: center;
+}
+.main-new-header{
+  display: inline-block;
+  padding: 0 25px 40px;
+  border-bottom: 2px solid #d1cdcb;
+}
+.main-new-title-en{
+  color: #37271f;
+  font-weight: 600;
+  font-size: 2rem;
+}
+.main-new-title{
+  margin-top: 13px;
+  color: #37271f;
+  font-weight: bold;
+  font-size: 4rem;
+  line-height: 1.2;
+}
+.main-new-text{
+  margin-top: 17px;
+  color: #37271f;
+  font-size: 1.1rem;
+}
+.main-new-main{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 0 20px;
+}
+.main-new-item > p{
+  font-size: 1.1rem;
+}
+.main-new-content > img{
+  width: 100%;
+}
+.sub-new-part{
+  margin-top: 90px;
+}
+.sub-new-title{
+  color: #41332c;
+  font-size: 2.2rem;
+}
+.sub-new-item-box{
+  margin-top: 40px;
+  margin-left: calc(50% - 517px);
+  /* width: 1034px; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0 10px;
+}
+/* .sub-new-item{
+  width: calc(100% + 2px);
+  /* height: 253px; 
+  margin: -1px -1px 0;
+} */
+.sub-new-item-box >img{
+  width: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+
+}
+
