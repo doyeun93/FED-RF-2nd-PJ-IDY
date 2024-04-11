@@ -589,7 +589,7 @@ p {
 .main-new-main{
   display: flex;
   justify-content: center;
-  margin-top: 30px;
+  margin-top: 20px;
   gap: 0 20px;
 }
 .main-new-item > p{
@@ -609,6 +609,7 @@ p {
 .sub-new-item-box{
   margin-top: 40px;
   margin-left: calc(50% - 517px);
+
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 0 10px;
