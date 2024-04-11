@@ -123,7 +123,13 @@
 /* 뉴아이템 영역 */
 
 /* 비베네핏 영역 */
-
+.beslider li img{
+  width: 100%;  
+}
+.beslider{
+    grid-template-columns: repeat(3,2fr);
+    gap: 10 10px;
+  };
 /* 하단영역 */
   .cont-box-foot {
     padding-top: 30px;
