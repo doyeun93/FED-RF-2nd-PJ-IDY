@@ -19,10 +19,10 @@
     margin-right: 17.2%;
   }
   .new-first-slider li + li {
-    margin-left: -15.5%;
+    margin-left: -16%;
   }
   .new-second-slider li + li {
-    margin-right: 13.5%;
+    margin-right: 13%;
   }
   .new-second-slider.on {
     right: 2%;
@@ -121,6 +121,8 @@
  }  
 
 /* 뉴아이템 영역 */
+
+/* 비베네핏 영역 */
 
 /* 하단영역 */
   .cont-box-foot {

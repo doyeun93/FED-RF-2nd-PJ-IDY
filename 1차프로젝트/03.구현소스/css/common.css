@@ -153,10 +153,6 @@ body{
   /* 부모크기만큼 옆으로 나가게하려면 flex-shrink 기본값 1을 0으로 변경한다
   1의 의미는 자동으로 부모크기에 맞춰 줄어듦
   0의 의미는 설정된 크기만큼 늘어남 */
-
-  /* background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; */
 }
 
 .snum-01 {
@@ -221,28 +217,6 @@ p {
   border-radius: 25px;
   object-fit: cover;
 }
-
-/* 프로모션 이동버튼
-.abtn {
-  position: absolute;
-  top: 60%;
-  /*Y축 중앙이동
-  transform: translateY(-50%);  
-}
-
-.abtn img {
-  height: 100px;
-}
-
-왼쪽버튼
-.ab1 {
-  left: 0%;
-}
-
-오른쪽버튼
-.ab2 {
-  right: 0%;
-} */
 
 
 /***************** 4. 뉴아이템 영역 *****************/
@@ -347,8 +321,9 @@ p {
 .beslider {
   position: relative;
   left: 0%;
-  display: flex;
-  gap: 0 30px;
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  gap: 0 40px;
   
 }
 .beslider li {
@@ -357,7 +332,7 @@ p {
   
 }
 .beslider li img {
-  width: 105%;
+  width: 110%;
   clip-path: polygon(
     49.8% 3%,
     83.8% 16.2%,
@@ -619,11 +594,6 @@ p {
   grid-template-columns: repeat(4, 1fr);
   gap: 0 10px;
 }
-/* .sub-new-item{
-  width: calc(100% + 2px);
-  /* height: 253px; 
-  margin: -1px -1px 0;
-} */
 .sub-new-item-box img{
   width: 253px;
   height: 253px;
