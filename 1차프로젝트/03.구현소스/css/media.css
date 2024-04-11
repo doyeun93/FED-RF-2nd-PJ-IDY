@@ -72,6 +72,13 @@
 
 /********************  최대 768px ********************/
 @media screen and (max-width: 768px) {
+  .pointer{
+    display: none;
+  }
+  body>*{
+    width: 100vw;
+    overflow-x: hidden;
+  }
   /*  탑영역  */
   [class*='col-'] {
     padding: 7px 0px;
