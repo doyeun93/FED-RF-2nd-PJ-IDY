@@ -121,6 +121,23 @@
  }  
 
 /* 뉴아이템 영역 */
+.new-first-slider.on, .new-second-slider.on{
+  
+}
+
+ .new-first-slider{
+  left: auto;
+  
+ }
+ .new-first-slider > img{
+   width: 100vw
+ 
+ }
+ .new-second-slider{
+  right: auto;
+ }
+
+ 
 
 /* 비베네핏 영역 */
 .benefit-area, .ban-area, .footer-area {
@@ -141,13 +158,16 @@
   .ban-first-box {
    left: 0%;
   }
-  /* .ban-first-text {
-    text-align: ;        
-  } */
+  .ban-first-title, .ban-second-title {
+    font-size: 0.9rem;        
+  }
 /* 하단영역 */
   .cont-box-foot {
     padding-top: 30px;
   }
+  .footer-wrap {
+    width: auto;
+  }   
   .footer-cont {
     padding: 50px 4px 20px;
   }
@@ -163,26 +183,34 @@
   }
   .footer-text {
     padding: 0px 59px;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   .footer-social-list {
     padding: 55px 25px;
   }
   .footer-icon-list {
-    padding: 55px 0px;
-    margin-left: -16px;
+    padding: 55px 22px;
+    margin-left: -44px;
   }
   }
 /********************  최대 768px 미디어쿼리 종료 ********************/
 
-/********************  최대 480px ********************/
+/********************  최대 450px ********************/
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 450px) {
+  .logo img {
+    width: 60%;
+    padding: 8px 5px;
+  }
 
-
-
+  .ban-box{
+    display: inline;
+  }
+  .footer-top {
+    display: inline;
+   }
 
 
 }
-/********************  최대 480px 미디어쿼리 종료 ********************/
+/********************  최대 450px 미디어쿼리 종료 ********************/
 
