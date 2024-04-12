@@ -607,16 +607,24 @@ body{
 }
 .sub-new-item-box{
   margin-top: 40px;
-  margin-left: calc(50% - 517px);
-
+  /* margin-left: calc(50% - 517px); */
+  margin-left: calc(50% - 542px);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 0 10px;
+  gap: 0 25px;
 }
+.sub-new-item:hover img{
+  transform: scale(1.15);
+}
+
 .sub-new-item-box img{
   width: 253px;
   height: 253px;
-  
-
+  border-radius: 22px;
+}
+.sub-info {
+  font-size: 1.1rem;
+  text-align: center;
+  line-height: 3.5;
 }
 
