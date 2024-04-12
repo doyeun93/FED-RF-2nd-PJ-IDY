@@ -123,6 +123,9 @@
 /* 뉴아이템 영역 */
 
 /* 비베네핏 영역 */
+.benefit-area, .ban-area, .footer-area {
+  height: auto;
+}
 .be-header {
   padding-top: 20px;
 }
@@ -133,10 +136,15 @@
     grid-template-columns: repeat(3,2fr);
     gap: 10 10px;
   };
-/* 하단영역 */
-  #ban-area #footer-area{
-    height: auto;
+
+  /*  */
+  .ban-first-box {
+   left: 0%;
   }
+  /* .ban-first-text {
+    text-align: ;        
+  } */
+/* 하단영역 */
   .cont-box-foot {
     padding-top: 30px;
   }
