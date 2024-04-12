@@ -131,12 +131,15 @@
     gap: 10 10px;
   };
 /* 하단영역 */
+  .footer-area{
+    height: auto;
+  }
   .cont-box-foot {
     padding-top: 30px;
   }
   .footer-cont {
     padding: 50px 4px 20px;
-}
+  }
   .footer-top {
    flex-wrap: nowrap;
   }
@@ -146,18 +149,18 @@
   .footer-info-logo img {
     padding: 45px 20px;
     width: 120%;
-    }
-    .footer-text {
-      padding: 0px 59px;
-      font-size: 0.9rem;
-    }
-    .footer-social-list {
-      padding: 55px 25px;
+  }
+  .footer-text {
+    padding: 0px 59px;
+    font-size: 0.9rem;
+  }
+  .footer-social-list {
+    padding: 55px 25px;
   }
   .footer-icon-list {
     padding: 55px 0px;
     margin-left: -16px;
-}
+  }
   }
 /********************  최대 768px 미디어쿼리 종료 ********************/
 
