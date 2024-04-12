@@ -134,7 +134,7 @@
     gap: 10 10px;
   };
 /* 하단영역 */
-  .ban-area .footer-area{
+  #ban-area #footer-area{
     height: auto;
   }
   .cont-box-foot {
