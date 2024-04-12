@@ -123,6 +123,9 @@
 /* 뉴아이템 영역 */
 
 /* 비베네핏 영역 */
+.be-header {
+  padding-top: 20px;
+}
 .beslider li img{
   width: 100%;  
 }
@@ -131,7 +134,7 @@
     gap: 10 10px;
   };
 /* 하단영역 */
-  .footer-area{
+  .ban-area .footer-area{
     height: auto;
   }
   .cont-box-foot {
