@@ -198,19 +198,81 @@
 /********************  최대 450px ********************/
 
 @media screen and (max-width: 450px) {
+     /* 레이아웃구성 */
+     .col-3rd-1 {width: 8.33%;}
+     .col-3rd-2 {width: 16.66%;}
+     .col-3rd-3 {width: 25%;}
+     .col-3rd-4 {width: 33.33%;}
+     .col-3rd-5 {width: 41.66%;}
+     .col-3rd-6 {width: 50%;}
+     .col-3rd-7 {width: 58.33%;}
+     .col-3rd-8 {width: 66.66%;}
+     .col-3rd-9 {width: 75%;}
+     .col-3rd-10 {width: 83.33%;}
+     .col-3rd-11 {width: 91.66%;}
+     .col-3rd-12 {width: 100%;}
+     /* 숨길 박스 */
+     .col-none{display: none;}
+     /* 보일 박스 */
+     .col-block{display: block;}
+
   .logo img {
     width: 60%;
-    padding: 8px 5px;
+    padding: 14px 16px;
+  }
+  .gnb dl > dt a {
+    font-size: 0.9rem;
+    padding: 5px;
+  }
+  .gnb dd {
+    line-height: 40px;
+  }
+  .gnb dd a{
+    font-size: 0.5rem;
+  }
+  .search{
+    display: inline;
+    padding: 0;
+  }
+  .search img {
+    height: auto;
+    padding-top: 6px;
   }
 
   .ban-box{
     display: inline;
   }
+  .ban-first-box {
+    text-align: center;
+    padding-top: 40px;
+    left: 0%;
+  }
+  .ban-second-text, 
+  .ban-first-title, .ban-second-title{
+    text-align: center;
+  }
+
   .footer-top {
     display: inline;
+    text-align: end;
+    line-height: 1.5;
+    font-size: .9rem;
    }
-
-
+   .cont-box-foot{
+    display: inline;
+   }
+   .footer-info-logo {
+    width: auto;
+    height: auto;
+   }
+   .footer-info-logo img {
+   
+    width: 30%;
+  }
+  .footer-icon-list {
+    padding: 40px 18px;
+    margin-left: 0;
+  }
 }
 /********************  최대 450px 미디어쿼리 종료 ********************/
 

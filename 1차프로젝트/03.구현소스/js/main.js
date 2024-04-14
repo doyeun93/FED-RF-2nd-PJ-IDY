@@ -1,6 +1,9 @@
 const qs = (x) => document.querySelector(x);
 const qsa = (x) => document.querySelectorAll(x);
 
+
+
+
 /// 바로실행하는 익명함수(지역화목적) 구역 1 ///////////
 (() => {
   // addEvent 함수

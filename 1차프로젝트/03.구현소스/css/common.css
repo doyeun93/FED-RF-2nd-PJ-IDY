@@ -9,7 +9,6 @@
 
 body{
   overflow-x: hidden;
-
 }
 
 /************* 1. 상단영역 *************/
@@ -24,8 +23,10 @@ body{
 }
 
 .logo img{
-  width: 90%;
-  padding: 4px 10px;
+  /* width: 90%;
+  padding: 4px 10px; */
+  width: 70%;
+  padding: 7px 22px;
 }
 .gnb {
   display: flex;
@@ -37,7 +38,7 @@ body{
 }
 
 .gnb dl > dt a {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: bold;
 }
 #top-area:hover .gnb {
@@ -86,10 +87,11 @@ body{
 /*********************** 기타파트 ***********************/
 .search {
   display: flex;
-  padding: 20px 87px;
+  padding: 20px;
+  gap: 20px;
 }
 .search img {
-  height: 32px;
+  height: 35px;
   padding-left: 32px;
 }
 
@@ -452,10 +454,10 @@ body{
 /***************** 하단영역 TOP버튼 추가 *****************/
 .btn-top {
   position: fixed;
-  bottom: 2.5vw;
+  bottom: 4vw;
   right: 3vw;
-  width: 5vw;
-  height: 5vw;
+  width: 6vw;
+  height: 6vw;
   border-radius: 50%;
   border: 2px outset #fff;
   background-color: #ffe4ea;
@@ -467,14 +469,8 @@ body{
   width: 100%;
   height: 100%;
   color: #000;
-  font: 2vw/6.5vw "Poor Story";
+  font: 2.4vw/6.5vw "Poor Story";
 }
-
-/* 오버시 설정 */
-/* .btn-top:hover{
-  border-style: inset;
-} */
-
 .btn-top:hover a {
   font-weight: bold;
   color: rgb(255, 105, 155);
