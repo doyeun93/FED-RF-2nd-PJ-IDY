@@ -1,0 +1,155 @@
+@charset "utf-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Poor+Story&display=swap");
+
+
+/***************************** 서브페이지1 *****************************/
+/*********************** 메뉴영역 ***********************/
+#menu-area{
+    padding-top: 20px;
+  }
+  
+  .menu-list{
+    display: flex;
+    justify-content: center;
+    gap: 0 35px;
+    width: 1024px;
+    margin: 0 auto;
+    border: 1px solid #d4d4d4;
+    background: #ffffff7d;
+  }
+  .menu-list-first a{
+    font-size: 1.8rem;
+    font-family: "Poor Story";
+    color: #ff5484;
+    font-weight: bold;
+  }
+  
+  .menu-list-item a{
+    font-size: 1.2rem;
+    font-family: "Poor Story";
+    /* color:#f986bd; */
+  }
+  
+  .main-new-top{
+    padding-top: 50px;
+    text-align: center;
+    font-size: 6rem;
+    font-family: "Poor Story";
+    color: #ff5484;
+    font-weight: bold; 
+  }
+  
+  .main-new-part{
+    margin: 80px auto 0;
+  }
+  .main-new-box{
+    padding: 60px 0 50px;
+    border: 1px solid #d4d4d4;
+    text-align: center;
+  }
+  .main-new-header{
+    display: inline-block;
+    padding: 0 25px 40px;
+    border-bottom: 2px solid #d1cdcb;
+  }
+  .main-new-title-en{
+    color: #37271f;
+    font-weight: 600;
+    font-size: 2rem;
+  }
+  .main-new-title{
+    margin-top: 13px;
+    color: #37271f;
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 1.2;
+  }
+  .main-new-text{
+    margin-top: 17px;
+    color: #37271f;
+    font-size: 1.1rem;
+  }
+  .main-new-main{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 0 20px;
+  }
+  .main-new-item > p{
+    font-size: 1.1rem;
+  }
+  .main-new-content > img{
+    width: 100%;
+    height: 1150px;
+  }
+  .sub-new-part{
+    margin-top: 65px;
+  }
+  .sub-new-title{
+    color: #41332c;
+    font-size: 2.2rem;
+  }
+  .sub-new-item-box{
+    margin-top: 40px;
+    /* margin-left: calc(50% - 517px); */
+    margin-left: calc(50% - 542px);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0 25px;
+  }
+  .sub-new-item:hover img{
+    transform: scale(1.15);
+  }
+  
+  .sub-new-item-box img{
+    width: 253px;
+    height: 253px;
+    border-radius: 22px;
+  }
+  .sub-info {
+    font-size: 1.1rem;
+    text-align: center;
+    line-height: 3.5;
+  }
+  
+  
+  /***************************** 서브페이지2 *****************************/
+  .main-header{
+    padding-top: 50px;
+    text-align: center;
+    font-size: 6rem;
+    font-family: "Poor Story";
+    color: #ff5484;
+    font-weight: bold; 
+  }
+  
+  .main-header-top {
+    padding-top: 40px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Poor Story";
+    color: #ff5484;
+    font-weight: bold; 
+
+  }
+
+  .main-item-list{
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+
+  }
+  .main-item-list >li {
+    border: 1px solid #d4d4d4;
+    background: #fff;
+  }
+
+  .main-item-list img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    /* 블록박스 이미지 하단 공백 제거 */
+    vertical-align: middle;
+  }
