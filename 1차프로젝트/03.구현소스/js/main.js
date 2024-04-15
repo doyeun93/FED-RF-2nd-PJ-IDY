@@ -1,7 +1,11 @@
+// import iceList from "./subpage.js";
+// iceList();
+//  import  * as icData from "../data/ic_data.js";
+
+
 const qs = (x) => document.querySelector(x);
 const qsa = (x) => document.querySelectorAll(x);
 
-// import iceList from "./subpage.js";
 
 
 /// 바로실행하는 익명함수(지역화목적) 구역 1 ///////////
@@ -104,6 +108,7 @@ const qsa = (x) => document.querySelectorAll(x);
       goSlide(false, false);
     }, 3000);
   } //////////////////////// autoSlide 함수 //////////////////
+
 
   /*************************** 뉴아이템 영역 ***************************/
   // 위치값 함수 (화면상단에서의 top위치값)

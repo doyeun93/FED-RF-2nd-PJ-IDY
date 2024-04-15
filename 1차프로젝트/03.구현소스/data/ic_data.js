@@ -1,4 +1,4 @@
-const icData = [
+const icMenuData = [
     {
         idx: "1",
         title: "아이스 도쿄바나나",
@@ -146,12 +146,12 @@ const icData = [
     },
     {
         idx: "30",
-        title: "애플",
+        title: "애플 민트",
         imgName: "a30",
     },
 
 
 ];
 
-export {icData};
+export {icMenuData};
 
