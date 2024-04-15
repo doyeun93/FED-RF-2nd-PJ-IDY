@@ -76,10 +76,10 @@ body{
   background-color: black;
 }
 #newitem-area{
-  background-color: #ffe4ea;
+  background-color: rgb(255, 228, 234);
 }
 #pro-area, #benefit-area, #ban-area{
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
 }
 
 
