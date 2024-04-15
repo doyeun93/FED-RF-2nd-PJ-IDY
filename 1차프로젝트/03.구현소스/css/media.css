@@ -122,7 +122,16 @@
 
 /* 뉴아이템 영역 */
 .new-first-slider.on, .new-second-slider.on{
+  overflow: scroll;
   
+}
+.new-first-slider li:first-child img:first-child ,
+  .new-second-slider li:first-child img:first-child {
+  display: none;
+}
+.new-first-slider li:first-child img:last-child ,
+  .new-second-slider li:first-child img:last-child {
+  display: inline;
 }
 
  .new-first-slider{
