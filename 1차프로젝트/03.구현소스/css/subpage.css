@@ -160,3 +160,8 @@
     font-size: 1.1rem;
     text-align: center;
   }
+
+  .main-item-list li:hover img{
+    transform: rotateX(20deg);
+    transition: .2s ease-in-out;
+  }
