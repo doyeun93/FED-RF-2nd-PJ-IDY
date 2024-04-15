@@ -227,11 +227,10 @@
 
   .logo img {
     width: 60%;
-    padding: 14px 16px;
+    padding: 18px 8px;
   }
   .gnb dl > dt a {
-    font-size: 0.9rem;
-    padding: 5px;
+    font-size: 0.7rem;
   }
   .gnb dd {
     line-height: 40px;
