@@ -288,6 +288,10 @@ body{
   margin-left: -29%;
   transition: 3.5s ease-in-out;
 }
+.new-first-slider li:first-child img:last-child ,
+  .new-second-slider li:first-child img:last-child {
+  display: none;
+}
 .new-second-slider.on {
   right: 5%;
 }
