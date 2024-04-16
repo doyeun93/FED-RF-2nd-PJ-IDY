@@ -230,13 +230,13 @@
     padding: 18px 8px;
   }
   .gnb dl > dt a {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
   .gnb dd {
     line-height: 40px;
   }
   .gnb dd a{
-    font-size: 0.5rem;
+    font-size: 0.55rem;
   }
   .search{
     display: inline;
