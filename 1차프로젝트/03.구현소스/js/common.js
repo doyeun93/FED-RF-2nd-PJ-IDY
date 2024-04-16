@@ -23,3 +23,5 @@ import myFn from "./function.js";
       moving.style.opacity = 0;
     };
   } ///////////// loadFn 함수 ////////////
+
+ loadFn(); /// 호출을 해줌으로써 sub1에서도 문제없도록 함
