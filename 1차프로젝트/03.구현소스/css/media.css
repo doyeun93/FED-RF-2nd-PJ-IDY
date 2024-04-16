@@ -282,6 +282,50 @@
     padding: 40px 18px;
     margin-left: 0;
   }
+
+
+   /************************* 서브1 *************************/
+   #menu-area {
+    width: auto;
+    height: auto;
+    border: 2px solid #ccc;
+   }
+   .menu-list {
+     display: inline;
+     text-align: center;
+     line-height: 1.2;
+   }
+   #main-new, #sub-new {
+    height: auto;
+   }
+ 
+   .main-new-container, .main-new-content, .sub-new-main {
+     width: auto;
+   }
+   .main-new-content > img {
+     width: 100%;
+     height: auto;
+   }
+ 
+ .sub-new-item-box {
+      margin-left: 0; 
+     display: grid;
+     grid-template-columns: repeat(2, 2fr);
+ }
+ 
+ .sub-new-item-box img {
+     margin-left: calc(50% - 150px / 2);
+     width: 150px;
+     height: auto;
+ }
+ .sub-info{
+   padding-bottom: 30px;
+ }
+ 
+ 
+   /************************* 서브2 *************************/
+
+
 }
 /********************  최대 450px 미디어쿼리 종료 ********************/
 
