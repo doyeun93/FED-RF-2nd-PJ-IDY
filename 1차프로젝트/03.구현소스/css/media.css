@@ -283,7 +283,10 @@
     margin-left: 0;
   }
 
-
+  .btn-top {
+    bottom: 10vw;
+    right: 5vw;
+  }
    /************************* 서브1 *************************/
    #menu-area {
     width: auto;
@@ -322,9 +325,20 @@
    padding-bottom: 30px;
  }
  
- 
+ .footer-cont {
+  padding: 50px 60px 4px;
+}
    /************************* 서브2 *************************/
 
+   .main-item {
+    margin-left: 0;
+  }
+
+  .main-item-list{
+    grid-template-columns: repeat(3,1fr);
+    gap: 55px 14px;
+
+  }
 
 }
 /********************  최대 450px 미디어쿼리 종료 ********************/
