@@ -171,3 +171,18 @@
     transition: .2s ease-in-out;
   }
 
+/*********************************** 서브페이지1 링크페이지 ***********************************/
+.menu-view-box{
+  padding-top: 60px;
+  
+}
+.view-box{
+  display: flex;
+  align-items: flex-end;
+}
+
+.view-box-header{
+  width: 400px;
+  padding-right: 50px;
+  box-sizing: border-box;
+}
