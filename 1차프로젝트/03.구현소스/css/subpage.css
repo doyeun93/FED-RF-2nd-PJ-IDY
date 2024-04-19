@@ -186,3 +186,31 @@
   padding-right: 50px;
   box-sizing: border-box;
 }
+
+.view-box-top{
+  color: #ff87a0;
+  font-size: 0.9rem;
+  font-weight: bold;
+  line-height: 1;
+}
+.view-box-title-en{
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+.view-box-title-ko{
+  margin-top: 16px;
+  font-size: 2.8rem;
+}
+.view-box-text{
+  margin-top: 16px;
+  font-size: 1.1rem;
+  line-height: 1.3;
+}
+.view-box-ingredients > ul{
+  display: flex;
+  gap: 90px;
+}
+.ingredients-list{
+  display: flex;
+  text-align: center;
+}
