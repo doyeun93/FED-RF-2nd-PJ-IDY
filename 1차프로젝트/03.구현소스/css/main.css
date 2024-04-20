@@ -108,3 +108,8 @@ body{
   max-width: 1652px;
   height: auto
 }
+
+/* 서브페이지1 메인페이지 */
+#menu-view-area{
+  background-color: #fff;
+}

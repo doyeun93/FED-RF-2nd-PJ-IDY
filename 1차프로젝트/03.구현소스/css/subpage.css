@@ -190,7 +190,7 @@
 
 .view-box-top{
   color: #ff87a0;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   font-weight: bold;
   line-height: 1;
 }
@@ -223,4 +223,30 @@
 }
 .menu-view-top-box{
   display: flex;
+}
+.menu-view-top-title{
+  width: 215px;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.menu-view-top-content{
+  float: left;
+}
+.menu-view-top-content + .menu-view-top-content{
+  margin-left: 35px;
+}
+.menu-view-top-content >dt{
+  font-size: 1rem;
+  text-align: center;
+}
+.menu-view-top-content >dd{
+  font-size: 1rem;
+  text-align: center;
+  font-weight: bold;
+  color: #ff5484;
+  padding-top: 10px;
+}
+
+.menu-view-middle{
+  padding: 5% 20%;
 }
