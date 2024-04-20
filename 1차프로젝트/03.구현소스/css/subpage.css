@@ -181,7 +181,13 @@
   align-items: center;
   justify-content: center;
 }
-
+.view-box-content >img{
+  width: 80%;
+  margin-left: 9%;
+}
+.view-box-content{
+  background: url(../images/cone.png) no-repeat center bottom -12px / 122px auto;
+}
 .view-box-header{
   width: 400px;
   padding-right: 50px;
@@ -249,4 +255,22 @@
 
 .menu-view-middle{
   padding: 5% 20%;
+}
+.menu-view-bottom{
+  display: flex;
+  align-items: flex-start;
+  width: 985px;
+  margin: 50px auto 0;
+}
+
+.menu-view-bottom h3{
+  display: flex;
+  align-items: flex-end;
+  width: 215px;
+  height: 36px;
+  font-size: 1.8rem;
+}
+.menu-view-list{
+  display: flex;
+  align-items: start;
 }
