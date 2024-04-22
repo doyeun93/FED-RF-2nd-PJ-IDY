@@ -256,6 +256,10 @@
 .menu-view-middle{
   padding: 5% 20%;
 }
+.menu-view-middle > img{
+  margin-left: 12%;
+}
+
 .menu-view-bottom{
   display: flex;
   align-items: flex-start;
