@@ -340,6 +340,72 @@
 
   }
 
+  /************************ 서브_링크  ************************/
+  .view-box {
+    display: inline;
+  }
+  .view-box-content >img{
+    width: 78%;
+    margin-left: 10%;
+  }
+  .view-box-content{
+    background: url(../images/cone.png) no-repeat center bottom -9px / 75px  auto;
+  }
+  .view-box-header {
+    padding-top: 30px;
+    width: 100%;
+  }
+
+  .view-box-header p, h2{
+    text-align: center;
+  }
+
+.view-box-ingredients > ul {
+ justify-content: space-evenly;
+}
+
+.menu-view-top {
+  max-width: 100%;
+}
+
+.menu-view-top-box {
+  display: inline;
+}
+.menu-view-top-title {
+  padding-bottom: 20px;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+}
+
+.menu-view-top-content {
+  display: flex;
+  float: none;
+  justify-content: space-around;
+}
+
+.menu-view-top-content + .menu-view-top-content {
+   margin-left: 0;
+}
+
+.menu-view-middle {
+   padding: 0;
+}
+.menu-view-middle > img {
+  margin-left: 0;
+  width: 100%;
+}
+
+
+.menu-view-bottom{
+  display: inline-block;
+  height: auto;
+}
+
+
+.menu-view-list {
+ display: inline;
+}
 }
 /********************  최대 450px 미디어쿼리 종료 ********************/
 
