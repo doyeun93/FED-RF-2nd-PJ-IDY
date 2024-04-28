@@ -12,7 +12,7 @@
  height: 1200px;
 }
 #main{
-  /* height: 1500px; */
+  max-height: 100vh; 
 }
 #footer{
   /* height: 400px; */
@@ -28,9 +28,9 @@
 
 #ifr{
   position: relative;
-  left: calc(50% - 700px / 2);
-  width: 700px;
-  height: 400px;
+  left: calc(50% - 800px / 2);
+  width: 800px;
+  height: 500px;
   
 }
 
@@ -43,10 +43,30 @@
 }
 
 .main-synopsis{
-
+  height: 15%;
+  padding: 3%;
+}
+.main-synopsis h2{
+  text-align: center;
+  font-size: 2.5rem;
+}
+.main-synopsis span{
+  font-size: 1.5rem;
+  line-height: 1.6;
+  text-align: center;
+  display: flex;
+  padding: 2%;
+  width: 90%;
+  border-bottom: 1px solid rgb(204, 204, 204);
 }
 
 
+
+.poster{
+  display: flex;
+  gap: 20px;
+  padding: 5% 0%;
+}
 
 
 
