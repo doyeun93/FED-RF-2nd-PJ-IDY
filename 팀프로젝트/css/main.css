@@ -9,7 +9,7 @@
 }
 
 #top{
-  /* height: 1000px; */
+ height: 1200px;
 }
 #main{
   /* height: 1500px; */
@@ -19,23 +19,28 @@
 }
 
 /********************************* 상단구역 *********************************/
-.top-area >img{
-  width: 40%;
-  margin-left: 30%;
-}
 
 .screen{
   position: relative;
   width: 100%;
+  padding-top: 5%;
 }
 
 #ifr{
   position: relative;
-  left: 42%;
+  left: calc(50% - 700px / 2);
+  width: 700px;
+  height: 400px;
+  
 }
 
 
 /********************************* 메인구역 *********************************/
+.main-top >img{
+  width: 40%;
+  margin-left: 30%;
+  padding-top: 5%;
+}
 
 .main-synopsis{
 
