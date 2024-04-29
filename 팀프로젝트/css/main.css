@@ -113,3 +113,29 @@
 
 
 /********************************* 하단구역 *********************************/
+.footer-icon{
+  position: fixed;
+  bottom: 1%;
+  right: 1%;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.footer-icon img{
+  position: relative;
+  width: 50%;
+  left: 55%;
+  animation: icon-ani 1.3s ease-in-out infinite;
+}
+
+
+@keyframes icon-ani {
+  0%, 100% {
+    transform: translateY(0px) scale(0.95);
+  }
+  50% {
+  transform: translateY(-20px) scale(1);
+  }
+}
+  
+
