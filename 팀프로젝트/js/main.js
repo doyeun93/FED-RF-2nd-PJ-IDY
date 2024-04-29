@@ -44,11 +44,11 @@ let criteria = updateCriteria();
 mFn.addEvt(window,"resize",
 
     ()=> {criteria = updateCriteria();
-    console.log('기준값 업데이트:',criteria);
+    // console.log('기준값 업데이트:',criteria);
 });
 
 
-console.log('기준값:',criteria);
+// console.log('기준값:',criteria);
 
 // 현재 translate 값
 let currVal = 0;
