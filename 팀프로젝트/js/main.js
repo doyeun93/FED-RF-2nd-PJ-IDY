@@ -47,7 +47,6 @@ mFn.addEvt(window,"resize",
     // console.log('기준값 업데이트:',criteria);
 });
 
-
 // console.log('기준값:',criteria);
 
 // 현재 translate 값
@@ -106,3 +105,6 @@ mFn.addEvt(gbox,"mouseleave",()=>{
     // 재귀호출함수 호출하기
     moveGallery();
 });
+
+
+
