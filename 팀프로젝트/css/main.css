@@ -23,14 +23,14 @@
 .screen{
   position: relative;
   width: 100%;
-  padding-top: 5%;
+  padding-top: 12%;
 }
 
 #ifr{
   position: relative;
-  left: calc(50% - 800px / 2);
-  width: 800px;
-  height: 500px;
+  left: 0.5%;
+  width: 750px;
+  height: 450px;
   
 }
 
