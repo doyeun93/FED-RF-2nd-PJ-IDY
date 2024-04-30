@@ -108,6 +108,9 @@
 
 }
 
+.cha-box1,.cha-box2, .cha-box3, .cha-box4, .cha-box5, .cha-box6, .cha-box7{
+  display: flex;
+}
 
 
 
