@@ -104,16 +104,29 @@
 /*  캐릭터 소개 영역 */
 
 .main-character{
-
-
+  padding: 5% 0%;
 }
 
-.cha-box1,.cha-box2, .cha-box3, .cha-box4, .cha-box5, .cha-box6, .cha-box7{
+.cha-box > h1{
+ font-size: 3rem;
+ padding-bottom: 1%;
+}
+.cha-box > span{
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+.cha-pic{
   display: flex;
+  gap: 1%;
+  padding-top: 1%;
+  padding-bottom: 3%;
 }
 
-
-
+.cha-pic > li img{
+  width: 450px;
+  height: 450px;
+}
 
 /********************************* 하단구역 *********************************/
 .footer-icon{
