@@ -96,6 +96,25 @@
   gap: 6%;
   padding: 5% 5%;
 }
+.poster li img:first-child{
+  display: inline-block;
+  margin-left: 75%;
+  opacity: 1;
+}
+.poster li:hover img:first-child{
+  cursor: pointer;
+  opacity: 0;
+  
+}
+
+.poster li:nth-child(1) ~ li:nth-child(-n+4){
+ opacity: 0;
+}
+
+.poster li:nth-child(1) ~ li:nth-child(-n+4):hover{
+ opacity: 1;
+
+}
 
 
 
