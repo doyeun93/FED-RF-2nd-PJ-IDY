@@ -114,9 +114,10 @@
 .poster span{
   position: relative;
     z-index: 11;
-    right: 51%;
+    right: 49%;
     font-size: 2.5rem;
-    color: red;
+    font-weight: bold;
+    color: white;
   
 }
 .poster img{

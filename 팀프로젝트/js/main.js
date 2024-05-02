@@ -1,15 +1,16 @@
 
 import mFn from './my_function.js';
 
-// 재귀함수 호출
-// 초기셋팅하기
-// 대상: .gbox
+import { catInfo } from './sub4_data.js';
+
+
+// 재귀함수 ////////////////////////////
 const gbox = mFn.qs(".gbox");
 
-// 코드변수
+
 let hcode = "<ul>";
 
-// for문으로 코드 만들기 : ul>li>img
+
 for(let i=1; i<=8; i++) {
     hcode += `
         <li>
@@ -21,14 +22,11 @@ for(let i=1; i<=8; i++) {
 
 hcode += "</ul>";
 
-// 대상에 코드넣기
+
 gbox.innerHTML = hcode;
 
 
 
-///// 갤러리 박스를 왼쪽으로 계속 움직이게하는 재귀호출함수 만들기
-
-// 움직일 대상 : .gbox ul
 let target = mFn.qsEl(gbox,'ul');
 
 
@@ -44,17 +42,16 @@ let criteria = updateCriteria();
 mFn.addEvt(window,"resize",
 
     ()=> {criteria = updateCriteria();
-    // console.log('기준값 업데이트:',criteria);
+    
 });
 
-// console.log('기준값:',criteria);
+
 
 // 현재 translate 값
 let currVal = 0;
 
 
 
-// translate 참고 링크 : https://developer.mozilla.org/en-US/docs/Web/CSS/translate
 
 function moveGallery(){
     // 현재값 1씩 감소
@@ -88,17 +85,16 @@ function moveGallery(){
 
 
 // 대상에 마우스 오버시 멈추고 아웃시 다시 흘러가게하기
-// 대상 : .gbox ->  gbox변수
 // 멈춤상태 변수
 let stopSts = false;
 
-// 1. 멈추기(mouseenter)
+
 mFn.addEvt(gbox,"mouseenter",()=>{
     //  멈춤상태변수 true변경
     stopSts = true;
 
 });
-// 2. 다시 흘러가기(mouseleave)
+
 mFn.addEvt(gbox,"mouseleave",()=>{
     //  멈춤상태변수 false 변경
     stopSts = false;
@@ -124,3 +120,22 @@ function showPoster(){
     },2000)
 }
 
+
+
+//// 캐릭터 영역
+
+// const catList = mFn.qs('.cha-box');
+
+// console.log(catList);
+
+// catList.innerHTML =
+// catInfo.map(v=>`
+//     <h1>${v.title}</h1>
+//     <span>${v.desc}</span>
+//     <li>
+//         <img src="./images/${v.img[0]}.jpg" alt="${v.title}" />
+//     </li>
+
+
+
+// `).join('');
