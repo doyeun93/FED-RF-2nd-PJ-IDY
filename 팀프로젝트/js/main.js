@@ -130,9 +130,8 @@ function showPoster(){
     
     console.log(catList);
     
-    
-    let i = catList;
-    
+
+
     for (let i=1 ; i<6; i++) {
     
     
@@ -148,6 +147,6 @@ function showPoster(){
     
     `).join('');
     
-    };
+    }; ///// for
 
 })();
