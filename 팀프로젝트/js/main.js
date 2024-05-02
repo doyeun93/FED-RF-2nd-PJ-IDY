@@ -132,22 +132,19 @@ function showPoster(){
     console.log(catList);
     
     
-
-    for (let i=1 ; i<6; i++) {
-    
-    
-    
     catList.innerHTML = 
     catInfo.map((v,i)=>`
         <h1>${v.title}</h1>
         <span>${v.desc}</span>
         <ul class = "cha-pic">
         <li>
-           <img src="./images/${v.imgName[i]}.jpg" alt="${v.title}" />
+        <img src="./images/${v.imgName[i]}.jpg" alt="${v.title}" />
         </li>
         </ul>    
-    
-    `).join('');
+        
+        `).join('');
+        
+    for (let i=1 ; i<6; i++) {
     
     }; ///// for
 
