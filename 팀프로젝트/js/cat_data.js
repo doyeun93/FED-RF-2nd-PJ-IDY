@@ -87,4 +87,4 @@ const catInfo = [
 
 ];
 
-export {catInfo};
+export default catInfo;

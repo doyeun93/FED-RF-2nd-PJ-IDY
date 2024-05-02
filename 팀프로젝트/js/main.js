@@ -1,12 +1,12 @@
 
 import mFn from './my_function.js';
 
-import { catInfo } from './sub4_data.js';
+import catInfo from './cat_data.js';
+
 
 
 // 재귀함수 ////////////////////////////
 const gbox = mFn.qs(".gbox");
-
 
 let hcode = "<ul>";
 
@@ -117,25 +117,37 @@ function showPoster(){
     // 2초후 앞에 있는 포스터 없애기
     setTimeout(()=>{
         poster[0].style.display="none";
-    },2000)
+    },3000)
 }
 
 
 
 //// 캐릭터 영역
+// 대상 : .cha-box
+(()=>{
 
-// const catList = mFn.qs('.cha-box');
+    const catList = mFn.qs(".cha-box");
+    
+    console.log(catList);
+    
+    
+    let i = catList;
+    
+    for (let i=1 ; i<6; i++) {
+    
+    
+    catList.innerHTML = 
+    catInfo.map(v=>`
+        <h1>${v.title}</h1>
+        <span>${v.desc}</span>
+        <ul class = "cha-pic">
+        <li>
+           <img src="./images/${v.img[i]}.jpg" alt="${v.title}" />
+        </li>
+        </ul>    
+    
+    `).join('');
+    
+    };
 
-// console.log(catList);
-
-// catList.innerHTML =
-// catInfo.map(v=>`
-//     <h1>${v.title}</h1>
-//     <span>${v.desc}</span>
-//     <li>
-//         <img src="./images/${v.img[0]}.jpg" alt="${v.title}" />
-//     </li>
-
-
-
-// `).join('');
+})();
