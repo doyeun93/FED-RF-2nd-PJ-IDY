@@ -136,7 +136,7 @@ function showPoster(){
     
     
     catList.innerHTML = 
-    catInfo.map(v=>`
+    catInfo.map((v,i)=>`
         <h1>${v.title}</h1>
         <span>${v.desc}</span>
         <ul class = "cha-pic">
