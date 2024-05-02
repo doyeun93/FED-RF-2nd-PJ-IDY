@@ -122,6 +122,7 @@ function showPoster(){
 
 
 
+
 //// 캐릭터 영역
 // 대상 : .cha-box
 (()=>{
@@ -130,9 +131,10 @@ function showPoster(){
     
     console.log(catList);
     
-
+    
 
     for (let i=1 ; i<6; i++) {
+    
     
     
     catList.innerHTML = 
