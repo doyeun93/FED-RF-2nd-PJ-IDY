@@ -11,7 +11,7 @@ const catInfo = [
             anything to make sure she’s happy and they’re all taken care of.
             <br />But an unexpected reunion with his dear friend Bo Peep shows
             Woody that the world is much bigger than he ever imagined.`,
-        img:"woody",
+        imgName:"woody",
     },
 
     {
@@ -23,7 +23,7 @@ const catInfo = [
             <br />Buzz would do anything to support his pull-string buddy, but
             when his efforts land him in a carnival game booth as an inadvertent
             prize, he turns to his inner voice for guidance.`,
-        img:"buzz",
+        imgName:"buzz",
         
     },
    
@@ -34,7 +34,7 @@ const catInfo = [
             spork-turned-craft-project, Forky is pretty sure that he doesn’t
             belong in Bonnie’s room. <br />Unfortunately, every time he tries to
             get away, someone yanks him back into an adventure he’d rather skip.`,
-        img:"forky",
+        imgName:"forky",
     },
     {
         idx:4,
@@ -48,7 +48,7 @@ const catInfo = [
             belie her delicate porcelain exterior. <br />When she and Woody are
             reunited under unlikely circumstances, Bo realizes just how much
             she’s missed him, and can’t wait to show him what she’s been up to.`,
-        img:"bopeep",
+        imgName:"bopeep",
     },
     {
         idx:5,
@@ -61,7 +61,7 @@ const catInfo = [
             of voiceless ventriloquist dummies. <br />Gabby Gabby knows someone
             will want her if only she can find a working voice box to repair
             hers.`,
-        img:"gabby",
+        imgName:"gabby",
     },
     { 
         idx:6,
@@ -70,7 +70,7 @@ const catInfo = [
             <br />But when their plans are rudely interrupted, they find
             themselves on an unexpected adventure with a group of toys who have
             no idea what it feels like to be tacked to a prize wall.`,
-        img:"duckybunny",
+        imgName:"duckybunny",
     },
     {
         idx:7,
@@ -82,7 +82,7 @@ const catInfo = [
             He has never been able to do the awesome stunts advertised in his
             own toy commercial. <br />For years, Duke has been sitting in an
             antique store, constantly reliving the failures of his tragic past.`,
-        img:"duke",
+        imgName:"duke",
     },
 
 ];
