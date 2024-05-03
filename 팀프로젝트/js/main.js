@@ -130,22 +130,25 @@ function showPoster(){
     const catList = mFn.qs(".cha-box");
     
     console.log(catList);
+
+    const makeCode = (imgName,title) => {
+        let hcode = '<ul class = "cha-pic">';
+        for(let i=1;i<=5;i++){
+            hcode += `<li>
+                 <img src="./images/${imgName+i}.jpg" alt="${title}" />
+                 </li>
+            `;
+        } //// for ///
+        hcode += "</ul>";
+
+        return hcode;
+    }; ////// makeCode 함수 ////////
     
     
     catList.innerHTML = 
     catInfo.map((v,i)=>`
         <h1>${v.title}</h1>
-        <span>${v.desc}</span>
-        <ul class = "cha-pic">
-        <li>
-        <img src="./images/${v.imgName[i]}.jpg" alt="${v.title}" />
-        </li>
-        </ul>    
-        
-        `).join('');
-        
-    for (let i=1 ; i<6; i++) {
-    
-    }; ///// for
+        <span>${v.desc}</span>        
+        ${makeCode(v.imgName,v.title)}`).join('');
 
 })();
