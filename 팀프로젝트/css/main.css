@@ -2,11 +2,13 @@
 
 @import url(./core.css);
 @import url(./reset.css);
+@import url(./media.css);
 
 
-#top, #main, #footer{
+
+/* #top, #main, #footer{
   max-width: 1200;
-}
+} */
 
 #top{
  height: 1200px;
@@ -14,11 +16,14 @@
 #main{
   max-height: 100vh; 
 }
-#footer{
-  /* height: 400px; */
-}
+
 
 /********************************* 상단구역 *********************************/
+
+#top{
+  position: relative;
+}
+
 
 .screen{
   position: relative;
@@ -27,7 +32,7 @@
 }
 
 #ifr{
-  position: relative;
+  position: absolute;
   left: 0.5%;
   width: 750px;
   height: 450px;
