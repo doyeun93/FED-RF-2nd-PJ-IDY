@@ -173,6 +173,20 @@
 
 
 /********************************* 하단구역 *********************************/
+/* 마우스 포인터 */
+.pointer{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  background: url(../images/ts4logo.png) no-repeat center;
+  transition: 0.3s ease-out;
+  /* opacity: 0; */
+  pointer-events: none;
+}
+
+
 .footer-icon{
   position: fixed;
   bottom: 1%;
