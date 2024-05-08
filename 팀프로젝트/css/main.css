@@ -180,6 +180,14 @@
   object-fit: cover;
 }
 
+.cha-pic > li:hover img {
+  transition: .2s linear;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+
+
 
 /********************************* 하단구역 *********************************/
 /* 마우스 포인터 */
