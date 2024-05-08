@@ -33,9 +33,9 @@
 
 #ifr{
   position: absolute;
-  left: 0.5%;
+  left: 0.7%;
   width: 750px;
-  height: 450px;
+  height: 460px;
   
 }
 
@@ -99,6 +99,9 @@
 .main-poster{
   position: relative;
 }
+.main-poster > h2{
+  padding-top: 9%;
+}
 .main-poster.on .poster{
   opacity: 0;
 }
@@ -119,8 +122,8 @@
 .poster span{
   position: absolute;
   z-index: 11;
-  top: 46%;
-  left: 30%;
+  top: 50%;
+  left: 37%;
   font-size: 2.5rem;
   font-weight: bold;
   color: white; 
@@ -151,16 +154,17 @@
 /*  캐릭터 소개 영역 */
 
 .main-character{
-  padding: 5% 0%;
+  padding: 10% 0%;
 }
 
 .cha-box > h1{
  font-size: 3rem;
- padding-bottom: 1%;
+ padding: 2%;
 }
 .cha-box > span{
   font-size: 1.3rem;
   line-height: 1.5;
+  padding-bottom: 1%;
 }
 
 .cha-pic{
