@@ -1,1 +1,4 @@
-https://www.semie.cooking/
+원본: https://www.semie.cooking/
+
+svg파일 다른 파일로 변환사이트 
+-> https://svgtojpg.com/ko/
