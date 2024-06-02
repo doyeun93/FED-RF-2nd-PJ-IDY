@@ -11,7 +11,7 @@
   left: 0;
   width: 100%;
   /* height: 5.625rem; */
-  height: 16vh;
+  height: 13vh;
   border-bottom: 1px solid #15a775;
   box-sizing: border-box;
   box-shadow: 2px 2px 20px 0 rgba(0, 0, 0, 0.08);
@@ -21,8 +21,8 @@
 
 }
 .logo img{
-  width: 70%;
-  padding: 21% 90%;
+  width: 72%;
+  padding: 14% 90%;
 }
 
 
