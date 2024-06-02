@@ -1,0 +1,17 @@
+header .utWrap {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  right: 7rem;
+  font-size: 1.125rem;
+  z-index: 10000000;
+
+}
+
+
+
+header .utWrap .logWrap {
+  font-size: 1rem;
+}
