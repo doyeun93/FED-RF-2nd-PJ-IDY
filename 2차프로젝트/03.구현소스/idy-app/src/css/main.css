@@ -40,6 +40,9 @@
   /* font-weight: bold; */
   gap: 10px;
 }
+.top-gnb >li{
+  position: relative;
+}
 .top-gnb > li > a{
   font-size: 1rem;
 }
