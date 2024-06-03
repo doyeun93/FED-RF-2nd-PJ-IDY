@@ -57,3 +57,10 @@
   width: 60%;
   bottom: 8%;
 }
+.top-gnb > li:first-child::after{
+  content: "";
+  background:url(../../public/image/ic_star.png) no-repeat center;
+  display: inline-block;
+  width: 12%;
+  height: 44%;
+}
