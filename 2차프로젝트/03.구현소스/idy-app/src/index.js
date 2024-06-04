@@ -20,9 +20,25 @@ root.render(
             <li>
               <a href="#">요리연구소</a>
             </li>
+              <ul className="bt-gnb">
+                <li>
+                  <a href="#">레시피</a>
+                </li>
+                <li>
+                  <a href="#">솔루션</a>
+                </li>
+              </ul>
             <li>
               <a href="#">요리해요</a>
             </li>
+              <ul className="bt-gnb">
+                <li>
+                  <a href="#">요리해요</a>
+                </li>
+                <li>
+                  <a href="#">고민있어요</a>
+                </li>
+              </ul>
             <li>
               <a href="#">WOW이벤트</a>
             </li>

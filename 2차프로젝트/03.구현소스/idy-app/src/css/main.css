@@ -18,8 +18,12 @@
   background-color: #fff;
   transition: top 0.4s;
   z-index: 1000;
-
 }
+
+/* .topbox:hover{
+  background-color: #fff;
+} */
+
 .logo img{
   width: 74%;
   padding: 17% 90%;
@@ -31,21 +35,76 @@
   align-items: center;
   justify-content: center;
   width: 100%;
+  height: 9vh;
   margin: 0 auto;
 }
+
+/* #gnb{
+  display: flex;
+  justify-content: center;
+  height: 9vh;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+  transition: top 0.4s;
+
+} */
 
 .top-gnb{
   display: flex;
   justify-content: center;
-  /* font-weight: bold; */
-  gap: 10px;
+  align-items: center;
+  height: 100%;
+  /* width: 100%; */
+  font-weight: bold;
+  /* gap: 10px; */
 }
 .top-gnb >li{
   position: relative;
+  display: inline-flex;
+  align-items: center;
+  height: 100%;
 }
 .top-gnb > li > a{
   font-size: 1rem;
 }
+
+.bt-gnb{
+  display: none;
+  width: 100%;
+  height: 100px;
+}
+/* .top-gnb > li:hover{
+  display: inline-block;
+} */
+
+.top-gnb > li:first-child::after{
+  content: "";
+  display: inline-block;
+  background:url(../../public/image/ic_star.png) no-repeat center;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.top-gnb > li:nth-child(2)::after{
+  content: "";
+  background:url(../../public/image/ic_star.png) no-repeat center;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.top-gnb > li:nth-child(4)::after{
+  content: "";
+  background:url(../../public/image/ic_star.png) no-repeat center;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 로그인 영역 */
 .log{
   display: flex;
   position: relative;
@@ -59,11 +118,4 @@
   position: relative;
   width: 60%;
   bottom: 8%;
-}
-.top-gnb > li:first-child::after{
-  content: "";
-  background:url(../../public/image/ic_star.png) no-repeat center;
-  display: inline-block;
-  width: 12%;
-  height: 44%;
 }
