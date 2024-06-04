@@ -1,1 +1,11 @@
-https://www.semie.cooking/
+원본: https://www.semie.cooking/
+
+svg파일 다른 파일로 변환사이트 
+-> https://svgtojpg.com/ko/
+
+
+파비콘 :  https://www.favicon-generator.org/
+
+
+스와이퍼 사이트(프리뷰-> 소스 긁기)
+https://swiperjs.com/

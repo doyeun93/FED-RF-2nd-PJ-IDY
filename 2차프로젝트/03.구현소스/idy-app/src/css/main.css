@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+@import url(./reset.css);
+
+
+
+.topbox{
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* height: 5.625rem; */
+  height: 9vh;
+  border-bottom: 1px solid #15a775;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 20px 0 rgba(0, 0, 0, 0.08);
+  background-color: #fff;
+  transition: top 0.4s;
+  z-index: 1000;
+}
+
+/* .topbox:hover{
+  background-color: #fff;
+} */
+
+.logo img{
+  width: 74%;
+  padding: 17% 90%;
+}
+
+
+#gnb{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 9vh;
+  margin: 0 auto;
+}
+
+/* #gnb{
+  display: flex;
+  justify-content: center;
+  height: 9vh;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+  transition: top 0.4s;
+
+} */
+
+.top-gnb{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  /* width: 100%; */
+  font-weight: bold;
+  /* gap: 10px; */
+}
+.top-gnb >li{
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  height: 100%;
+}
+.top-gnb > li > a{
+  font-size: 1rem;
+}
+
+.bt-gnb{
+  display: none;
+  width: 100%;
+  height: 100px;
+}
+/* .top-gnb > li:hover{
+  display: inline-block;
+} */
+
+.top-gnb > li:first-child::after{
+  content: "";
+  display: inline-block;
+  background:url(../../public/image/ic_star.png) no-repeat center;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.top-gnb > li:nth-child(2)::after{
+  content: "";
+  background:url(../../public/image/ic_star.png) no-repeat center;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.top-gnb > li:nth-child(4)::after{
+  content: "";
+  background:url(../../public/image/ic_star.png) no-repeat center;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 로그인 영역 */
+.log{
+  display: flex;
+  position: relative;
+  width: 15%;
+  top: 37%;
+}
+.log > ul{
+  display: flex
+}
+.log >ul > li >a> img{
+  position: relative;
+  width: 60%;
+  bottom: 8%;
+}
