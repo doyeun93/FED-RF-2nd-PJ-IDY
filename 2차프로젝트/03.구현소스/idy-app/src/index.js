@@ -120,10 +120,10 @@ root.render(
           <section></section>
         </ul>
       </div>
+    </footer>
       <button className='btn-top'>
         <a href='#'>↑</a>
       </button>
-    </footer>
 
   </>
 );
