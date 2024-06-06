@@ -87,6 +87,13 @@
   line-height: 2;
 }
 
+.bt-gnb > li >a:hover{
+  color: black;
+}
+
+.bt-gnb > li > a{
+  color: rgb(156, 155, 155);
+}
 
 .top-gnb > li:first-child::after{
   content: "";
@@ -125,7 +132,8 @@
 .log >ul > li >a> img{
   position: relative;
   width: 60%;
-  bottom: 8%;
+  bottom: 14%;
+  left: 12%;
 }
 
 
@@ -150,11 +158,11 @@
 }
 .info-top > li:first-child::after{
   content: "•";
-  color: rgb(112, 112, 112);
+  color: rgb(156, 155, 155);;
 }
 .info-top > li:nth-child(1)~li:nth-child(-n+3)::after{
   content: "•";
-  color: rgb(112, 112, 112);
+  color: rgb(156, 155, 155);;
   
 }
 .info-mid{
@@ -167,7 +175,7 @@
 }
 .info-area > span{
   color: rgb(156, 155, 155);
-  font-size: .9rem;
+  font-size: .8rem;
 }
 .footer-sns{
   display: flex;
