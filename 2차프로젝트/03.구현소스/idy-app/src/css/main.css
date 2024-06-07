@@ -12,7 +12,7 @@
   left: 0;
   width: 100%;
   /* height: 5.625rem; */
-  height: 10vh;
+  height: 9vh;
   border-bottom: 1px solid #15a775;
   box-sizing: border-box;
   box-shadow: 2px 2px 20px 0 rgba(0, 0, 0, 0.08);
@@ -79,12 +79,12 @@
   border: 1px solid #15a775;
   border-radius: 0 0 8% 8%;
   background-color: #fff;
-  top: 110%;
+  top: 99%;
   left: -7%;
   width: 100%;
   height: 100%;
   z-index: 1001;
-  line-height: 2;
+  line-height: 2.4;
 }
 
 .bt-gnb > li >a:hover{
@@ -103,7 +103,6 @@
   height: 100%;
 }
 
-/* .top-gnb > li:nth-child(2)::after{ */
 .top-gnb > li:nth-child(1) ~ li:nth-child(-n+3)::after{
   content: "";
   background:url(../../public/image/ic_star.png) no-repeat center;
@@ -111,13 +110,6 @@
   width: 14%;
   height: 100%;
 }
-/* .top-gnb > li:nth-child(3)::after{
-  content: "";
-  background:url(../../public/image/ic_star.png) no-repeat center;
-  display: inline-block;
-  width: 14%;
-  height: 100%;
-} */
 
 /* 로그인 영역 */
 .log{
@@ -157,11 +149,11 @@
   display: flex;
 }
 .info-top > li:first-child::after{
-  content: "•";
+  content: " • ";
   color: rgb(156, 155, 155);;
 }
 .info-top > li:nth-child(1)~li:nth-child(-n+3)::after{
-  content: "•";
+  content: " • ";
   color: rgb(156, 155, 155);;
   
 }
@@ -171,13 +163,13 @@
 
 }
 .info-mid >li:first-child::after{
-  content: "|" ;
+  content: " | " ;
 }
 .info-area > span{
   color: rgb(156, 155, 155);
   font-size: .8rem;
 }
-.footer-sns{
+.footer-sns > ul{
   display: flex;
 }
 .btn-top{

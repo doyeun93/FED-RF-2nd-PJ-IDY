@@ -104,17 +104,17 @@ root.render(
         <ul>
           <li>
             <a href="#">
-              <img src="" alt="로고어워즈" />
+              <img src="./image/logo_award.png" alt="로고어워즈" />
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="" alt="인스타그램" />
+              <img src="./image/ic_insta.png" alt="인스타그램" />
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="" alt="카카오톡" />
+              <img src="./image/ic_kakao.png" alt="카카오톡" />
             </a>
           </li>
           <section></section>
