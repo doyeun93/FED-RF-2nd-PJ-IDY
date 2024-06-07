@@ -81,7 +81,9 @@ root.render(
           </li>
           <li>이벤트</li>
         </ul>
-        <button className="event-btn">더보기〉</button>
+        <button className="event-btn">
+          <a href="#">더보기 〉</a>
+        </button>
       </div>
       <div className="event-ban">
         <img src="./image/event.png" alt="이벤트배너" />
