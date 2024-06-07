@@ -131,6 +131,14 @@
 
 
 
+/* 이벤트 구역 */
+
+.event-ban{
+
+}
+
+
+
 
 /* 하단 영역 */
 #footer-area{
@@ -138,6 +146,8 @@
   display: flex;
   justify-content: space-between;
 }
+
+/* 인포메이션 구역 */
 .footer-info{
   width: 800px;
   line-height: 3;
@@ -147,6 +157,10 @@
 }
 .info-top{
   display: flex;
+}
+.info-top > li{
+  font-weight: bold;
+  padding-right: 1%;
 }
 .info-top > li:first-child::after{
   content: " • ";
@@ -162,6 +176,9 @@
   color: rgb(112, 112, 112);
 
 }
+.info-mid > li{
+  padding-right: 1%;
+}
 .info-mid >li:first-child::after{
   content: " | " ;
 }
@@ -169,9 +186,42 @@
   color: rgb(156, 155, 155);
   font-size: .8rem;
 }
+
+/* sns구역 */
+.footer-social{
+  width: 600px;
+
+}
+.footer-sns{
+  padding: 10%;
+}
 .footer-sns > ul{
   display: flex;
+  justify-content: space-evenly;
 }
+
+/* 콤보박스 */
+#brand{
+ font-weight: bold;
+ font-size: 1rem;
+
+}
+
+/* 버튼 */
 .btn-top{
-  position: relative;
+  position: absolute;
+  width: 3vw;
+  height: 6vh;
+  right: 6%;
+  border-radius: 25%;
 }
+.btn-top a > img{
+ position: relative;
+ width: 100%;
+ right: 7%;
+}
+
+
+
+
+

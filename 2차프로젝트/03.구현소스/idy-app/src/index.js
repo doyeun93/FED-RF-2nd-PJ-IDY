@@ -73,7 +73,20 @@ root.render(
     <div id="cook-area">요리해요 </div>
 
     {/* <!-- 이벤트 구역 --> */}
-    <div id="event-area">이벤트 </div>
+    <div id="event-area"> 
+      <div className="event-box">
+        <ul>
+          <li>
+            <img src="./image/samie_txt.png" alt="wow"/>
+          </li>
+          <li>이벤트</li>
+        </ul>
+        <button>더보기〉</button>
+      </div>
+      <div className="event-ban">
+        <img src="./image/event.png" alt="이벤트배너" />
+      </div>
+    </div>
 
     {/* <!-- 하단구역 --> */}
     <footer id="footer-area"> 
@@ -100,30 +113,43 @@ root.render(
           <span>Copyright © 샘표식품, All Rights Reserved.</span>
         </div>
       </div>
-      <div className= "footer-sns">
-        <ul>
-          <li>
-            <a href="#">
-              <img src="./image/logo_award.png" alt="로고어워즈" />
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="./image/ic_insta.png" alt="인스타그램" />
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="./image/ic_kakao.png" alt="카카오톡" />
-            </a>
-          </li>
-          <section></section>
-        </ul>
-      </div>
+      <div className="footer-social">
+        <div className= "footer-sns">
+          <ul>
+            <li>
+              <a href="#">
+                <img src="./image/logo_award.png" alt="로고어워즈" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./image/ic_insta.png" alt="인스타그램" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./image/ic_kakao.png" alt="카카오톡" />
+              </a>
+            </li>
+            <select name="brand" id="brand">
+              <option value="init">관련사이트</option>
+                <option value="brand1">샘표 기업</option>
+                <option value="brand2">새미네부엌 플랫폼</option>
+                <option value="brand3">티·아시아</option>
+                <option value="brand4">새미네부엌</option>
+                <option value="brand5">폰타나</option>
+                <option value="brand6">샘표 채용</option>
+                <option value="brand7">샘표 통합회원 웹사이트</option>
+            </select>
+          </ul>
+        </div>
+        <button className="btn-top">
+          <a href='#'>
+            <img src="./image/ic_top_btn.png" alt="탑버튼" />
+          </a>
+        </button>
+    </div>
     </footer>
-      <button className='btn-top'>
-        <a href='#'>↑</a>
-      </button>
 
   </>
 );
