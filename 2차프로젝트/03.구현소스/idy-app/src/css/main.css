@@ -133,12 +133,25 @@
 
 /* 이벤트 구역 */
 
-.event-ban{
-
+#event-area{
+  display: flex;
+  justify-content: space-around;
 }
 
+.event-box > ul{
+  display: flex;
+}
+.event-box > ul > li:nth-child(2){
+  font-size: 3.8rem;
+  font-weight: bold;
+}
 
-
+.event-btn{
+  width: 35%;
+  height: 23%;
+  border: solid 1px #d4d4d4;
+  border-radius: 30px;
+}
 
 /* 하단 영역 */
 #footer-area{
