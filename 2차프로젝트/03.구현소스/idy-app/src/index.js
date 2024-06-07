@@ -147,7 +147,7 @@ root.render(
         </div>
         <button className="btn-top">
           <a href='#'>
-            <img src="./image/ic_top_btn.png" alt="탑버튼" />
+            <img src="./image/samie5.png" alt="탑버튼" />
           </a>
         </button>
     </div>

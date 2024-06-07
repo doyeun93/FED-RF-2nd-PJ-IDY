@@ -229,17 +229,30 @@
 /* 버튼 */
 .btn-top{
   position: absolute;
-  width: 3vw;
+  width: 5vw;
   height: 6vh;
   right: 6%;
-  border-radius: 25%;
+  border: #fff;
+  cursor: pointer;
+  z-index: 1;
 }
+
 .btn-top a > img{
  position: relative;
  width: 100%;
- right: 7%;
+ bottom: 50%;
+ animation: icon-ani 1.3s ease-in-out infinite;
 }
 
+@keyframes icon-ani {
+  0%, 100% {
+    transform: translateY(0px) scale(0.95);
+  }
+  50% {
+  transform: translateY(-20px) scale(1);
+  }
+}
+  
 
 
 
