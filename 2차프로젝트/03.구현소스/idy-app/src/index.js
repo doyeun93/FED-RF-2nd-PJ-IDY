@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './css/main.css';
+import './components/func/headerarea';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -61,8 +62,20 @@ root.render(
 
     {/* <!-- 요리초보가이드 --> */}
     <header id="header-area"> 
-      <div className=''>
-
+      <div className="header-top">
+          <ul className="header-text">
+            <img src="./image/samie1.png" alt="새미이미지"/>
+            <li>추천드려요!</li>
+            <li>
+              <a href="#">가이드 더보기 ➕</a>
+            </li>
+          </ul>
+          <ul className="header-title">
+            <li>요리초보가이드</li>
+          </ul>
+      </div>
+      <div className="header-img">
+          <div className="header-slide"></div>
       </div>
     </header>
 
