@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+#header-area{
+    max-width: 1920px;
+    height: 1000px;
+}
+
+#main-area{
+    height: 800px;
+}
+
+#cook-area{
+    height: 800px;
+}
+#event-area{
+    height: 250px;
+}
+#footer-area{
+    height: 250px;
+}

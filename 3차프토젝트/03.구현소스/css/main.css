@@ -1,0 +1,342 @@
+@charset "utf-8";
+
+@import url(./reset.css);
+@import url(./core.css);
+
+
+
+.topbox{
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* height: 5.625rem; */
+  height: 9vh;
+  border-bottom: 1px solid #15a775;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 20px 0 rgba(0, 0, 0, 0.08);
+  background-color: #fff;
+  transition: top 0.4s;
+  z-index: 1000;
+}
+
+/* .topbox:hover{
+  background-color: #fff;
+} */
+
+.logo img{
+  width: 74%;
+  padding: 17% 90%;
+}
+
+
+#gnb{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 9vh;
+  margin: 0 auto;
+  transition: top 0.4s;
+}
+
+
+.top-gnb{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  white-space: nowrap;
+  height: 100%;
+  width: 50%;
+  font-weight: bold;
+}
+
+.top-gnb >li{
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  height: 100%;
+  width: 20%;
+}
+
+.top-gnb > li > a{
+  font-size: 1rem;
+  width: 100%;
+}
+
+#gnb .top-gnb> li:hover .bt-gnb {
+  display: block;
+}
+#gnb .top-gnb> li:hover .bt-gnb>li{
+  text-align: center;
+}
+
+.bt-gnb{
+  display: none;
+  position: absolute;
+  border: 1px solid #15a775;
+  border-radius: 0 0 8% 8%;
+  background-color: #fff;
+  top: 99%;
+  left: -7%;
+  width: 100%;
+  height: 100%;
+  z-index: 1001;
+  line-height: 2.4;
+}
+
+.bt-gnb > li >a:hover{
+  color: #15a775;
+}
+
+.bt-gnb > li > a{
+  color: rgb(156, 155, 155);
+}
+
+.top-gnb > li:first-child::after{
+  content: "";
+  display: inline-block;
+  /* background:url(../image/ic_star.png) no-repeat center; */
+  background:url(../image/ic_star.png) no-repeat center;
+  width: 14%;
+  height: 100%;
+}
+
+.top-gnb > li:nth-child(1) ~ li:nth-child(-n+3)::after{
+  content: "";
+  background:url(../image/ic_star.png) no-repeat center;
+  display: inline-block;
+  width: 14%;
+  height: 100%;
+}
+
+/* 로그인 영역 */
+.log{
+  display: flex;
+  position: relative;
+  width: 15%;
+  top: 37%;
+}
+.log > ul{
+  display: flex
+}
+.log >ul > li >a> img{
+  position: relative;
+  width: 60%;
+  bottom: 14%;
+  left: 12%;
+}
+
+
+/* 요리초보가이드 구역 */
+.header-top{
+  height: 250px;
+}
+.header-text{
+  display: flex;
+  position: relative;
+  padding: 8% 7%;
+  gap:1.1%
+}
+.header-text > li:nth-child(2){
+  font-size: 1.4rem;
+  color: #15a775;
+  margin-top: 1.3%;
+  font-weight: bold;
+}
+.header-text > li:last-child{
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: 2.3%;
+  padding-left: 73%;
+  z-index: 1;
+}
+
+.header-text > li:last-child::after{
+  content: "";
+  display: inline-block;
+  position: relative;
+  right: 22%;
+  bottom: 89%;
+  width: 150%;
+  height: 120%;
+  background-color: #15a77446;
+  border: solid 1px #15a775;;
+  border-radius: 30px;
+}
+
+.header-title{
+  display: flex;
+  position: absolute;
+  top: 27%;
+  padding-left: 8%;
+}
+.header-title > li:first-child{
+  font-size: 4rem;
+}
+/* 가로스크롤 이미지 구역 */
+.header-img{
+  height: calc(100vh + 3000px);
+}
+.header-slide{
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 100vh;
+}
+.header-slide ul {
+  position: relative;
+  left: 0;
+  display: flex;
+  width: calc(100vw + 3000px);
+  /* 가로크기는 타겟박스가 이동하는크기인
+  3000px에 맞도록 100vw에 더하여 잡아준다!
+  이유는 JS의 getBoundingClientRect().top
+  값의 수치와 정확히 일치 시키기 위함! */
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transition: 0.4s ease-out;
+}
+.header-slide ul li {
+  flex: 1;
+  text-align: center;
+}
+
+.header-slide ul li img {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50%;
+  border-radius: 20px;
+}
+
+/* 이벤트 구역 */
+
+#event-area{
+  display: flex;
+  justify-content: space-around;
+}
+
+.event-box > ul{
+  display: flex;
+}
+.event-box > ul > li:nth-child(2){
+  font-size: 3.8rem;
+  font-weight: bold;
+}
+
+.event-btn{
+  width: 35%;
+  height: 23%;
+  border: solid 1px #d4d4d4;
+  border-radius: 30px;
+}
+.event-btn > a{
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+
+/* 하단 영역 */
+#footer-area{
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 인포메이션 구역 */
+.footer-info{
+  width: 800px;
+  line-height: 3;
+}
+.info-area{
+  padding: 6.5% 10%;
+}
+.info-top{
+  display: flex;
+}
+.info-top > li{
+  font-weight: bold;
+  padding-right: 1%;
+}
+.info-top > li:first-child::after{
+  content: " • ";
+  color: rgb(156, 155, 155);;
+}
+.info-top > li:nth-child(1)~li:nth-child(-n+3)::after{
+  content: " • ";
+  color: rgb(156, 155, 155);;
+  
+}
+.info-mid{
+  display: flex;
+  color: rgb(112, 112, 112);
+
+}
+.info-mid > li{
+  padding-right: 1%;
+}
+.info-mid >li:first-child::after{
+  content: " | " ;
+}
+.info-area > span{
+  color: rgb(156, 155, 155);
+  font-size: .8rem;
+}
+
+/* sns구역 */
+.footer-social{
+  width: 600px;
+
+}
+.footer-sns{
+  padding: 10%;
+}
+.footer-sns > ul{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* 콤보박스 */
+#brand{
+ font-weight: bold;
+ font-size: 1rem;
+ padding: 3% 1%;
+ border-radius: 30px;
+}
+
+/* 버튼 */
+.btn-top{
+  position: absolute;
+  width: 5vw;
+  height: 6vh;
+  right: 6%;
+  border: #fff;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.btn-top a > img{
+ position: relative;
+ width: 100%;
+ bottom: 50%;
+ animation: icon-ani 1.3s ease-in-out infinite;
+}
+
+@keyframes icon-ani {
+  0%, 100% {
+    transform: translateY(0px) scale(0.95);
+  }
+  50% {
+  transform: translateY(-20px) scale(1);
+  }
+}
+  
+
+
+
+
