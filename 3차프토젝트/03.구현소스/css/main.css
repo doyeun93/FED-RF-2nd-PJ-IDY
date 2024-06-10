@@ -139,7 +139,8 @@
   position: relative;
   height: 80px;
   padding: 7% 7%;
-  gap:1.1%
+  gap: 1.1%;
+  box-sizing: content-box;
 }
 .header-text > li:nth-child(2){
   font-size: 1.4rem;
@@ -171,11 +172,12 @@
 .header-title{
   display: flex;
   position: absolute;
-  top: 23%;
+  top: 22%;
   padding-left: 8%;
 }
 .header-title > li:first-child{
-  font-size: 4rem;
+  font-size: 3.5rem;
+  font-weight: bold;
 }
 
 /* 가로스크롤 이미지 구역 */
