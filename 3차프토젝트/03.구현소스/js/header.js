@@ -17,6 +17,7 @@ for(let i = 1; i <= 8; i++){
   hcode += `
     <li>
       <img src="./image/main${i}.jpg" alt="header image" />
+      <span>${headerdata[i-1].title}</span>
     </li>
 
   `;
