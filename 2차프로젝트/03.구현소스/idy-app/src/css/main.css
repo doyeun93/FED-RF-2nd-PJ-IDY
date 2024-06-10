@@ -136,7 +136,8 @@
 .header-text{
   display: flex;
   position: relative;
-  padding: 8% 7%;
+  height: 80px;
+  padding: 7% 7%;
   gap:1.1%
 }
 .header-text > li:nth-child(2){
@@ -169,7 +170,7 @@
 .header-title{
   display: flex;
   position: absolute;
-  top: 27%;
+  top: 23%;
   padding-left: 8%;
 }
 .header-title > li:first-child{
@@ -179,13 +180,13 @@
 
 /* 가로스크롤 이미지 구역 */
 .header-img{
-  height: calc(800px + 3000px);
+  height: calc(700px + 3000px);
 }
 .header-slide{
   position: sticky;
   top: 0;
   left: 0;
-  height: 800px;
+  height: 700px;
 }
 .header-slide ul {
   position: relative;

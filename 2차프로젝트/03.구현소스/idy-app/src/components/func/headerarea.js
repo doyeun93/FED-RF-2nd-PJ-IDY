@@ -84,7 +84,7 @@ function upDownFn(ele,idx){ // ele = 각 li요소, idx =  각 li 순번
   // 짝수일 경우 마이너스를 곱하여 방향을 반대로 해준다
   // 짝수는 %연산자 사용 : 숫자%2==0 이면 짝수임
   if(idx%2==0) mVal = -mVal;
-  console.log("순번을 2로 나눈 나머지:", idx%2);
+  // console.log("순번을 2로 나눈 나머지:", idx%2);
   
   // 실제 위치이동  css적용하기
   ele.style.translate = `0 ${mVal}%`;
