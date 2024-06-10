@@ -1,6 +1,8 @@
 //  가로 스크롤 구현
 
-import mFn from "./function";
+import mFn from "./function.js";
+
+
 
 const slidePg = mFn.qs('.header-slide');
 
@@ -11,7 +13,7 @@ let hcode = "<ul>";
 for(let i = 1; i <= 8; i++){
   hcode += `
     <li>
-      <img src="./images/main${i}.jpg" alt="header image" />
+      <img src="./image/main${i}.jpg" alt="header image" />
     </li>
   `;
 } ///////////////// for ////////////////////
@@ -60,7 +62,7 @@ function moveSlide(){
 
    // 3. 개별리스트 상하 이동함수 호출하기
    eachList.forEach((ele,idx)=>upDownFn(ele,idx)); 
-   // ele = 해당 리스트 li자신, idx는 li 자신의 순번
+   
 
 } ///////// moveSlide 함수 ////////////////////
 
@@ -76,7 +78,7 @@ function upDownFn(ele,idx){ // ele = 각 li요소, idx =  각 li 순번
   let mVal = mFn.getBCR2(ele);
 
   // 2. 위치값을 양수로 만들고 윈도우 크기로 나눈 후 백분율. 수치가 크므로 2로 나움
-  mVal = Math.abs(mVal/window.innerWidth)*100/3;
+  mVal = Math.abs(mVal/window.innerWidth) * 100/3;
   // console.log('바운딩left:',mVal);
 
   // 3. 들어온 li순번이 짝수일 경우 마이너스 처리하기

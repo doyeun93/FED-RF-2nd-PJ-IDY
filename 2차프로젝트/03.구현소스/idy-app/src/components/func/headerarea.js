@@ -2,6 +2,7 @@
 
 import mFn from "./function";
 
+
 const slidePg = mFn.qs('.header-slide');
 
 
@@ -11,7 +12,7 @@ let hcode = "<ul>";
 for(let i = 1; i <= 8; i++){
   hcode += `
     <li>
-      <img src="../images/main${i}.jpg" alt="header image" />
+      <img src="../image/main${i}.jpg" alt="header image" />
     </li>
   `;
 } ///////////////// for ////////////////////
@@ -24,7 +25,7 @@ slidePg.innerHTML = hcode;
 
 
 
-const tpg =  mFn.qs('.header-image');
+const tpg =  mFn.qs('.header-img');
 
 // 움직일 대상 : .slidePg>ul
 const target = mFn.qs('.header-slide>ul');

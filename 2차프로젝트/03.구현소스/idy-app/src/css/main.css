@@ -175,15 +175,17 @@
 .header-title > li:first-child{
   font-size: 4rem;
 }
+
+
 /* 가로스크롤 이미지 구역 */
 .header-img{
-  height: calc(100vh + 3000px);
+  height: calc(800px + 3000px);
 }
 .header-slide{
   position: sticky;
   top: 0;
   left: 0;
-  height: 100vh;
+  height: 800px;
 }
 .header-slide ul {
   position: relative;
