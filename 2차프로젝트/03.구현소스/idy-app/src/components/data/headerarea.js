@@ -8,7 +8,8 @@ export const headerdata = [
     {
         idx: "2",
         imgName: "top2",
-        title: "처음 주방을 채워야 한다면, 이렇게!",
+        title: `처음 주방을 채워야 한다면, 
+        이렇게!`,
     },
     
     {
