@@ -3,6 +3,9 @@
 import mFn from "./function.js";
 
 
+// 헤더 데이터 불러오기
+import { headerdata } from "../data/headerarea.js";
+
 
 const slidePg = mFn.qs('.header-slide');
 
@@ -15,6 +18,7 @@ for(let i = 1; i <= 8; i++){
     <li>
       <img src="./image/main${i}.jpg" alt="header image" />
     </li>
+
   `;
 } ///////////////// for ////////////////////
 
@@ -24,6 +28,40 @@ hcode += "</ul>";
 // 3. 코드 출력하기
 slidePg.innerHTML = hcode;
 
+
+
+
+/* 
+
+const slidePg = mFn.qs('.header-slide');
+
+
+const headerBox = (imgName) => {
+  // 2.코드 변수에 태그 만들어 넣기
+  let hcode = "<ul>";
+  
+  for(let i = 1; i <= 8; i++){
+    hcode += `
+      <li>
+        <img src="./image/main${i}.jpg" alt="header image" />
+      </li>
+    `;
+  } ///////////////// for ////////////////////
+  
+  hcode += "</ul>";
+  
+  return hcode;
+
+}
+
+slidePg.innerHTML = headerdata.map((v,i)=>{
+  <span>${v.title}</span>
+
+}).join('');
+
+
+
+*/
 
 
 const tpg =  mFn.qs('.header-img');
@@ -51,12 +89,12 @@ function moveSlide(){
     target.style.left = '0px';
   }
   // (2) 바운딩 top값이 0이하 -3000이하일때 부모 바운딩 top값 위치이동하기
-  else if(bTop <= 0 && bTop >= -3000){
+  else if(bTop <= 0 && bTop >= -2000){
     target.style.left = bTop + 'px';
   }
   // (3) 마지막 한계 이후엔 한계값으로 세팅
   else{
-    target.style.left ='-3000px';
+    target.style.left ='-2000px';
   }
 
 

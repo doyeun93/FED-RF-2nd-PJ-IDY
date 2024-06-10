@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './css/main.css';
-import './components/func/headerarea';
+// import './components/func/headerarea';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
