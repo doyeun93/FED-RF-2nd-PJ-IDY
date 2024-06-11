@@ -3,6 +3,8 @@
 #header-area{
     max-width: 1920px;
     /* height: 1200px; */
+    /* background-color: rgb(253, 245, 237); */
+    background-image: url(../../public/image/bg_pattern.png);
 }
 
 #main-area{

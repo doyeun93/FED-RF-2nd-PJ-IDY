@@ -173,7 +173,7 @@ body{
 .header-title{
   display: flex;
   position: absolute;
-  top: 21%;
+  top: 20%;
   padding-left: 8%;
 }
 .header-title > li:first-child{
@@ -191,6 +191,7 @@ body{
   top: 0;
   left: 0;
   height: 750px;
+  // background-color:rgb(253, 245, 237);
 }
 .header-slide ul {
   position: relative;
