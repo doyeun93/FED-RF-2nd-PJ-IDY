@@ -43,6 +43,9 @@ function Main(props) {
             </div>
           </div>
         </header>
+        
+        {/* <!-- 요리 연구소 -->  */}
+        <div id="lab-area">요리연구소</div>
 
         {/* <!-- 요리해요 --> */}
         <div id="cook-area">요리해요 </div>
