@@ -8,11 +8,12 @@
 }
 
 #lab-area{
-    height: 800px;
+    height: 1000px;
 }
 
 #cook-area{
-    height: 800px;
+    height: 1000px;
+    background-image: url(../../public/image/bg_pattern_green.png);
 }
 #event-area{
     height: 250px;

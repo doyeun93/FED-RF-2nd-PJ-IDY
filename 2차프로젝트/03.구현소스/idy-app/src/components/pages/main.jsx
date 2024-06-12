@@ -48,7 +48,22 @@ function Main(props) {
         <div id="lab-area">요리연구소</div>
 
         {/* <!-- 요리해요 --> */}
-        <div id="cook-area">요리해요 </div>
+        <div id="cook-area">
+            <div className="cook-top">
+              <ul className="cook-title">
+                <li>요리해요 </li>
+                <li>
+                <a href="#">더보기 〉</a>
+                </li>
+              </ul>
+            </div>
+            <div className="cook-img">
+
+            </div>
+            <div className="cook-bottom">
+              
+            </div>
+        </div>
   
         {/* <!-- 이벤트 구역 --> */}
         <div id="event-area">
