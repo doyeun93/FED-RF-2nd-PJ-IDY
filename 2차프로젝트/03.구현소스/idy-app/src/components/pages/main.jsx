@@ -58,13 +58,16 @@ function Main(props) {
               </ul>
             </div>
             <div className="cook-img">
-                
+              <ul>
+                {/* <img src="./image/cook1.jpg" alt="요리해요 이미지"/> */}
+
+              </ul>
             </div>
             <div className="cook-bottom">
               <img src="./image/samie2.png" alt="새미이미지"/>
               <div className="cook-food">
                 <p>나만의 요리를 올려주세요!</p>
-                <a href="">작성하기
+                <a href="#">작성하기
                   <img src="./image/ic_write.png" alt="연필그림"/>
                 </a>
               </div>

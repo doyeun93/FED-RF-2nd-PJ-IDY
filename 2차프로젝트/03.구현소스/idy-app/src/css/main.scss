@@ -235,6 +235,7 @@ body{
 /* 요리해요 구역 */
 
 .cook-top{
+  height: 100px;
 
 }
 .cook-title{
@@ -257,6 +258,11 @@ body{
   font-size: 1.4rem;
   font-weight: bold;
   line-height: 3.2;
+}
+
+
+.cook-bottom{
+
 }
 
 /* 이벤트 구역 */
