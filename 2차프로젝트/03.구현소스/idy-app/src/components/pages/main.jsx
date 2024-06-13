@@ -47,7 +47,9 @@ function Main(props) {
         </header>
         
         {/* <!-- 요리 연구소 -->  */}
-        <div id="lab-area">요리연구소</div>
+        <div id="lab-area">
+      
+        </div>
 
         {/* <!-- 요리해요 --> */}
         <div id="cook-area">
@@ -61,8 +63,7 @@ function Main(props) {
             </div>
             <div className="cook-img">
               <ul>
-                {/* <img src="./image/cook1.jpg" alt="요리해요 이미지"/> */}
-
+                
               </ul>
             </div>
             <div className="cook-bottom">

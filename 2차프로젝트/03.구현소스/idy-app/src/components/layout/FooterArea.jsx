@@ -1,12 +1,12 @@
 import React, { useLayoutEffect } from 'react';
 
 import {comboData} from '../data/combodata';
-import comboFn from '../func/combo';
+// import comboFn from '../func/combo';
 
 function FooterArea(props) {
 
   useLayoutEffect(() => {
-    comboFn();
+   
   }, []);
 
 
@@ -57,7 +57,11 @@ function FooterArea(props) {
                 <select name="brand" id="brand">
                 <option value="init">관련사이트</option>
                   {/* {comboData.map((v,i) => {
-                    <option key={i} value={ `brand${i}`}> ${v} </option>
+                    <option key={i} >
+                      <a href={v.link}>
+                        <option value={v.idx}>{v.tit}</option>
+                      </a>
+                    </option>
                   })} */}
                    <option value="brand1">샘표 기업</option>
                 <option value="brand2">새미네부엌 플랫폼</option>

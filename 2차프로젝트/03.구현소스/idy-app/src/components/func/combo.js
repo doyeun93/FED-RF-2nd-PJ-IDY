@@ -13,11 +13,6 @@ function bindCombo(){
     const brandBox = mFn.qs("#brand");
     
 
-    // // 2. 데이터 바인딩하기
-    // // 데이터 대상 : comboData.brand
-  
-    // // 대상 요소 내부 데이터 넣기
-    // // 배열데이터 .map().join('') -> JS에서만 join사용가능하고 리액트에서는 join을 생략할 수 있다
     brandBox.innerHTML = <option value="init">관련사이트</option>
     //   comboData.brand.map((v,i)=>`
     //     <option value="brand${i}">${v}</option>

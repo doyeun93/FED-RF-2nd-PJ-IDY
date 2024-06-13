@@ -1,4 +1,4 @@
-export const maindata = [
+export const mainData = [
     {
         idx: "1",
         imgName: "main1",
