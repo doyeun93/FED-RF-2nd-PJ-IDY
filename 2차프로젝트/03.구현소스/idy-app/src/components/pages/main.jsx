@@ -35,7 +35,9 @@ function Main(props) {
               <ul>
                 {headerdata.map((v,i) => (
                   <li key={i}>
-                    <img src={`./image/${v.imgName}.jpg`} alt="header image" />
+                    <a href="#">
+                      <img src={`./image/${v.imgName}.jpg`} alt="header image" />
+                    </a>
                     <span>{v.title}</span>
                   </li>
                 ))}
