@@ -1,7 +1,7 @@
-// WOW이벤트 페이지 컴포넌트 ///
+// 요리초보가이드 페이지 컴포넌트 ///
  
 
-export default function Event(){
+export default function CookLab(){
     //// 코드 리턴 구역
     return(
         <>
@@ -9,6 +9,6 @@ export default function Event(){
              {/* <Banner catName="SERIES"/> */}
         </>
     );
-} ////////////  Event함수 ////////
+} ////////////  Lab함수 ////////
 
 

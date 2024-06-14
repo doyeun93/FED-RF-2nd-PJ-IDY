@@ -6,6 +6,11 @@ import "./css/index.scss";
 // import './components/func/headerarea';
 import Main from "./components/pages/main";
 import Layout from "./components/layout/Layout";
+import CookGuide from "./components/pages/CookGuide";
+import CookLab from "./components/pages/CookLab";
+import CookCook from "./components/pages/CookCook";
+import CookEvent from "./components/pages/CookEvent";
+
 
 
 
@@ -23,10 +28,10 @@ function MainComponent(props) {
         첫페이지로 구성됨 -> MainArea 컴포넌트 <Outlet/>에
         출력된다!*/}
           <Route index element={<Main />} />
-          {/* <Route path="guide" element={<Guide />} /> */}
-          {/* <Route path="lab" element={<Lab />} />
-          <Route path="cook" element={<Cook />} />
-          <Route path="event" element={<Event />} /> */}
+          <Route path="cookguide" element={<CookGuide />} />
+          <Route path="cooklab" element={<CookLab />} />
+          <Route path="cookcook" element={<CookCook />} />
+          <Route path="cookevent" element={<CookEvent />} />
         </Route>
         {/* Layout 루트 Route로 하위 Route를 감싼다! */}
       </Routes>

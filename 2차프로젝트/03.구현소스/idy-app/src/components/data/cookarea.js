@@ -1,3 +1,5 @@
+
+export const cookData =
 [
     {
         idx: "1",

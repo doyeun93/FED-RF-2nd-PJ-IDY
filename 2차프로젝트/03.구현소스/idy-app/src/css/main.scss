@@ -231,7 +231,49 @@ body{
 
 
 /*  요리 연구소 구역 */
+.lab-top{
+  margin-top: 3%;
+  height: 100px;
+  
+}
+.lab-top > ul{
+  display: flex;
+  justify-content: space-between;
 
+}
+.lab-top > ul > li:first-child{
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-left: 5%;
+}
+.lab-top > ul >li:last-child{
+  width: 7%;
+  height: auto;
+  margin-right: 7%;
+  border: solid 1px #d4d4d4;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 3.2;
+}
+.lab-img{
+  position: absolute;
+  width: auto;
+  height: auto;
+}
+.lab-img2{
+  position: relative;
+  width: auto;
+  height: auto;
+}
+.lab-tit{
+  width: auto;
+  height: 142px;
+}
+.lab-tit > span{
+  font-size: 1.5rem;
+}
 
 
 /* 요리해요 구역 */
@@ -262,12 +304,16 @@ body{
   line-height: 3.2;
 }
 
+.cook-img{
+  height: 500px;
+}
+
 
 .cook-bottom{
   width: 85%;
   height: 7%;
   margin-left: 10%;
-  margin-top: 20%;
+  margin-top: 15%;
   border-radius: 40px;
   background-color: #fbb9bf;
 }
@@ -298,9 +344,9 @@ body{
 .cook-food > a::before{
   content: " |";
   display: inline-block;
-  
- 
+
 }
+
 
 /* 이벤트 구역 */
 

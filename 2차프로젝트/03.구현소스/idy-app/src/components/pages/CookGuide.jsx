@@ -1,7 +1,7 @@
-// 요리연구소 페이지 컴포넌트 ///
+// 요리초보가이드 페이지 컴포넌트 ///
  
 
-export default function Lab(){
+export default function CookGuide(){
     //// 코드 리턴 구역
     return(
         <>
@@ -9,6 +9,6 @@ export default function Lab(){
              {/* <Banner catName="SERIES"/> */}
         </>
     );
-} ////////////  Lab함수 ////////
+} ////////////  Guide함수 ////////
 
 

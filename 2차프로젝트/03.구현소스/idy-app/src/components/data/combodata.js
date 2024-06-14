@@ -1,6 +1,12 @@
 export const comboData = [
 
   {
+    idx : "brand0",
+    tit : "관련사이트",
+    link : "",
+  },
+
+  {
     idx : "brand1",
     tit : "샘표 기업",
     link : "https://www.sempio.com/",

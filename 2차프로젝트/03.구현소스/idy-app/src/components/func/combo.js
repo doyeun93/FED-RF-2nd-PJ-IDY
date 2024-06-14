@@ -11,15 +11,7 @@ export default function comboFn() {
 function bindCombo(){
     // // 1. 대상선정 : #brand
     const brandBox = mFn.qs("#brand");
-    
-
-    brandBox.innerHTML = <option value="init">관련사이트</option>
-    //   comboData.brand.map((v,i)=>`
-    //     <option value="brand${i}">${v}</option>
-    //     `);
-  
-
-
+ 
    // 3. 브랜드 바로가기 링크 이동하기
    
    brandBox.addEvt("change", openwindow); 

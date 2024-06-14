@@ -6,6 +6,8 @@ import "../../css/main.scss";
 
 import {headerdata} from "../data/headerarea";
 import headerFn from '../func/header';
+import SwiperLab from '../plugin/SwiperLab';
+// import Cookpic from '../modules/Cookpic';
 
 function Main(props) {
     
@@ -48,7 +50,15 @@ function Main(props) {
         
         {/* <!-- 요리 연구소 -->  */}
         <div id="lab-area">
-      
+          <div className="lab-top">
+            <ul>
+              <li>요리연구소</li>
+              <li>
+                <a href="#">더보기 〉</a>
+              </li>
+            </ul>
+          </div>
+                <SwiperLab />
         </div>
 
         {/* <!-- 요리해요 --> */}
@@ -62,10 +72,10 @@ function Main(props) {
               </ul>
             </div>
             <div className="cook-img">
-              <ul>
-                
-              </ul>
+              {/* <Cookpic /> */}
+
             </div>
+            
             <div className="cook-bottom">
               <img src="./image/samie2.png" alt="새미이미지"/>
               <div className="cook-food">
