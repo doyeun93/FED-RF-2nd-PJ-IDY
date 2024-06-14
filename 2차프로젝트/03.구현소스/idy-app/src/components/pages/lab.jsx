@@ -1,4 +1,5 @@
 // 요리연구소 페이지 컴포넌트 ///
+ 
 
 export default function Lab(){
     //// 코드 리턴 구역
@@ -9,3 +10,5 @@ export default function Lab(){
         </>
     );
 } ////////////  Lab함수 ////////
+
+

@@ -1,4 +1,5 @@
-// wow이벤트 페이지 컴포넌트 ///
+// WOW이벤트 페이지 컴포넌트 ///
+ 
 
 export default function Event(){
     //// 코드 리턴 구역
@@ -9,3 +10,5 @@ export default function Event(){
         </>
     );
 } ////////////  Event함수 ////////
+
+
