@@ -1,10 +1,10 @@
-import React, { useLayoutEffect } from 'react';
+import React, { useEffect } from 'react';
 
 import { cookData } from '../data/cookarea';
 import mainCookFn from '../func/maincook';
 
 function Cookpic(props) {
-    useLayoutEffect(()=>{},[
+    useEffect(()=>{},[
         mainCookFn()
     ]);
 

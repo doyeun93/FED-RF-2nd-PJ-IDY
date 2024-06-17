@@ -14,7 +14,7 @@ import CookEvent from "./components/pages/CookEvent";
 
 
 
-function MainComponent(props) {
+export default function MainComponent(props) {
   return(
     // 라우터 루트로 라우터 구성시작
     <BrowserRouter>
@@ -24,14 +24,14 @@ function MainComponent(props) {
         하위 라우트를 감싸도록한다!!! */}
         <Route path="/" element={<Layout />}>
           {/* 하위 라우트 셋팅 
-        -> path설정대신 index키워드를 쓰면 
-        첫페이지로 구성됨 -> MainArea 컴포넌트 <Outlet/>에
-        출력된다!*/}
+        -> path설정대신 index키워드를 쓰면 첫페이지로 구성됨 -> MainArea 컴포넌트 <Outlet/>에 출력된다!*/}
+        
           <Route index element={<Main />} />
           <Route path="cookguide" element={<CookGuide />} />
           <Route path="cooklab" element={<CookLab />} />
           <Route path="cookcook" element={<CookCook />} />
           <Route path="cookevent" element={<CookEvent />} />
+
         </Route>
         {/* Layout 루트 Route로 하위 Route를 감싼다! */}
       </Routes>

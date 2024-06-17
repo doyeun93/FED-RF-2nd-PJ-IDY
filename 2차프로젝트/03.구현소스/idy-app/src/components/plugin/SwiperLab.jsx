@@ -23,7 +23,7 @@ export default function SwiperLab() {
   return (
     <>
       <Swiper
-        slidesPerView={3}
+        slidesPerView={4}
         spaceBetween={50}
         navigation={true}
         /* 사용할 모듈을 여기에 적용시킨다 */
