@@ -2,6 +2,7 @@ import React, { useLayoutEffect } from 'react';
 
 import {comboData} from '../data/combodata';
 import comboFn from '../func/combo';
+import "../../css/footer_area.scss";
 
 
 function FooterArea() {
@@ -19,16 +20,16 @@ function FooterArea() {
             <div className="info-area">
               <ul className="info-top">
                 <li>
-                  <a href="#">이용약관</a>
+                  <a href="https://member.sempio.com/legal/terms-and-condition">이용약관</a>
                 </li>
                 <li>
-                  <a href="#">개인정보처리방침</a>
+                  <a href="https://member.sempio.com/legal/privacy-policy">개인정보처리방침</a>
                 </li>
                 <li>
-                  <a href="#">이용 가이드</a>
+                  <a href="https://semie.cooking/userguide">이용 가이드</a>
                 </li>
                 <li>
-                  <a href="#">ABOUT US</a>
+                  <a href="https://semie.cooking/aboutus">ABOUT US</a>
                 </li>
               </ul>
               <ul className="info-mid">
