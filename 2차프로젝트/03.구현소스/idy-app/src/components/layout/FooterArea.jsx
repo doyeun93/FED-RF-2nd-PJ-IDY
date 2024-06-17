@@ -61,8 +61,6 @@ function FooterArea() {
                   {comboData.map((v,i)=>{
                       return <option key={i} value={v.idx}>{v.tit}</option>
                   })}
-
-
                   {/* 
                   <option value="init">관련사이트</option>
                   {comboData.map((v,i) => {
@@ -71,9 +69,7 @@ function FooterArea() {
                         <option value={v.idx}>{v.tit}{v.link}</option>
                      
                     </option>
-                  })} */}
-                   
-                  
+                  })} */}     
                 </select>
               </ul>
             </div>

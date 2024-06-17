@@ -25,24 +25,25 @@ export default function SwiperLab() {
       <Swiper
         slidesPerView={4}
         spaceBetween={50}
+        loop = {true}
         navigation={true}
         /* 사용할 모듈을 여기에 적용시킨다 */
         modules={[Navigation]}
-        // breakpoints={{
-        //     200: {
-        //         slidesPerView: 2,
-        //     },
-        //     700: {
-        //         slidesPerView: 3,
-        //     },
-        //     1000: {
-        //         slidesPerView: 4,
-        //     },
-        //     1200: {
-        //         slidesPerView: 8,
-        //     },
-        //   }
-        // }
+        breakpoints={{
+            200: {
+                slidesPerView: 1,
+            },
+            500: {
+                slidesPerView: 2,
+            },
+            900: {
+                slidesPerView: 3,
+            },
+            1200: {
+                slidesPerView: 4,
+            },
+          }
+        }
 
         className="mySwiper"
       >
@@ -53,7 +54,6 @@ export default function SwiperLab() {
               <div className="lab-img2">
                 <img src={v.imgName} alt={v.title} />
               </div>
-
               <section className="lab-text">
                 {/* 이미지 타이틀영역 */}
                 <div className="lab-tit">
@@ -62,6 +62,10 @@ export default function SwiperLab() {
                 <div className="lab-cate">
                   <span>{v.category}</span>
                 </div>
+                <ul className="lab-type">
+                    <li>{v.type1}</li>
+                    <li>{v.type2}</li>
+                </ul>
               </section>
             </section>
           </SwiperSlide>

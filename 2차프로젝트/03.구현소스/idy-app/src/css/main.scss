@@ -23,10 +23,14 @@ body{
   z-index: 1000;
 }
 
+.logo{
+  width: 230px;
+}
 
 .logo img{
-  width: 74%;
-  padding: 17% 90%;
+  width: 50%;
+  padding: 4% 58%;
+  position: relative;
 }
 
 
@@ -114,7 +118,7 @@ body{
 .log{
   display: flex;
   position: relative;
-  width: 15%;
+  width: 22%;
   top: 37%;
 }
 .log > ul{
@@ -126,6 +130,11 @@ body{
   bottom: 14%;
   left: 12%;
 }
+
+#schinGnb{
+  display: none;
+}
+
 
 
 /* 요리초보가이드 구역 */
@@ -270,10 +279,26 @@ body{
 }
 .lab-tit{
   width: auto;
-  height: 142px;
+  height: 60px;
 }
 .lab-tit > span{
   font-size: 1.5rem;
+}
+.lab-cate{
+  font-size: 1.1rem;
+  font-weight: bold;
+  height: 70px;
+}
+.lab-type{
+  display: flex;
+  justify-content: space-evenly
+}
+.lab-type > li{
+  width: 28%;
+  padding: 0.7% 0.6%;
+  background-color: #f3f3f3;
+  border: 1px solid #f3f3f3;
+  border-radius: 13px;
 }
 
 
@@ -311,9 +336,9 @@ body{
 
 
 .cook-bottom{
-  width: 85%;
+  width: 82%;
   height: 7%;
-  margin-left: 10%;
+  margin-left: 8.8%;
   margin-top: 15%;
   border-radius: 40px;
   background-color: #fbb9bf;
@@ -326,13 +351,12 @@ body{
 }
 .cook-food{
   display: flex;
-  justify-content: space-around;
-  gap: 14%;
+  gap: 43%;
 }
 
 .cook-food > p{
-  margin-top: 1%;
-  margin-left: 10%;
+  margin-top: 1.2%;
+  margin-left: 20%;
   color: white;
   font-size: 1.5rem;
   font-weight: bold;
