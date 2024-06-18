@@ -1,4 +1,4 @@
-// import comboData from "../data/combo"
+
 
 import mFn from "./function"
 import {comboData} from "../data/combodata";
@@ -11,7 +11,7 @@ export default function comboFn() {
 function bindCombo(){
     // // 1. 대상선정 : #brand
     const brandBox = mFn.qs("#brand");
-    
+    console.log("콤보바인딩", brandBox);
  
    // 3. 브랜드 바로가기 링크 이동하기
    
@@ -25,7 +25,7 @@ function bindCombo(){
   function openwindow(){
     // 1. 이동할 주소 : comboData.brandLink 객체 선택
      let url = comboData[this.id+"link"][this.value];
-  
+     console.log("브랜드 어디?", url);
   
     // 2. 선택 option 값의 주소로 이동하기
     
