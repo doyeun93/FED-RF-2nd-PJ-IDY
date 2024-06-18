@@ -273,10 +273,20 @@ body{
   font-weight: bold;
   font-size: 1.1rem;
 }
+.event-ban >img{
+  animation: event-ani 1s ease-in-out ;
+}
 
 
-
-
+@keyframes event-ani {
+  0%{
+    transform: translateY(0);
+  }
+  100%{
+    transform: translateY(10%);
+  }
+  
+}
 
 
 

@@ -52,10 +52,11 @@
   }
   .footer-sns{
     padding: 10%;
-  }
-  .footer-sns > ul{
-    display: flex;
-    justify-content: space-evenly;
+
+    ul{
+      display: flex;
+      justify-content: space-evenly;
+    }
   }
   
   /* 콤보박스 */
@@ -92,4 +93,6 @@
     transform: translateY(-20px) scale(1);
     }
   }
-    
+  
+  
+  

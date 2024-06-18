@@ -9,11 +9,11 @@ export default function comboFn() {
 
 //////// 콤보박스 바인딩 함수 
 function bindCombo(){
-    // // 1. 대상선정 : #brand
+    // 대상선정 : #brand
     const brandBox = mFn.qs("#brand");
-    console.log("콤보바인딩", brandBox);
+    // console.log("콤보바인딩", brandBox);
  
-   // 3. 브랜드 바로가기 링크 이동하기
+    // 브랜드 바로가기 링크 이동하기
    
    brandBox.addEvt("change", openwindow); 
   

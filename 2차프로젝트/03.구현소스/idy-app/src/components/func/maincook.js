@@ -7,23 +7,21 @@ export default function mainCookFn() {
 
   const gbox = mFn.qs(".cook-img");
 
-  let target = mFn.qs(gbox, ".cook-img >ul");
+  let target = mFn.qs(gbox, "ul");
+
 
 
   const updateCriteria = () => mFn.qsa(target, "li")[0].offsetWidth;
+
 
   
   let criteria = updateCriteria();
 
   
-  mFn.addEvt(
-    window,
-    "resize",
+  mFn.addEvt( window, "resize",
 
-    () => {
-      criteria = updateCriteria();
-    }
-  );
+    () => {criteria = updateCriteria();
+  });
 
  
   let currVal = 0;

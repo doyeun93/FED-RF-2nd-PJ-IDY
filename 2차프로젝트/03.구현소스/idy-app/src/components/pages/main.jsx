@@ -7,12 +7,13 @@ import "../../css/main.scss";
 import {headerdata} from "../data/headerarea";
 import headerFn from '../func/header';
 import SwiperLab from '../plugin/SwiperLab';
-// import Cookpic from '../modules/Cookpic';
+import Cookpic from '../modules/Cookpic';
 
 function Main(props) {
     
   useLayoutEffect(() => {
     headerFn();
+    
   }, []);
 
   // 코드 리턴구역 ////////////
@@ -72,9 +73,10 @@ function Main(props) {
               </ul>
             </div>
             <div className="cook-img">
+          
+            </div>
               {/* <Cookpic /> */}
 
-            </div>
             
             <div className="cook-bottom">
               <img src="./image/samie2.png" alt="새미이미지"/>
