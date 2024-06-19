@@ -12,6 +12,16 @@ function FooterArea() {
   }, []);
   const selData = comboData;
 
+  const goSite = (e) => {
+    let i = e.currentTarget.value;
+    console.log("값:",i);
+    let res = comboData.find(v=>{
+      if(v.idx==i) return true;
+    }); /////// find /////
+    console.log(res);
+    window.open(res.link);
+  };
+
 
   ///// 코드 리턴구역 ///////////////
     return (
@@ -58,10 +68,8 @@ function FooterArea() {
                   </a>
                 </li>
 
-                <select name="brand" id="brand">
-                  {comboData.map((v,i)=>{
-                      return <option key={i} value={v.idx}>{v.tit}</option>
-                  })}
+                <select name="brand" id="brand" onChange={goSite}>
+                  {comboData.map((v,i)=><option key={i} value={v.idx}>{v.tit}</option>)}
                   {/* 
                   <option value="init">관련사이트</option>
                   {comboData.map((v,i) => {

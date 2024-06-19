@@ -27,7 +27,7 @@ export const comboData = [
   {
     idx : "brand4",
     tit :   "폰타나",
-    link : "https://www.fontanastyle.com/main.do",
+    link : "https://www.fontanastyle.com/",
   },
 
   {

@@ -29,6 +29,7 @@ export default function MainComponent(props) {
           <Route index element={<Main />} />
           <Route path="cookguide" element={<CookGuide />} />
           <Route path="cooklab" element={<CookLab />} />
+          <Route path="cooklabkkk" element={<CookLab />} />
           <Route path="cookcook" element={<CookCook />} />
           <Route path="cookevent" element={<CookEvent />} />
 

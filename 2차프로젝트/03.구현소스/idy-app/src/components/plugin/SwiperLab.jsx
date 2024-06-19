@@ -54,7 +54,7 @@ export default function SwiperLab() {
               <div className="lab-img2">
                 <img src={v.imgName} alt={v.title} />
               </div>
-              <section className="lab-text">
+              <section className={v.category=="솔루션"?"lab-text sol":"lab-text rec"}>
                 {/* 이미지 타이틀영역 */}
                 <div className="lab-tit">
                   <span>{v.title}</span>

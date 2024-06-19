@@ -13,7 +13,7 @@ export const gnbData = [
             },
             {
                 txt: "솔루션",
-                link: "/cooklab",
+                link: "/cooklabkkk",
             },
         ]
     },        

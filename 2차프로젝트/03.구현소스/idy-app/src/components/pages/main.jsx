@@ -72,10 +72,10 @@ function Main(props) {
                 </li>
               </ul>
             </div>
-            <div className="cook-img">
+            {/* <div className="cook-img">
           
-            </div>
-              {/* <Cookpic /> */}
+            </div> */}
+              <Cookpic />
 
             
             <div className="cook-bottom">

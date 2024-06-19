@@ -84,6 +84,7 @@ body{
   transition: 0.4s ease-out;
 }
 .header-slide ul li {
+  position: relative;
   flex: 1;
   text-align: center;
 }
@@ -175,6 +176,24 @@ body{
   background-color: #f3f3f3;
   border: 1px solid #f3f3f3;
   border-radius: 13px;
+}
+.sol{ 
+  .lab-type{
+
+    background-color: red;
+  }
+  .lab-cate{
+    background-color: hotpink;
+  }
+}
+.rec{ 
+  .lab-type{
+
+    background-color: blue;
+  }
+  .lab-cate{
+    background-color: lightseagreen;
+  }
 }
 
 
