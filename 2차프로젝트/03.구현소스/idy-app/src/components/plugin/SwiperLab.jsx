@@ -58,6 +58,7 @@ export default function SwiperLab() {
                 {/* 이미지 타이틀영역 */}
                 <div className="lab-tit">
                   <span>{v.title}</span>
+                  <p>{v.text}</p>
                 </div>
                 <div className="lab-cate">
                   <span>{v.category}</span>

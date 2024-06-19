@@ -78,6 +78,16 @@ export const mainData = [
         type1: "# 두부",
         type2: "# 재료 보관",
     },
+
+    {
+        idx: "9",
+        imgName: "./image/main9.jpg",
+        category: "레시피",
+        title: " 밥도둑 반숙계란장 ",
+        text: "삶은 계란에 잘 섞은 양념 부어 완성!",
+        type1: "준비시간 : 10분",
+        type2: "조리시간 : 15분",
+    },
     
 
 
