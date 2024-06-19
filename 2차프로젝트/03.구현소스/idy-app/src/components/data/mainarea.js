@@ -88,6 +88,16 @@ export const mainData = [
         type1: "준비시간 : 10분",
         type2: "조리시간 : 15분",
     },
+
+    {
+        idx: "10",
+        imgName: "./image/main10.jpg",
+        category: "솔루션",
+        title: "국 vs 찌개 vs 짜글이 ",
+        text: "내가 끓인 국물요리의 정체는?",
+        type1: "# 국물",
+        type2: "# 찌개",
+    },
     
 
 
