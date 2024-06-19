@@ -70,17 +70,13 @@ body{
   top: 0;
   left: 0;
   height: 750px;
-  // background-color:rgb(253, 245, 237);
 }
 .header-slide ul {
   position: relative;
   left: 0;
   display: flex;
   width: calc(100vw + 3000px);
-  /* 가로크기는 타겟박스가 이동하는크기인
-  3000px에 맞도록 100vw에 더하여 잡아준다!
-  이유는 JS의 getBoundingClientRect().top
-  값의 수치와 정확히 일치 시키기 위함! */
+  
   height: 100%;
   margin: 0;
   padding: 0;
@@ -96,15 +92,15 @@ body{
   position: relative;
   top: 46%;
   transform: translateY(-40%);
-  width: 62%;
-  border-radius: 25px;
+  width: 65%;
+  border-radius: 30px;
 }
 .header-slide span{
   position: absolute;
   display: inline;
   width: 328px;
   height: 100px;
-  top: 74%;
+  top: 78%;
   left: 20%;
   font-size: 1.5rem;
   font-weight: bold;
@@ -114,8 +110,8 @@ body{
 
 /*  요리 연구소 구역 */
 .lab-top{
-  margin-top: 3%;
-  height: 100px;
+  height: 90px;
+  padding-top: 4%;
   
 }
 .lab-top > ul{
@@ -281,19 +277,26 @@ body{
   font-size: 1.1rem;
 }
 .event-ban >img{
-  animation: event-ani 1s ease-in-out ;
+  // animation: event-ani 1s ease-in-out infinite;
+
+  transition: transform 1s ease-in-out;
+}
+.event-ban:hover >img{
+  transform: scale(1.1);
+  transform-origin: center;
+  transition: transform 1s ease-in-out;
 }
 
 
-@keyframes event-ani {
-  0%{
-    transform: translateY(0);
-  }
-  100%{
-    transform: translateY(10%);
-  }
+// @keyframes event-ani {
+//   0%{
+//     transform: translateY(0);
+//   }
+//   100%{
+//     transform: translateY(10%);
+//   }
   
-}
+// }
 
 
 

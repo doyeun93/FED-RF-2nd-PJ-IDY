@@ -8,7 +8,7 @@
   .swiper-slide {
     text-align: center;
     font-size: 1rem;
-    background: #fff;
+    // background: #fff;
   
     /* Center slide text vertically */
     display: flex;
@@ -25,3 +25,8 @@
     cursor: pointer;
   }
   
+  .swiper-button-prev, .swiper-button-next {
+    top: var(--swiper-navigation-top-offset, 41%);
+    color: #15a775;
+
+    }
