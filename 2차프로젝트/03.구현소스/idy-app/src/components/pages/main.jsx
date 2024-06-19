@@ -72,9 +72,6 @@ function Main(props) {
                 </li>
               </ul>
             </div>
-            {/* <div className="cook-img">
-          
-            </div> */}
               <Cookpic />
 
             

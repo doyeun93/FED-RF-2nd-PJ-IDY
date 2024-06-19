@@ -1,15 +1,12 @@
-import React, { useLayoutEffect } from 'react';
+import React from 'react';
 
 import {comboData} from '../data/combodata';
-import comboFn from '../func/combo';
+
 import "../../css/footer_area.scss";
 
 
 function FooterArea() {
 
-  useLayoutEffect(() => {
-      comboFn();
-  }, []);
   const selData = comboData;
 
   const goSite = (e) => {
@@ -18,7 +15,9 @@ function FooterArea() {
     let res = comboData.find(v=>{
       if(v.idx==i) return true;
     }); /////// find /////
+
     console.log(res);
+
     window.open(res.link);
   };
 
@@ -69,16 +68,7 @@ function FooterArea() {
                 </li>
 
                 <select name="brand" id="brand" onChange={goSite}>
-                  {comboData.map((v,i)=><option key={i} value={v.idx}>{v.tit}</option>)}
-                  {/* 
-                  <option value="init">관련사이트</option>
-                  {comboData.map((v,i) => {
-                    <option key={i} >
-
-                        <option value={v.idx}>{v.tit}{v.link}</option>
-                     
-                    </option>
-                  })} */}     
+                  {comboData.map((v,i)=><option key={i} value={v.idx}>{v.tit}</option>)}      
                 </select>
               </ul>
             </div>

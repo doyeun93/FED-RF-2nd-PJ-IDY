@@ -15,11 +15,14 @@
   }
   .info-top{
     display: flex;
+
+    li{
+      font-weight: bold;
+      padding-right: 1%;
+    }
+    
   }
-  .info-top > li{
-    font-weight: bold;
-    padding-right: 1%;
-  }
+
   .info-top > li:first-child::after{
     content: " • ";
     color: rgb(156, 155, 155);;
@@ -76,14 +79,16 @@
     border: #fff;
     cursor: pointer;
     z-index: 1;
+
+    a > img{
+      position: relative;
+      width: 100%;
+      bottom: 50%;
+      animation: icon-ani 1.3s ease-in-out infinite;
+     }
+
   }
   
-  .btn-top a > img{
-   position: relative;
-   width: 100%;
-   bottom: 50%;
-   animation: icon-ani 1.3s ease-in-out infinite;
-  }
   
   @keyframes icon-ani {
     0%, 100% {
