@@ -14,7 +14,7 @@ function FooterArea() {
 
     let res = comboData.find(v=>{
       if(v.idx==i) return true;
-    }); /////// find : 선택요소 /////
+    }); /////// find : 선택요소 하위 자손요소를 모두 찾음 /////
 
     console.log(res);
 
