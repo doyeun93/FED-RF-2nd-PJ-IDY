@@ -7,14 +7,14 @@ import "../../css/footer_area.scss";
 
 function FooterArea() {
 
-  const selData = comboData;
 
   const goSite = (e) => {
     let i = e.currentTarget.value;
     console.log("값:",i);
+
     let res = comboData.find(v=>{
       if(v.idx==i) return true;
-    }); /////// find /////
+    }); /////// find : 선택요소 /////
 
     console.log(res);
 
@@ -68,7 +68,7 @@ function FooterArea() {
                 </li>
 
                 <select name="brand" id="brand" onChange={goSite}>
-                  {comboData.map((v,i)=><option key={i} value={v.idx}>{v.tit}</option>)}      
+                  {comboData.map((v,i) => <option key={i} value={v.idx}>{v.tit} </option>)}      
                 </select>
               </ul>
             </div>
