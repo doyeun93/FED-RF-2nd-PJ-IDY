@@ -1,0 +1,17 @@
+.event-top {
+  height: auto;
+}
+.evt-title{
+    margin-top: 10%;
+    margin-left: 5%;
+
+    ul{
+        display: flex;
+        gap: 1.5%;
+    }
+}
+
+.evt-title > ul > li:nth-child(2) {
+  font-size: 3.8rem;
+  font-weight: bold;
+}
