@@ -54,10 +54,31 @@ export const cookData =
     {
         idx: "6",
         imgName: "cook6",
-        title:"길쭉길쭉 팽이버섯전",
+        title: "길쭉길쭉 팽이버섯전",
         text : "잘게 찢은 팽이버섯 위에 계란물을 부어 초간단 완성!",
         type1: "준비시간 : 5분",
         type2: "조리시간 : 5분",
+       
+    },
+
+    {
+        idx: "7",
+        imgName: "cook7",
+        title: "30분만에, 육회",
+        text : "고기만 준비하면 30분만에 초간단 완성!",
+        type1: "준비시간 : 20분",
+        type2: "조리시간 : 10분",
+       
+    },
+   
+    
+    {
+        idx: "8",
+        imgName: "cook8",
+        title: "얼큰칼칼 고추장찌개",
+        text : "얼큰한 국물이 땡긴다면!",
+        type1: "준비시간 : 10분",
+        type2: "조리시간 : 30분",
        
     },
    

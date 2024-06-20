@@ -1,20 +1,16 @@
-
-body{
+body {
   overflow-x: hidden;
 }
 
-#main-area{
+#main-area {
   height: auto;
 }
 
-
-
-
 /* 요리초보가이드 구역 */
-.header-top{
+.header-top {
   height: 250px;
 }
-.header-text{
+.header-text {
   display: flex;
   position: relative;
   height: 80px;
@@ -22,13 +18,13 @@ body{
   gap: 1.1%;
   box-sizing: content-box;
 }
-.header-text > li:nth-child(2){
+.header-text > li:nth-child(2) {
   font-size: 1.4rem;
   color: #15a775;
   margin-top: 1.3%;
   font-weight: bold;
 }
-.header-text > li:last-child{
+.header-text > li:last-child {
   font-size: 1.1rem;
   font-weight: bold;
   margin-top: 2.3%;
@@ -36,7 +32,7 @@ body{
   z-index: 1;
 }
 
-.header-text > li:last-child::after{
+.header-text > li:last-child::after {
   content: "";
   display: inline-block;
   position: relative;
@@ -45,27 +41,26 @@ body{
   width: 150%;
   height: 120%;
   background-color: #15a77446;
-  border: solid 1px #15a775;;
+  border: solid 1px #15a775;
   border-radius: 30px;
 }
 
-.header-title{
+.header-title {
   display: flex;
   position: absolute;
   top: 20%;
   padding-left: 8%;
 }
-.header-title > li:first-child{
+.header-title > li:first-child {
   font-size: 3.5rem;
   font-weight: bold;
 }
 
-
 /* 가로스크롤 이미지 구역 */
-.header-img{
+.header-img {
   height: calc(750px + 3000px);
 }
-.header-slide{
+.header-slide {
   position: sticky;
   top: 0;
   left: 0;
@@ -76,7 +71,7 @@ body{
   left: 0;
   display: flex;
   width: calc(100vw + 3000px);
-  
+
   height: 100%;
   margin: 0;
   padding: 0;
@@ -96,7 +91,7 @@ body{
   width: 65%;
   border-radius: 30px;
 }
-.header-slide span{
+.header-slide span {
   position: absolute;
   display: inline;
   width: 328px;
@@ -108,24 +103,23 @@ body{
   line-height: 1.3;
 }
 
-
 /*  요리 연구소 구역 */
-.lab-top{
+.lab-top {
   height: 90px;
   padding-top: 4%;
-  
-}
-.lab-top > ul{
-  display: flex;
-  justify-content: space-between;
 
+  ul {
+    display: flex;
+    justify-content: space-between;
+  }
 }
-.lab-top > ul > li:first-child{
+
+.lab-top > ul > li:first-child {
   font-size: 3.5rem;
   font-weight: bold;
   margin-left: 5%;
 }
-.lab-top > ul >li:last-child{
+.lab-top > ul > li:last-child {
   width: 7%;
   height: auto;
   margin-right: 7%;
@@ -136,47 +130,62 @@ body{
   font-weight: bold;
   line-height: 3.2;
 }
-.lab-img{
+
+// 이미드 슬라이드 구역 //
+.lab-img {
   position: absolute;
   width: auto;
   height: auto;
-  
 }
-.lab-img2{
+
+.lab-img2 {
   position: relative;
   width: auto;
   height: auto;
-}
-.lab-tit{
-  width: auto;
-  height: 60px;
-}
-.lab-tit > span{
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-.lab-tit > p{
-  font-size: 1.2rem;
-  padding: 3%;
+  border-radius: 40px;
+  overflow: hidden;
 }
 
-.lab-cate{
+.lab-img2 img:hover {
+  transform: scale(1.1, 1.1);
+  transition: 0.3s ease-in-out;
+}
+
+.lab-img2 img {
+  transition: 0.3s ease-in-out;
+}
+
+.lab-tit {
+  width: auto;
+  height: 60px;
+
+  span {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 1.2rem;
+    padding: 3%;
+  }
+}
+
+.lab-cate {
   font-size: 1.1rem;
   font-weight: bold;
   height: 70px;
   padding-top: 10%;
 
-  span{
+  span {
     padding: 0.7%;
     border-radius: 13px;
   }
-  
 }
-.lab-type{
+.lab-type {
   display: flex;
   justify-content: space-evenly;
 
-  li{
+  li {
     width: 28%;
     padding: 1.3% 0.6%;
     border: 1px solid #f3f3f3;
@@ -184,48 +193,41 @@ body{
   }
 }
 
-.sol{ 
-  .lab-type > li{
-
+.sol {
+  .lab-type > li {
     background-color: #fff;
   }
-  .lab-cate >span{
-    background-color:#fb9622;
+  .lab-cate > span {
+    background-color: #fb9622;
     color: #fff;
-    
-    
   }
 }
-.rec{ 
-  .lab-type >li{
-
+.rec {
+  .lab-type > li {
     background-color: #e1e1e1;
   }
-  .lab-cate > span{
+  .lab-cate > span {
     background-color: #15a775;
     color: #fff;
-  
   }
 }
-
 
 /* 요리해요 구역 */
 
-.cook-top{
+.cook-top {
   height: 100px;
-
 }
-.cook-title{
+.cook-title {
   padding-top: 2%;
   display: flex;
   justify-content: space-between;
 }
-.cook-title >li:first-child{
+.cook-title > li:first-child {
   font-size: 3.5rem;
   font-weight: bold;
   margin-left: 5%;
 }
-.cook-title >li:last-child{
+.cook-title > li:last-child {
   width: 7%;
   height: auto;
   margin-right: 7%;
@@ -237,99 +239,101 @@ body{
   line-height: 3.2;
 }
 
-.cook-img{
-  height: 500px;
-}
-
-
-.cook-bottom{
+.cook-bottom {
   width: 82%;
   height: 7%;
   margin-left: 8.8%;
-  margin-top: 15%;
+  margin-top: 4%;
   border-radius: 40px;
   background-color: #fbb9bf;
 }
-.cook-bottom >img {
+.cook-bottom > img {
   position: absolute;
   margin-top: -3.4%;
   margin-left: 4.7%;
-
 }
-.cook-food{
+.cook-food {
   display: flex;
   gap: 43%;
 }
 
-.cook-food > p{
+.cook-food > p {
   margin-top: 1.2%;
   margin-left: 20%;
   color: white;
   font-size: 1.5rem;
   font-weight: bold;
 }
-.cook-food > a{
+.cook-food > a {
   margin-top: 1.3%;
   color: white;
   font-size: 1.5rem;
 }
-.cook-food > a::before{
+.cook-food > a::before {
   content: " |";
   display: inline-block;
-
 }
-
 
 /* 이벤트 구역 */
 
-#event-area{
+#event-area {
   padding-top: 5%;
   display: flex;
   justify-content: space-around;
 }
 
-.event-box > ul{
+.event-box > ul {
   display: flex;
 }
-.event-box > ul > li:nth-child(2){
+.event-box > ul > li:nth-child(2) {
   font-size: 3.8rem;
   font-weight: bold;
 }
 
-.event-btn{
+.event-btn {
   width: 35%;
   height: 23%;
   margin-left: 5%;
   border: solid 1px #d4d4d4;
   border-radius: 30px;
 
-  a{
+  a {
     font-weight: bold;
     font-size: 1.1rem;
   }
 }
 
-.event-ban >img{
-  // animation: event-ani 1s ease-in-out infinite;
 
-  transition: transform 1s ease-in-out;
-}
-.event-ban:hover >img{
-  transform: scale(1.1);
-  transform-origin: center;
-  transition: transform 1s ease-in-out;
+
+.event-ban img:hover {
+  animation: ban-ani 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  cursor: pointer;
 }
 
+@keyframes ban-ani {
+  0%,
+  100% {
+    transform: rotate(0deg);
 
-// @keyframes event-ani {
-//   0%{
-//     transform: translateY(0);
-//   }
-//   100%{
-//     transform: translateY(10%);
-//   }
-  
-// }
-
-
-
+    transform-origin: 50% 100%;
+  }
+  10% {
+    transform: rotate(2deg);
+  }
+  20%,
+  40%,
+  60% {
+    transform: rotate(-4deg);
+  }
+  30%,
+  50%,
+  70% {
+    transform: rotate(4deg);
+  }
+  80% {
+    transform: rotate(-2deg);
+  }
+  90% {
+    transform: rotate(2deg);
+  }
+}

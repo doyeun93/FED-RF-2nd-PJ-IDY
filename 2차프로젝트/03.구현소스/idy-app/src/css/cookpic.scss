@@ -1,0 +1,34 @@
+.cook-img {
+  padding-top: 3%;
+  height: 600px;
+  overflow: hidden;
+
+  ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    width: 25vw;
+    padding: 1vw;
+    flex-shrink: 0;
+    aspect-ratio: 300/260;
+    box-sizing: border-box;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 30px;
+    }
+
+    span {
+      font-weight: bold;
+      font-size: 1.5vw;
+      text-align: center;
+      padding: 15px;
+    }
+  }
+}

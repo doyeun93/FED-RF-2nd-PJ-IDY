@@ -100,7 +100,8 @@ function Main(props) {
             </button>
           </div>
           <div className="event-ban">
-            <img src="./image/event.png" alt="이벤트배너" />
+              <img src="./image/event.png" alt="이벤트배너" />    
+        
           </div>
         </div>
   

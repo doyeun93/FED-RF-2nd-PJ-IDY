@@ -22,8 +22,6 @@ export default function mainCookFn() {
   let currVal = 0;
 
   function moveGallery() {
-    // 현재값 1씩 감소
-
     target.style.translate = --currVal + "px";
 
     if (currVal <= Math.floor(-criteria)) {

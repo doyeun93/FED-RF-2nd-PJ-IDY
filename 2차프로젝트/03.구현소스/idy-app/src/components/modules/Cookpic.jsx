@@ -3,6 +3,8 @@ import React, { useEffect } from "react";
 import { cookData } from "../data/cookarea";
 import mainCookFn from "../func/maincook";
 
+import "../../css/cookpic.scss";
+
 console.log(cookData);
 
 function Cookpic(props) {
@@ -12,22 +14,12 @@ function Cookpic(props) {
 
   return (
     <div className="cook-img">
-      <ul style={{ display: "flex" }}>
+      <ul >
         {cookData.map((v, i) => (
-          <li key={i} style={{ flexBasis: "33.33%", flexShrink: "0" }}>
+          <li key={i} >
             <a href="#">
-              <img src={`./image/${v.imgName}.jpg`} alt={v.title} style={{ width: "100%" }} />
-              <span
-                style={{
-                  display: "block",
-                  fontWeight: "bold",
-                  fontSize: "2vw",
-                  textAlign: "center",
-                  padding: "15px",
-                }}
-              >
-                {v.title}
-              </span>
+              <img src={`./image/${v.imgName}.jpg`} alt={v.title} />
+              <span > {v.title} </span>
             </a>
           </li>
         ))}
