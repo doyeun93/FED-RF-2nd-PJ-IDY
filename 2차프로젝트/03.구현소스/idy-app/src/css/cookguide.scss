@@ -1,0 +1,23 @@
+
+
+.guide-title{
+    height: 250px;
+    span{
+        position: relative;
+        top: 65%;
+        left: 10%;
+        font-size: 3.5rem;
+        font-weight: bold;
+
+    }
+}
+
+.guide-wrap{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10%;
+}
+.guide-mid >ul {
+    display: grid;
+}

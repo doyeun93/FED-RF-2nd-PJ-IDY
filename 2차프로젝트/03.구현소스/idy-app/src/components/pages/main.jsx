@@ -13,6 +13,7 @@ function Main(props) {
     
   useLayoutEffect(() => {
     headerFn();
+    window.scrollTo(0, 0);
     
   }, []);
 
@@ -26,7 +27,7 @@ function Main(props) {
               <img src="./image/samie1.png" alt="새미이미지" />
               <li>추천드려요!</li>
               <li>
-                <a href="#">가이드 더보기 ➕</a>
+                <a href="/cookguide">가이드 더보기 ➕</a>
               </li>
             </ul>
             <ul className="header-title">
@@ -38,7 +39,7 @@ function Main(props) {
               <ul>
                 {headerdata.map((v,i) => (
                   <li key={i}>
-                    <a href="#">
+                    <a href="/cookguide">
                       <img src={`./image/${v.imgName}.jpg`} alt="header image" />
                     </a>
                     <span>{v.title}</span>
@@ -55,7 +56,10 @@ function Main(props) {
             <ul>
               <li>요리연구소</li>
               <li>
-                <a href="#">더보기 〉</a>
+                <img src="./image/samie4.png" alt="새미이미지"/>
+              </li>
+              <li>
+                <a href="/cooklab">더보기 〉</a>
               </li>
             </ul>
           </div>
@@ -66,15 +70,17 @@ function Main(props) {
         <div id="cook-area">
             <div className="cook-top">
               <ul className="cook-title">
+                <li>
+                  <img src="./image/samie3.jpg" alt="새미이미지"/>
+                </li>
                 <li>요리해요 </li>
                 <li>
-                <a href="#">더보기 〉</a>
+                <a href="/cookcook">더보기 〉</a>
                 </li>
               </ul>
             </div>
               <Cookpic />
 
-            
             <div className="cook-bottom">
               <img src="./image/samie2.png" alt="새미이미지"/>
               <div className="cook-food">
@@ -96,12 +102,11 @@ function Main(props) {
               <li>이벤트</li>
             </ul>
             <button className="event-btn">
-              <a href="#">더보기 〉</a>
+              <a href="/cookevent">더보기 〉</a>
             </button>
           </div>
           <div className="event-ban">
               <img src="./image/event.png" alt="이벤트배너" />    
-        
           </div>
         </div>
   

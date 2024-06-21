@@ -1,4 +1,4 @@
-[
+export const guideData = [
     {
         idx: "1",
         imgName: "sub1",
