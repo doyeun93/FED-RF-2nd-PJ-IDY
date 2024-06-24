@@ -8,8 +8,8 @@ export default function CookCook(){
     //// 코드 리턴 구역
     return(
         <>
-            <section className="cook-top">
-                <div className="cook-title">
+            <section className="cookcook-top">
+                <div className="cookcook-title">
                     <span>요리해요</span>
                 </div>
 

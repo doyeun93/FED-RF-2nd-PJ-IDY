@@ -6,8 +6,8 @@ export default function CookLab(){
     //// 코드 리턴 구역
     return(
         <>
-           <section className="lab-top">
-                <div className="lab-title">
+           <section className="cooklab-top">
+                <div className="cooklab-title">
                     <span>요리연구소</span>
                 </div>
 

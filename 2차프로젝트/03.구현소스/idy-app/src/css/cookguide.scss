@@ -4,6 +4,7 @@
 
 .guide-title{
     height: 250px;
+    
     span{
         position: relative;
         top: 65%;
@@ -26,7 +27,7 @@
     margin: 0 auto;
     padding-top: 2%;
 }
-.guide-mid >ul {
+.guide-mid > ul {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-gap: 6%;
@@ -46,3 +47,4 @@
       
     }
 }
+
