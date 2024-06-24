@@ -20,4 +20,15 @@
 }
 .guide-mid >ul {
     display: grid;
+    max-width: 1200px;
+    margin: 0 auto;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 6%;
+   
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 }
