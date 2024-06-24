@@ -10,6 +10,7 @@ import CookGuide from "./components/pages/CookGuide";
 import CookLab from "./components/pages/CookLab";
 import CookCook from "./components/pages/CookCook";
 import CookEvent from "./components/pages/CookEvent";
+import SearchPage from "./components/pages/SearchPage";
 
 
 
@@ -33,6 +34,7 @@ export default function MainComponent(props) {
           <Route path="cookcook" element={<CookCook />} />
           <Route path="cookquestion" element={<CookCook />} />
           <Route path="cookevent" element={<CookEvent />} />
+          <Route path="search" element={<SearchPage />} />
 
         </Route>
         {/* Layout 루트 Route로 하위 Route를 감싼다! */}

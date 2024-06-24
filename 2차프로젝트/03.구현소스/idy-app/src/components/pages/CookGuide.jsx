@@ -1,6 +1,7 @@
 // 요리초보가이드 페이지 컴포넌트 ///
 import "../../css/cookguide.scss";
 import { guideData } from "../data/sub1";
+import SearchPage from "./SearchPage";
 
 export default function CookGuide() {
 
@@ -14,7 +15,7 @@ export default function CookGuide() {
         <div className="guide-seach">
           <ul className="guide-wrap">
             <li>
-              <a href="#">
+              {/* <a href="#">
                 <img src="./image/ic_search.png" alt="검색" onClick=""/>
                 <input type="text" name="schGuide" id="schGuide" placeholder="검색어를 입력해주세요" />
               </a>
@@ -23,7 +24,8 @@ export default function CookGuide() {
                 <button type="button">오름차순</button>
             </li>
             <li>
-                <button type="button">내림차순</button>
+                <button type="button">내림차순</button> */}
+                {/* <SearchPage /> */}
             </li>
           </ul>
         </div>

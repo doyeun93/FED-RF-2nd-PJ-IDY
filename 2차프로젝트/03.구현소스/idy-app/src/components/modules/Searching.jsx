@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
+
 
 import "../../css/searching.scss";
 
 import { guideData } from "../data/sub1";
+import SearchingData from "./SearchingData";
+
+
 
 function Searching({ kword }) {
 
@@ -10,7 +17,7 @@ function Searching({ kword }) {
   const [sort, setSort] = useState("asc");
 
   const newList = guideData.filter((v) => {
-    // let newVal = v.cname.toLocaleLowerCase();
+    let newVal = v.title.toLocaleLowerCase();
 
     let key = kw.toLocaleLowerCase();
 
@@ -34,12 +41,12 @@ function Searching({ kword }) {
 
   // (1) 오름 차순일 경우
   if (sort == "asc") {
-    newList.sort((a, b) => (a.cname > b.cname ? 1 : a.cname < b.cname ? -1 : 0));
+    newList.sort((a, b) => (a.title > b.title ? 1 : a.title < b.title ? -1 : 0));
   } //// if /////
 
   // (2) 내림 차순일 경우
   else if (sort == "desc") {
-    newList.sort((a, b) => (a.cname > b.cname ? -1 : a.cname < b.cname ? 1 : 0));
+    newList.sort((a, b) => (a.title > b.title ? -1 : a.title < b.title ? 1 : 0));
   } ///// else if ///////
 
   /// 코드 리턴 구역
@@ -97,7 +104,7 @@ function Searching({ kword }) {
           </aside>
           {/* 2-3. 캐릭터 리스트 컴포넌트 : 
             데이터 상태변수 중 첫번째값만 보냄 */}
-          <SearchingCat dt={newList} />
+          <SearchingData dt={newList} />
         </div>
       </section>
     </>
