@@ -15,7 +15,7 @@ export default function CookGuide() {
           <ul className="guide-wrap">
             <li>
               <a href="#">
-                <img src="./image/ic_search.png" alt="검색" />
+                <img src="./image/ic_search.png" alt="검색" onClick=""/>
                 <input type="text" name="schGuide" id="schGuide" placeholder="검색어를 입력해주세요" />
               </a>
             </li>
