@@ -35,9 +35,10 @@ export default function CookGuide() {
                     <li key={i} >
                         <a href="#">
                             <img src={`./image/sub1/${v.imgName}.jpg`} alt={v.title} />
+                        </a>
                             <span>{v.title}</span>
                             {/* <span>{v.text}</span> */}
-                        </a>
+                        <button type="button" className="guide-scrap" ></button>
                     </li>
                 ))}
             </ul>

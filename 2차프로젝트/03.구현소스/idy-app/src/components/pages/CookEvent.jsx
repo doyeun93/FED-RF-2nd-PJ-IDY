@@ -2,6 +2,7 @@
 import React from "react";
 
 import "../../css/cookevent.scss";
+import SwiperEvent from "../plugin/SwiperEvent";
 
 export default function CookEvent() {
   //// 코드 리턴 구역
@@ -21,7 +22,7 @@ export default function CookEvent() {
       </section>
 
       <section className="event-mid">
-        <h1> WOW이벤트 </h1>
+        <SwiperEvent />
       </section>
     </>
   );
