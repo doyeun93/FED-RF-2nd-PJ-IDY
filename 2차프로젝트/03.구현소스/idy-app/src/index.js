@@ -1,4 +1,4 @@
-import React, { useLayoutEffect } from "react";
+import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -17,7 +17,7 @@ import CookEvent from "./components/pages/CookEvent";
 export default function MainComponent(props) {
   return(
     // 라우터 루트로 라우터 구성시작
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
         {/* 중요!!! 레이아웃 컴포넌트를 루트로 설정!
         루트 Route 는 홀로닫지말고 반드시 다른
