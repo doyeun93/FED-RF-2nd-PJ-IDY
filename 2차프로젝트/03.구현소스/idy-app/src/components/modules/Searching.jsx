@@ -64,7 +64,7 @@ function Searching({ kword }) {
             <input
               id="schin"
               type="text"
-              placeholder="Filter by Keyword"
+              placeholder="검색어를 입력해보세요."
               defaultValue={kword}
               onKeyUp={(e) => {
                 if (e.key == "Enter") {
@@ -84,7 +84,7 @@ function Searching({ kword }) {
         {/* 2. 결과리스트박스 */}
         <div className="listbx">
           {/* 2-1. 결과 타이틀 */}
-          <h2 className="restit">BROWSE CHARACTERS</h2>
+          <h2 className="restit">어떤 요리가 궁금하신가요?</h2>
           {/* 2-2. 정렬선택박스 */}
           <aside className="sortbx">
             <select

@@ -111,18 +111,42 @@
     position: relative;
     width: 22%;
     top: 37%;
+    right: 5%;
   }
   .log > ul{
-    display: flex
-  }
-  .log >ul > li >a> img{
-    position: relative;
-    width: 60%;
-    bottom: 14%;
-    left: 12%;
+    display: flex;
+    width: 35%;
   }
   
-  #schinGnb{
-    display: none;
-  }
-  
+ /* gnb 검색입력창 박스 */
+.searchingGnb{    
+  position: absolute;
+  left: 50px;
+  top: -9px;
+  line-height: 41px;
+  width: 250px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #efefef;
+  color:#15a775;
+  box-sizing: border-box;
+  padding: 0 5px;
+  display: none;
+}
+.searchingGnb input{
+  font-size: 0.9rem;
+  width: 73%;
+  margin-top: 5px;
+  margin-left: 10px;
+  background-color: transparent;
+  border: none;
+}
+
+input:focus{
+  outline: none;
+}
+.schbtnGnb{
+  cursor: pointer;
+  margin-top: 9px;
+  margin-left: 10px;
+}

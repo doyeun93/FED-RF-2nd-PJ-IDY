@@ -20,9 +20,7 @@ function SearchingData({ dt }) {
       {
         // 선택데이터가 0개이면 아래 출력
         total == 0 && (
-          <h2 style={{ textAlign: "center" }}>
-            입력하신 데이터가 없습니다.
-          </h2>
+          <h2> 입력하신 데이터가 없습니다.</h2>
         )
       }
     </>

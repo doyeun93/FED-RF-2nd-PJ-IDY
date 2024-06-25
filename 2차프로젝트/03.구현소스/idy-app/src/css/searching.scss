@@ -5,12 +5,14 @@
     width: 250px;
     height: 40px;
     border-radius: 20px;
+    color: #15a775;
     background-color: #efefef;
     box-sizing: border-box;
     padding: 0 5px;
 }
 .searching input{
-    font-size: 15px;
+    font-size: 1rem;
+    line-height: 1.7;
     width: 77%;
     margin-top: 5px;
     margin-left: 10px;
@@ -51,6 +53,9 @@ input:focus{
     width: 70%;
 }
 
+.tit{
+    height: 10vh;
+}
 
 /* 정렬박스 */
 .sortbx{

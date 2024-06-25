@@ -17,12 +17,13 @@ function SwiperEvent() {
         effect={'creative'}
         creativeEffect={{
           prev: {
-            shadow: true,
+            // shadow: true,
+            backgroundColor: "#fffae847",
             translate: [0, 0, -800],
             rotate: [180, 0, 0],
           },
           next: {
-            shadow: true,
+            // shadow: true,
             translate: [0, 0, -800],
             rotate: [-180, 0, 0],
           },
@@ -33,7 +34,7 @@ function SwiperEvent() {
         {eData.map((v,i) => (
             <SwiperSlide key={i}>
                 <div className="eventcook-box">
-                    <img src={v.imgName} alt={v.title} />
+                    <img className="eventcook-pic" src={v.imgName} alt={v.title} />
                     <span>{v.title}</span>
                 </div>
             </SwiperSlide>

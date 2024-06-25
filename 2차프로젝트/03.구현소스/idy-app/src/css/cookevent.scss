@@ -16,22 +16,25 @@
   font-weight: bold;
 }
 
+.event-mid{
+  background-image: url(../../public/image/bg_pattern.png);
+  background-color: #fffae847;
+}
+
 
 .mySwiper1-slide{
   width: auto;
   height: 500px;
 }
-
-.eventcook-box > img{
-  width: auto;
-  height: auto;
+.eventcook-pic{
+  width: 100%;
+  height: 100%;
   border-radius: 20px;
-  
 }
 
 .eventcook-box > span{
   display: inline-block;
   padding-top: 5%;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   font-weight: bold;
 }
