@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 
 import "./css/index.scss";
 // import './components/func/headerarea';
@@ -42,6 +42,18 @@ export default function MainComponent(props) {
     </BrowserRouter>
   );
 }
+
+// 컴포넌트로 만들고 라우터 안에 넣고 라우터 경로 변경시 스크롤 최상단 이동
+const ScrollTop = () => {
+   const {pathname} = useLocation();
+
+   useEffect(()=>{
+    window.scrollTo(0,0);
+
+   },[pathname]);
+
+   return null;
+};
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<MainComponent/>);
