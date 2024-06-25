@@ -15,7 +15,7 @@ export default function CookGuide() {
         <div className="guide-seach">
           <ul className="guide-wrap">
             <li>
-              {/* <a href="#">
+              <a href="#">
                 <img src="./image/ic_search.png" alt="검색" onClick=""/>
                 <input type="text" name="schGuide" id="schGuide" placeholder="검색어를 입력해주세요" />
               </a>
@@ -24,7 +24,7 @@ export default function CookGuide() {
                 <button type="button">오름차순</button>
             </li>
             <li>
-                <button type="button">내림차순</button> */}
+                <button type="button">내림차순</button>
                 {/* <SearchPage /> */}
             </li>
           </ul>
@@ -35,10 +35,11 @@ export default function CookGuide() {
                     <li key={i} >
                         <a href="#">
                             <img src={`./image/sub1/${v.imgName}.jpg`} alt={v.title} />
+                      
                         </a>
                             <span>{v.title}</span>
                             {/* <span>{v.text}</span> */}
-                        <button type="button" className="guide-scrap" ></button>
+                        
                     </li>
                 ))}
             </ul>
