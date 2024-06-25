@@ -48,11 +48,22 @@
       
     }
 }
+.guide-mid >ul >li:hover .guide-info{
+    opacity: 1;
+}
+.guide-info{
+    opacity: 0;
+    padding: 45px 20px;
+    transform: translateY(100%);
+    transition: all .8s;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
 
 .guide-mid > ul> img::after{
     position: absolute;
     background: url(../../public/image/ic_scrap.png) no-repeat center / 100% 100%;
-
     
 }
 

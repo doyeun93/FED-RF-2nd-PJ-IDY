@@ -35,10 +35,11 @@ export default function CookGuide() {
                     <li key={i} >
                         <a href="#">
                             <img src={`./image/sub1/${v.imgName}.jpg`} alt={v.title} />
-                      
+                            <div className="guide-info">
+                              <span>{v.text}</span>
+                            </div>
                         </a>
                             <span>{v.title}</span>
-                            {/* <span>{v.text}</span> */}
                         
                     </li>
                 ))}
