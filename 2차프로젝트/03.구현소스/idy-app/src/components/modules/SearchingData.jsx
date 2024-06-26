@@ -31,7 +31,7 @@ function SearchingData({ dt }) {
                   }}
                 >
                   <img src={`./image/sub1/${v.imgName}.jpg`} alt={v.title} />
-                  <h3>{v.text}</h3>
+                  <h3>{v.title}</h3>
                 </Link>
               </li>
             ))}
