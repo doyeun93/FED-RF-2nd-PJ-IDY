@@ -98,8 +98,8 @@ function Searching({ kword }) {
                 setSort(e.target.value);
               }}
             >
-              <button value="asc">오름차순</button>
-              <button value="desc">내림차순</button>
+              <option value="asc">오름차순</option>
+              <option value="desc">내림차순</option>
             </select>
           </aside>
           {/* 2-3. 캐릭터 리스트 컴포넌트 : 

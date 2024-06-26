@@ -30,7 +30,7 @@ function SearchingData({ dt }) {
                     text: v.text, // 설명
                   }}
                 >
-                  <img src={`./image/sub1/${v.imgName}.jpg`} alt={v.title} />
+                  <img src={`./image/sub1/${v.imgName}.jpg`} alt={v.imgName} />
                   <h3>{v.title}</h3>
                 </Link>
               </li>

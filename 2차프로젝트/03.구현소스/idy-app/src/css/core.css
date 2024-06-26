@@ -5,7 +5,7 @@
     src: url(../../src/static/fonts/DoHyeon-Regular.woff) format("woff");
 } */
 
-/* @import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap");
 
 #header-area{
     max-width: 1920px;
