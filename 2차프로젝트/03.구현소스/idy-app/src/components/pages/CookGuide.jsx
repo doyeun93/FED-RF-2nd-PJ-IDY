@@ -16,7 +16,7 @@ export default function CookGuide() {
           <ul className="guide-wrap">
             <li>
               <a href="#">
-                <img src="./image/ic_search.png" alt="검색" onClick=""/>
+                <img src="./image/ic_search.png" alt="검색" />
                 <input type="text" name="schGuide" id="schGuide" placeholder="검색어를 입력해주세요" />
               </a>
             </li>
@@ -33,12 +33,12 @@ export default function CookGuide() {
             <ul>
                 {guideData.map((v,i) =>(
                     <li key={i} >
-                        <a href="#">
+                        <div className="guide-imgbox" >
                             <img src={`./image/sub1/${v.imgName}.jpg`} alt={v.title} />
                             <div className="guide-info">
-                              <span>{v.text}</span>
+                              <p>{v.text}</p>
                             </div>
-                        </a>
+                        </div>
                             <span>{v.title}</span>
                         
                     </li>
