@@ -1,5 +1,11 @@
 @charset "utf-8";
 
+@font-face {
+    font-family: 'DoHyeon-Regular', sans-serif;
+    src: url(../../src/static/fonts/DoHyeon-Regular.woff) format("woff");
+}
+
+
 #header-area{
     max-width: 1920px;
     /* height: 1200px; */

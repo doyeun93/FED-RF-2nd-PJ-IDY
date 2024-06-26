@@ -22,6 +22,9 @@ export default function CookEvent() {
       </section>
 
       <section className="event-mid">
+        <div className="event-info">
+          <p>↼ Drag ⇀</p>
+        </div>
         <SwiperEvent />
       </section>
     </>

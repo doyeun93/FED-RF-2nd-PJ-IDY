@@ -38,3 +38,23 @@
   font-size: 1.5rem;
   font-weight: bold;
 }
+
+.event-info{
+  position: absolute;
+  z-index: 99;
+  bottom: -72%;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #e6e6fa63;
+
+
+  p{
+    font-size: 1rem;
+    font-weight: bold;
+    position: relative;
+    top: 35%;
+    left: 4%;
+  }
+}
