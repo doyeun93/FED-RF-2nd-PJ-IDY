@@ -8,7 +8,6 @@ function SearchPage() {
 
     let keyword = loc.state.keyword;
 
-    console.log("검색어:", keyword);
 
     return (
         <>

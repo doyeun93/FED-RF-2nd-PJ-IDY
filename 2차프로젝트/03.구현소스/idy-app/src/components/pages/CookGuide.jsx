@@ -1,9 +1,21 @@
 // 요리초보가이드 페이지 컴포넌트 ///
+import { useState } from "react";
 import "../../css/cookguide.scss";
 import { guideData } from "../data/sub1";
-import SearchPage from "./SearchPage";
+
 
 export default function CookGuide() {
+
+  
+  // 정렬
+  const [sort, setSort] = useState("asc");
+
+  if (sort == "asc"){
+    guideData.sort((a,b) => (a.title > b.title ? 1 : a.title < b.title ? -1 : 0));
+  }
+  else if (sort == "desc"){
+    guideData.sort((a,b) => (a.title > b.title ? -1 : a.title < b.title ? 1 : 0));
+  }
 
   //// 코드 리턴 구역
   return (
@@ -12,22 +24,24 @@ export default function CookGuide() {
         <div className="guide-title">
             <span>요리초보가이드</span>
         </div>
-        <div className="guide-seach">
-          <ul className="guide-wrap">
-            <li>
-              <a href="#">
-                <img src="./image/ic_search.png" alt="검색" />
-                <input type="text" name="schGuide" id="schGuide" placeholder="검색어를 입력해주세요" />
-              </a>
-            </li>
-            <li>
-                <button type="button">오름차순</button>
-            </li>
-            <li>
-                <button type="button">내림차순</button>
-                {/* <SearchPage /> */}
-            </li>
-          </ul>
+        <div className="guide-sort">
+        <aside className="gsortbx">
+            <select
+              name="gsel"
+              id="gsel"
+              className="gsel"
+              // 값을 변경할 때 이벤트 발생
+              onChange={(e) => {
+                console.log(e.target.value);
+                // 정렬기준 상태변수 업데이트
+                setSort(e.target.value);
+              }}
+            >
+              <option value="asc">오름차순</option>
+              <option value="desc">내림차순</option>
+            </select>
+          </aside>
+             
         </div>
         <div className="guide-mid">
             <ul>
@@ -36,7 +50,8 @@ export default function CookGuide() {
                         <div className="guide-imgbox" >
                             <img src={`./image/sub1/${v.imgName}.jpg`} alt={v.title} />
                             <div className="guide-info">
-                              <p>{v.text}</p>
+                              <p>{v.text1}</p>
+                              <p>{v.text2}</p>
                             </div>
                         </div>
                             <span>{v.title}</span>
