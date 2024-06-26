@@ -32,7 +32,6 @@ export default function CookGuide() {
               className="gsel"
               // 값을 변경할 때 이벤트 발생
               onChange={(e) => {
-                console.log(e.target.value);
                 // 정렬기준 상태변수 업데이트
                 setSort(e.target.value);
               }}
