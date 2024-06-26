@@ -30,7 +30,7 @@
 .guide-mid > ul {
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-gap: 6%;
+    grid-gap: 4%;
     text-align: right;
    
 
@@ -45,7 +45,7 @@
 
     span{
       
-      font-size: 1.2rem;
+      font-size: 1.3rem;
       font-weight: bold;
       
     }
@@ -71,18 +71,20 @@
     height: 100%;
     top:0;
     left: 0;
+    background: rgba(0, 0, 0, 0.342);
 
     p{
         color: #fff;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
+        font-weight: bold;
+        font-size: 1.1rem;
+        margin-top: 71%;
+        margin-left: -2%;
     }
 }
 
-.guide-mid > ul> img::after{
-    position: absolute;
-    background: url(../../public/image/ic_scrap.png) no-repeat center / 100% 100%;
+// .guide-mid > ul> img::after{
+//     position: absolute;
+//     background: url(../../public/image/ic_scrap.png) no-repeat center / 100% 100%;
     
-}
+// }
 
