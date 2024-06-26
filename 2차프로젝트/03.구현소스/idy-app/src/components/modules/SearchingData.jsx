@@ -16,7 +16,28 @@ function SearchingData({ dt }) {
 
   return (
     <>
- 
+      {
+        // 데이터 개수가 0이 아닐때 출력
+        total > 0 && (
+          <ul className="clist">
+            {dt.map((v, i) => (
+              <li key={i}>
+                <Link
+                  to="/detail"
+                  /* state로 3가지 값을 넘겨준다! */
+                  state={{
+                    title: v.title, // 제목
+                    text: v.text, // 설명
+                  }}
+                >
+                  <img src={`./image/sub1/${v.imgName}.jpg`} alt={v.title} />
+                  <h3>{v.text}</h3>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        )
+      }
       {
         // 선택데이터가 0개이면 아래 출력
         total == 0 && (
