@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
@@ -15,6 +15,17 @@ function Searching({ kword }) {
 
   const [kw, setKw] = useState(kword);
   const [sort, setSort] = useState("asc");
+
+
+  const beforeKword = useRef(kword);
+  
+  if (beforeKword.current != kword){
+      setKw(kword);
+      beforeKword.current = kword;
+      document.querySelector("#schin").value = kword; 
+
+  } /////////////// if ////////////
+
 
   const newList = guideData.filter((v) => {
     let newVal = v.title.toLocaleLowerCase();
@@ -84,7 +95,7 @@ function Searching({ kword }) {
         {/* 2. 결과리스트박스 */}
         <div className="listbx">
           {/* 2-1. 결과 타이틀 */}
-          <h2 className="restit">어떤 요리가 궁금하신가요?</h2>
+          <h2 className="restit">어떤 요리가 궁금하신가요?({newList.length})</h2>
           {/* 2-2. 정렬선택박스 */}
           <aside className="sortbx">
             <select
