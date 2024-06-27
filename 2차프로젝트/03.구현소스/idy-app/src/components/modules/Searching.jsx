@@ -21,10 +21,10 @@ function Searching({ kword }) {
 
   console.log(guideData);
   console.log(recipeData);
-  console.log([...guideData,...recipeData]);
+  console.log([...guideData,...recipeData,...solutionData,...cookingData]);
 
 
-  const selData = [...guideData,...recipeData, ...solutionData, ...cookingData];
+  const selData = [...guideData,...recipeData,...solutionData,...cookingData];
 
   const beforeKword = useRef(kword);
   
