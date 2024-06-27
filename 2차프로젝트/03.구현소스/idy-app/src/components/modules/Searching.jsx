@@ -8,6 +8,8 @@ import "../../css/searching.scss";
 
 import { guideData } from "../data/sub1";
 import { recipeData } from "../data/sub2_1";
+import { solutionData } from "../data/sub2_2";
+import { cookingData } from "../data/sub3";
 import SearchingData from "./SearchingData";
 
 
@@ -22,7 +24,7 @@ function Searching({ kword }) {
   console.log([...guideData,...recipeData]);
 
 
-  const selData = [...guideData,...recipeData];
+  const selData = [...guideData,...recipeData, ...solutionData, ...cookingData];
 
   const beforeKword = useRef(kword);
   

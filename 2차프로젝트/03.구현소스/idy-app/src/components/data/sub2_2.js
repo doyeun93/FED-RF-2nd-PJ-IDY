@@ -1,4 +1,4 @@
-[
+export const solutionData = [
     {
         idx: "1",
         imgName: "sol1",

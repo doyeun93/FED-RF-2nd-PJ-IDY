@@ -12,10 +12,10 @@ function SearchingData({ dt }) {
 
   // total - 검색된 배열데이터 개수
   const total = dt.length;
-  console.log("데이터수:",total);
+  
 
   // 경로를 맞추기 위해 배열에 이미지명 앞3글자가 있는지 검사함!
-  const route = {"sub":"sub1","rec":"sub2"};
+  const route = {"sub":"sub1","rec":"sub2","sol":"sub2","coo":"sub3"};
   
 
 
@@ -28,7 +28,7 @@ function SearchingData({ dt }) {
           <ul className="clist">
             {dt.map((v, i) => (
               <li key={i}>
-                {v.imgName}
+                
                 <Link
                   to="/detail"
                   /* state로 3가지 값을 넘겨준다! */
