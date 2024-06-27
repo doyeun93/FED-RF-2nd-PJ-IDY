@@ -1,11 +1,7 @@
-@charset "utf-8";
-
-/* @font-face {
-    font-family: 'DoHyeon-Regular', sans-serif;
+@font-face {
+    font-family: myFont;
     src: url(../../src/static/fonts/DoHyeon-Regular.woff) format("woff");
-} */
-
-@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap");
+}
 
 #header-area{
     max-width: 1920px;

@@ -13,8 +13,6 @@ function Main(props) {
     
   useLayoutEffect(() => {
     headerFn();
-    window.scrollTo(0, 0);
-    
   }, []);
 
   // 코드 리턴구역 ////////////

@@ -7,6 +7,7 @@ import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import "../../css/searching.scss";
 
 import { guideData } from "../data/sub1";
+import { recipeData } from "../data/sub2_1";
 import SearchingData from "./SearchingData";
 
 
@@ -16,6 +17,12 @@ function Searching({ kword }) {
   const [kw, setKw] = useState(kword);
   const [sort, setSort] = useState("asc");
 
+  console.log(guideData);
+  console.log(recipeData);
+  console.log([...guideData,...recipeData]);
+
+
+  const selData = [...guideData,...recipeData];
 
   const beforeKword = useRef(kword);
   
@@ -27,7 +34,7 @@ function Searching({ kword }) {
   } /////////////// if ////////////
 
 
-  const newList = guideData.filter((v) => {
+  const newList = selData.filter((v) => {
     let newVal = v.title.toLocaleLowerCase();
 
     let key = kw.toLocaleLowerCase();

@@ -14,6 +14,12 @@ function SearchingData({ dt }) {
   const total = dt.length;
   console.log("데이터수:",total);
 
+  // 경로를 맞추기 위해 배열에 이미지명 앞3글자가 있는지 검사함!
+  const route = {"sub":"sub1","rec":"sub2"};
+  
+
+
+
   return (
     <>
       {
@@ -22,6 +28,7 @@ function SearchingData({ dt }) {
           <ul className="clist">
             {dt.map((v, i) => (
               <li key={i}>
+                {v.imgName}
                 <Link
                   to="/detail"
                   /* state로 3가지 값을 넘겨준다! */
@@ -30,7 +37,7 @@ function SearchingData({ dt }) {
                     text: v.text, // 설명
                   }}
                 >
-                  <img src={`./image/sub1/${v.imgName}.jpg`} alt={v.imgName} />
+                  <img src={`./image/${route[v.imgName.substr(0,3)]}/${v.imgName}.jpg`} alt={v.imgName} />
                   <h3>{v.title}</h3>
                 </Link>
               </li>

@@ -1,4 +1,4 @@
-[
+export const recipeData = [
     {
         idx: "1",
         imgName: "recipe1",

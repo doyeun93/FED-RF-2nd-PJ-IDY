@@ -4,6 +4,9 @@ import {comboData} from '../data/combodata';
 
 import "../../css/footer_area.scss";
 
+// 제이쿼리
+import $ from "jquery";
+
 
 function FooterArea() {
 
@@ -73,7 +76,15 @@ function FooterArea() {
               </ul>
             </div>
             <button className="btn-top">
-              <a href="#">
+              <a href="#" onClick={(e)=>{
+                e.preventDefault();
+                console.log("ㅎㅎㅎ");
+                $("html,body").animate({scrollTop:"0px"},0,()=>{
+                  setTimeout(()=>{
+                    $(".header-slide li").css("translate","0 0");
+                  },100);
+                });
+              }}>
                 <img src="./image/samie5.png" alt="탑버튼" />
               </a>
             </button>
