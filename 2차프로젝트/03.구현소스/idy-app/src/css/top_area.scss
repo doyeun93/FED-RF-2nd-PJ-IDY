@@ -161,18 +161,24 @@ input:focus{
     width: 31%;
     right: 3%;
   }
-  
+  .searchingGnb {
+    left: 48px;
+  }
 }
+
 @media screen and (min-width:481px) and (max-width:767px) {
   .logo {
-    width: 80px;
+    width: 67px;
   }
   .logo img {
-      width: 137%;
-      padding: 21% 14%;
+    width: 122%;
+    padding: 22% 8%;
+  }
+  #gnb {
+    width: 70%;
   }
   .top-gnb {
-      width: 100%;  
+      width: 99%;  
   }
   .top-gnb > li {
     width: 21.3%;
@@ -181,13 +187,31 @@ input:focus{
       font-size: 0.9rem;
       width: 90%;
   }
+  
   .bt-gnb > li > a {
     font-size: .9rem;
   }
+
+  .searchingGnb {
+    left: -47px;
+    top: 24px;
+    width: 218px;
+    height: 40px;
+    padding: 0 0px;
+
+  }
+  .searchingGnb input {
+    width: 80%;
+    margin-left: 5px;
+  }
   .log {
-        right: 0%;
+    right: 1%;
+    display: block; 
+    width: 22%;
+    top: 12%;
   }
   .log > ul {
+    display: block; 
     width: 56%;
   }
   
