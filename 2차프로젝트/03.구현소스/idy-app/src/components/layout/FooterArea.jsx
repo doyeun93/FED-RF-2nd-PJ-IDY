@@ -78,7 +78,6 @@ function FooterArea() {
             <button className="btn-top">
               <a href="#" onClick={(e)=>{
                 e.preventDefault();
-                console.log("ㅎㅎㅎ");
                 $("html,body").animate({scrollTop:"0px"},0,()=>{
                   setTimeout(()=>{
                     $(".header-slide li").css("translate","0 0");
