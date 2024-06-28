@@ -1,6 +1,3 @@
-
-
-
 body {
   overflow-x: hidden;
 }
@@ -21,7 +18,7 @@ body {
   gap: 1.1%;
   box-sizing: content-box;
 
-  img{
+  img {
     position: relative;
     height: 72%;
     top: 21%;
@@ -126,8 +123,7 @@ body {
   margin-left: 5%;
 }
 
-.lab-top > ul > li:nth-child(2) >img{
- 
+.lab-top > ul > li:nth-child(2) > img {
   position: absolute;
   width: auto;
   height: auto;
@@ -136,37 +132,34 @@ body {
   cursor: pointer;
   transform: rotateY(180deg);
 
-  &:hover{
-    animation: labani  0.9s ease infinite;
+  &:hover {
+    animation: labani 0.9s ease infinite;
   }
 }
-
-
 
 @keyframes labani {
   0% {
-      transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
   }
   30% {
-      transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
   }
   40% {
-      transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
   }
   50% {
-      transform: scale3d(0.85, 1.15, 1);
+    transform: scale3d(0.85, 1.15, 1);
   }
   65% {
-      transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
   }
   75% {
-      transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
   }
   100% {
-      transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
   }
 }
-
 
 .lab-top > ul > li:last-child {
   width: 7%;
@@ -209,7 +202,6 @@ body {
 
   span {
     font-size: 1.8rem;
-    
   }
 
   p {
@@ -272,7 +264,7 @@ body {
   justify-content: space-between;
 }
 
-.cook-title > li:first-child img{
+.cook-title > li:first-child img {
   margin-left: 124%;
 }
 .cook-title > li:nth-child(2) {
@@ -323,7 +315,7 @@ body {
   color: white;
   font-size: 1.4rem;
 
-  img{
+  img {
     margin-left: 5px;
   }
 }
@@ -362,8 +354,6 @@ body {
   }
 }
 
-
-
 .event-ban img:hover {
   animation: ban-ani 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
   cursor: pointer;
@@ -397,15 +387,12 @@ body {
   }
 }
 
-
-
-
 /****************** 미디어쿼리 ******************/
 @media screen and (max-width: 1280px) {
   .header-text {
     padding: 8% 8%;
   }
-  
+
   .header-text > li:nth-child(2) {
     margin-top: 3.3%;
     letter-spacing: 1.3px;
@@ -420,15 +407,15 @@ body {
     top: 75%;
     left: 18%;
   }
-    
+
   .lab-top > ul > li:nth-child(2) > img {
     left: 25%;
   }
-  .lab-cate { 
+  .lab-cate {
     padding-top: 23%;
-  } 
-  .cook-img{
-    padding-top : 8%;
+  }
+  .cook-img {
+    padding-top: 8%;
   }
   .cook-title > li:first-child img {
     margin-left: 122%;
@@ -436,27 +423,96 @@ body {
   .cook-title > li:nth-child(2) {
     margin-right: 47%;
   }
-  .cook-bottom{
-    margin-top: 1%
+  .cook-bottom {
+    margin-top: 1%;
   }
   .cook-bottom > img {
     margin-top: -5.1%;
   }
   .cook-food {
-     gap: 30%;
+    gap: 30%;
   }
   .cook-food > p {
     margin-top: 1.7%;
   }
-  .event-box >ul{
-    display:block
+  .event-box > ul {
+    display: block;
   }
-  .event-btn{
-    width :62%
+  .event-btn {
+    width: 62%;
   }
-  .event-ban >img{
+  .event-ban > img {
     width: 100%;
     height: 100%;
     object-fit: contain;
   }
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .header-text {
+    padding: 14% 8%;
+  }
+  .header-text > li:nth-child(2) {
+    margin-left: 2%;
+    margin-top: 5.3%;
+  }
+  .header-text > li:last-child {
+    margin-top: 6.3%;
+    padding-left: 49%;
+  }
+  .header-slide span {
+    top: 72%;
+    left: 17%;
+  }
+  .lab-top > ul > li:nth-child(2) > img {
+    left: 37%;
+  }
+
+  .lab-top > ul > li:last-child {
+    width: 17%;
+  }
+
+  .cook-title {
+    padding-top: 4%;
+  }
+
+  .cook-title > li:first-child img {
+    margin-left: 8%;
+  }
+
+  .cook-title > li:nth-child(2) {
+    margin-right: 29%;
+  }
+
+  .cook-title > li:last-child {
+    width: 20%;
+    height: 0%;
+  }
+
+  .cook-img {
+    padding-top: 14%;
+    height: 300px;
+  }
+  .cook-food{
+    gap : 5%;
+  }
+    
+  .cook-food > p {
+    margin-top : 3.3%;
+    margin-left : 26%;
+  }
+  .cook-bottom {
+    width: 86%;
+    margin-left: 7.6%;
+  }  
+  .cook-bottom > img {
+    margin-top : -8.9%;
+    margin-left: 1.7%; 
+  }
+}
+
+@media screen and  (max-width:480px) {
+
+
+  
 }

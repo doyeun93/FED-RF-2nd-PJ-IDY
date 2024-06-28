@@ -99,5 +99,26 @@
     }
   }
   
+
+
+  // 미디어쿼리
+  @media screen and (min-width:481px) and (max-width:767px) {
+    .info-area {
+      padding: 0%; 
+      margin-left: 9%;
+      padding-top: 13%;
+  }
+  .footer-sns ul {
+    display: block;
+  }
+  .btn-top {
+    width: 7vw;
+    height: 3.1vh;
+    right: 3%;
+  }
+}
+@media screen and  (max-width:480px) {
+
+
   
-  
+}
