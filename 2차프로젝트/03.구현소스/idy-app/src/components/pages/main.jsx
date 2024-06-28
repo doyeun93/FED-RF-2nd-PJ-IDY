@@ -9,6 +9,7 @@ import headerFn from '../func/header';
 import SwiperLab from '../plugin/SwiperLab';
 import Cookpic from '../modules/Cookpic';
 
+
 function Main(props) {
     
   useLayoutEffect(() => {
@@ -25,7 +26,7 @@ function Main(props) {
               <img src={process.env.PUBLIC_URL+`/image/samie1.png`} alt="새미이미지" />
               <li>추천드려요!</li>
               <li>
-                <a href="/cookguide">가이드 더보기 ➕</a>
+                <a href={process.env.PUBLIC_URL+"/cookguide"}>가이드 더보기 ➕</a>
               </li>
             </ul>
             <ul className="header-title">
