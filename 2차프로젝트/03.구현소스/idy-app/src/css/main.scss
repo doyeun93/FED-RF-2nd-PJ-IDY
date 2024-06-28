@@ -29,14 +29,12 @@ body {
   }
 }
 .header-text > li:nth-child(2) {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   color: #15a775;
   margin-top: 1.3%;
-  font-weight: bold;
 }
 .header-text > li:last-child {
-  font-size: 1.1rem;
-  font-weight: bold;
+  font-size: 1.2rem;
   margin-top: 2.3%;
   padding-left: 73%;
   z-index: 99;
@@ -63,8 +61,7 @@ body {
   padding-left: 8%;
 }
 .header-title > li:first-child {
-  font-size: 3.5rem;
-  font-weight: bold;
+  font-size: 4rem;
 }
 
 /* 가로스크롤 이미지 구역 */
@@ -109,9 +106,8 @@ body {
   height: 100px;
   top: 78%;
   left: 20%;
-  font-size: 1.5rem;
-  font-weight: bold;
-  line-height: 1.3;
+  font-size: 1.6rem;
+  line-height: 1.2;
 }
 
 /*  요리 연구소 구역 */
@@ -126,11 +122,8 @@ body {
 }
 
 .lab-top > ul > li:first-child {
-  font-size: 3.5rem;
-  font-weight: bold;
+  font-size: 4rem;
   margin-left: 5%;
-
-  
 }
 
 .lab-top > ul > li:nth-child(2) >img{
@@ -182,8 +175,7 @@ body {
   border: solid 1px #d4d4d4;
   border-radius: 30px;
   text-align: center;
-  font-size: 1.4rem;
-  font-weight: bold;
+  font-size: 1.5rem;
   line-height: 3.2;
 }
 
@@ -216,21 +208,20 @@ body {
   height: 60px;
 
   span {
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: 1.8rem;
+    
   }
 
   p {
-    font-size: 1.2rem;
-    padding: 3%;
+    font-size: 1.3rem;
+    padding: 5%;
   }
 }
 
 .lab-cate {
-  font-size: 1.1rem;
-  font-weight: bold;
+  font-size: 1.4rem;
   height: 70px;
-  padding-top: 10%;
+  padding-top: 13%;
 
   span {
     padding: 0.7%;
@@ -240,12 +231,13 @@ body {
 .lab-type {
   display: flex;
   justify-content: space-evenly;
+  font-size: 1.1rem;
 
   li {
     width: 28%;
     padding: 1.3% 0.6%;
     border: 1px solid #f3f3f3;
-    border-radius: 13px;
+    border-radius: 18px;
   }
 }
 
@@ -281,12 +273,11 @@ body {
 }
 
 .cook-title > li:first-child img{
-  margin-left: 120%;
+  margin-left: 124%;
 }
 .cook-title > li:nth-child(2) {
-  font-size: 3.5rem;
-  font-weight: bold;
-  margin-right: 59%;
+  font-size: 4rem;
+  margin-right: 60%;
 }
 
 .cook-title > li:last-child {
@@ -296,8 +287,7 @@ body {
   border: solid 1px #d4d4d4;
   border-radius: 30px;
   text-align: center;
-  font-size: 1.4rem;
-  font-weight: bold;
+  font-size: 1.5rem;
   line-height: 3.2;
 }
 
@@ -321,10 +311,9 @@ body {
 
 .cook-food > p {
   margin-top: 1.2%;
-  margin-left: 20%;
+  margin-left: 23%;
   color: white;
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 1.7rem;
 }
 .cook-food > a {
   display: flex;
@@ -332,8 +321,7 @@ body {
   align-content: center;
   margin-top: 1.3%;
   color: white;
-  font-size: 1.3rem;
-  font-weight: bold;
+  font-size: 1.4rem;
 
   img{
     margin-left: 5px;
@@ -342,7 +330,7 @@ body {
 .cook-food > a::before {
   content: " ｜ ";
   display: inline-block;
-  margin-right: 80px;
+  margin-right: 24px;
 }
 
 /* 이벤트 구역 */
@@ -355,10 +343,10 @@ body {
 
 .event-box > ul {
   display: flex;
+  align-items: center;
 }
 .event-box > ul > li:nth-child(2) {
-  font-size: 3.8rem;
-  font-weight: bold;
+  font-size: 4rem;
 }
 
 .event-btn {
