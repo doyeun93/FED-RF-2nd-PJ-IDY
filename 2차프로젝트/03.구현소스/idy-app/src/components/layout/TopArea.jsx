@@ -45,7 +45,7 @@ function TopArea(props) {
         <section id="top-area">
           <header className="topbox">
               <a className="logo" href="#" >
-              <img src="./image/logo.jpg" alt="로고이미지" 
+              <img src={process.env.PUBLIC_URL+"./image/logo.jpg"} alt="로고이미지" 
                 onClick={(e) => {e.preventDefault(); 
                 goNav("/")}}/>
               </a>

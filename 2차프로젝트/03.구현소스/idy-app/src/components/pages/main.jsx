@@ -86,7 +86,7 @@ function Main(props) {
               <div className="cook-food">
                 <p>나만의 요리를 올려주세요!</p>
                 <Link to ="/login">작성하기
-                  <img src="/image/ic_write.png" alt="연필그림"/>
+                  <img src={process.env.PUBLIC_URL+"/image/ic_write.png"} alt="연필그림"/>
                 </Link>
               </div>
             </div>
