@@ -38,7 +38,7 @@ function Main(props) {
                 {headerdata.map((v,i) => (
                   <li key={i}>
                     <a href="/cookguide">
-                      <img src={`./image/${v.imgName}.jpg`} alt="header image" />
+                      <img src={process.env.PUBLIC_URL+`/image/${v.imgName}.jpg`} alt="header image" />
                     </a>
                     <span>{v.title}</span>
                   </li>
