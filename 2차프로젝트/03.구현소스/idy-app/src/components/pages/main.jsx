@@ -22,7 +22,7 @@ function Main(props) {
         <header id="header-area">
           <div className="header-top">
             <ul className="header-text">
-              <img src="/image/samie1.png" alt="새미이미지" />
+              <img src="./image/samie1.png" alt="새미이미지" />
               <li>추천드려요!</li>
               <li>
                 <a href="/cookguide">가이드 더보기 ➕</a>
@@ -54,7 +54,7 @@ function Main(props) {
             <ul>
               <li>요리연구소</li>
               <li>
-                <img src="/image/samie4.png" alt="새미이미지"/>
+                <img src="./image/samie4.png" alt="새미이미지"/>
               </li>
               <li>
                 <a href="/cooklab">더보기 〉</a>
@@ -69,7 +69,7 @@ function Main(props) {
             <div className="cook-top">
               <ul className="cook-title">
                 <li>
-                  <img src="/image/samie3.jpg" alt="새미이미지"/>
+                  <img src="./image/samie3.jpg" alt="새미이미지"/>
                 </li>
                 <li>요리해요 </li>
                 <li>
@@ -80,11 +80,11 @@ function Main(props) {
               <Cookpic />
 
             <div className="cook-bottom">
-              <img src="/image/samie2.png" alt="새미이미지"/>
+              <img src="./image/samie2.png" alt="새미이미지"/>
               <div className="cook-food">
                 <p>나만의 요리를 올려주세요!</p>
                 <a href="#">작성하기
-                  <img src="/image/ic_write.png" alt="연필그림"/>
+                  <img src="./image/ic_write.png" alt="연필그림"/>
                 </a>
               </div>
             </div>
@@ -95,7 +95,7 @@ function Main(props) {
           <div className="event-box">
             <ul>
               <li>
-                <img src="/image/samie_txt.png" alt="wow" />
+                <img src="./image/samie_txt.png" alt="wow" />
               </li>
               <li>이벤트</li>
             </ul>
@@ -104,7 +104,7 @@ function Main(props) {
             </button>
           </div>
           <div className="event-ban">
-              <img src="/image/event.png" alt="이벤트배너" />    
+              <img src="./image/event.png" alt="이벤트배너" />    
           </div>
         </div>
   
