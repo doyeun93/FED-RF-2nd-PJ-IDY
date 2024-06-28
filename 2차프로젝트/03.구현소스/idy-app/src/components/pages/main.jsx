@@ -8,6 +8,7 @@ import {headerdata} from "../data/headerarea";
 import headerFn from '../func/header';
 import SwiperLab from '../plugin/SwiperLab';
 import Cookpic from '../modules/Cookpic';
+import { Link } from 'react-router-dom';
 
 
 function Main(props) {
@@ -26,7 +27,7 @@ function Main(props) {
               <img src={process.env.PUBLIC_URL+`/image/samie1.png`} alt="새미이미지" />
               <li>추천드려요!</li>
               <li>
-                <a href={process.env.PUBLIC_URL+"/cookguide"}>가이드 더보기 ➕</a>
+                <Link to="/cookguide">가이드 더보기 ➕</Link>
               </li>
             </ul>
             <ul className="header-title">
@@ -38,9 +39,9 @@ function Main(props) {
               <ul>
                 {headerdata.map((v,i) => (
                   <li key={i}>
-                    <a href="/cookguide">
+                    <Link to="/cookguide">
                       <img src={process.env.PUBLIC_URL+`/image/${v.imgName}.jpg`} alt="header image" />
-                    </a>
+                    </Link>
                     <span>{v.title}</span>
                   </li>
                 ))}
@@ -58,7 +59,7 @@ function Main(props) {
                 <img src={process.env.PUBLIC_URL+`/image/samie4.png`} alt="새미이미지"/>
               </li>
               <li>
-                <a href="/cooklab">더보기 〉</a>
+                <Link to="/cooklab">더보기 〉</Link>
               </li>
             </ul>
           </div>
@@ -74,7 +75,7 @@ function Main(props) {
                 </li>
                 <li>요리해요 </li>
                 <li>
-                <a href="/cookcook">더보기 〉</a>
+                <Link to="/cookcook">더보기 〉</Link>
                 </li>
               </ul>
             </div>
@@ -84,9 +85,9 @@ function Main(props) {
               <img src={process.env.PUBLIC_URL+`/image/samie2.png`} alt="새미이미지"/>
               <div className="cook-food">
                 <p>나만의 요리를 올려주세요!</p>
-                <a href="#">작성하기
+                <Link to ="/login">작성하기
                   <img src="/image/ic_write.png" alt="연필그림"/>
-                </a>
+                </Link>
               </div>
             </div>
         </div>
@@ -101,7 +102,7 @@ function Main(props) {
               <li>이벤트</li>
             </ul>
             <button className="event-btn">
-              <a href="/cookevent">더보기 〉</a>
+              <Link to ="/cookevent">더보기 〉</Link>
             </button>
           </div>
           <div className="event-ban">
