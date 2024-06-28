@@ -402,6 +402,61 @@ body {
 
 /****************** 미디어쿼리 ******************/
 @media screen and (max-width: 1280px) {
+  .header-text {
+    padding: 8% 8%;
+  }
   
-  
+  .header-text > li:nth-child(2) {
+    margin-top: 3.3%;
+    letter-spacing: 1.3px;
+  }
+
+  .header-text > li:last-child {
+    margin-top: 3.3%;
+    padding-left: 71%;
+  }
+
+  .header-slide span {
+    top: 75%;
+    left: 18%;
+  }
+    
+  .lab-top > ul > li:nth-child(2) > img {
+    left: 25%;
+  }
+  .lab-cate { 
+    padding-top: 23%;
+  } 
+  .cook-img{
+    padding-top : 8%;
+  }
+  .cook-title > li:first-child img {
+    margin-left: 122%;
+  }
+  .cook-title > li:nth-child(2) {
+    margin-right: 47%;
+  }
+  .cook-bottom{
+    margin-top: 1%
+  }
+  .cook-bottom > img {
+    margin-top: -5.1%;
+  }
+  .cook-food {
+     gap: 30%;
+  }
+  .cook-food > p {
+    margin-top: 1.7%;
+  }
+  .event-box >ul{
+    display:block
+  }
+  .event-btn{
+    width :62%
+  }
+  .event-ban >img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
 }
