@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 
 import "./css/index.scss";
-// import './components/func/headerarea';
+
 import Main from "./components/pages/main";
 import Layout from "./components/layout/Layout";
 import CookGuide from "./components/pages/CookGuide";
