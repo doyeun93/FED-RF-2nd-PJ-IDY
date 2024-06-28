@@ -18,7 +18,7 @@ function Cookpic(props) {
         {cookData.map((v, i) => (
           <li key={i} >
             <a href="/cookcook">
-              <img src={`./image/${v.imgName}.jpg`} alt={v.title} />
+              <img src={process.env.PUBLIC_URL+`/image/${v.imgName}.jpg`} alt={v.title} />
               <span > {v.title} </span>
             </a>
           </li>
