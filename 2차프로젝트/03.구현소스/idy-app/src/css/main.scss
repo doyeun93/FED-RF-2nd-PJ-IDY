@@ -512,8 +512,35 @@ body {
 }
 
 @media screen and  (max-width:480px) {
+  
+  .header-text {
+    display: block; 
+    position: relative;
+    height: auto; 
+    padding: 24% 2%;
+  }
 
- // 이벤트 구역
+  .header-text img {
+    left: 5%;
+  }
+
+  .header-text > li:nth-child(2) {
+    margin-top: 4.3%;
+  }
+
+  .header-text > li:last-child {
+    margin-top: 4.3%;
+    padding-left: 65%;
+    height: 52px;
+  }
+  .header-text > li:last-child::after {
+    width: 120%;
+  }
+  .header-title {
+    top: 33%;
+  }
+
+ 
  #event-area {
   display: block;
 }
