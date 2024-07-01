@@ -493,30 +493,29 @@ body {
     padding-top: 14%;
     height: 300px;
   }
-  .cook-food{
-    gap : 5%;
+  .cook-food {
+    gap: 5%;
   }
-    
+
   .cook-food > p {
-    margin-top : 3.3%;
-    margin-left : 26%;
+    margin-top: 3.3%;
+    margin-left: 26%;
   }
   .cook-bottom {
     width: 86%;
     margin-left: 7.6%;
-  }  
+  }
   .cook-bottom > img {
-    margin-top : -8.9%;
-    margin-left: 1.7%; 
+    margin-top: -8.9%;
+    margin-left: 1.7%;
   }
 }
 
-@media screen and  (max-width:480px) {
-  
+@media screen and (max-width: 480px) {
   .header-text {
-    display: block; 
+    display: block;
     position: relative;
-    height: auto; 
+    height: auto;
     padding: 24% 2%;
   }
 
@@ -540,22 +539,40 @@ body {
     top: 33%;
   }
 
- 
- #event-area {
-  display: block;
-}
-.event-box > ul {
-  display: flex;
-}
+  // 연구소 구역
+  .lab-top {
+    height: auto;
+    padding-top: 6%;
+  }
 
-.event-btn {
-  width: 20%;
-  margin-left: 76%;
-  border-radius: 15px;
-}
+  .lab-top ul {
+    height: auto;
+    display: block;
+  }
 
-.event-ban > img {
-  padding-top: 6%;
-}
-  
+  .lab-top > ul > li:nth-child(2) > img {
+    left: 57%;
+    margin-top: -21%;
+  }
+
+  .lab-top > ul > li:last-child {
+    width: 27%;
+    margin: 3% 5%;
+  }
+  #event-area {
+    display: block;
+  }
+  .event-box > ul {
+    display: flex;
+  }
+
+  .event-btn {
+    width: 20%;
+    margin-left: 76%;
+    border-radius: 15px;
+  }
+
+  .event-ban > img {
+    padding-top: 6%;
+  }
 }
