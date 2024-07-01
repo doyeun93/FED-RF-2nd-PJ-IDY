@@ -513,6 +513,22 @@ body {
 
 @media screen and  (max-width:480px) {
 
+ // 이벤트 구역
+ #event-area {
+  display: block;
+}
+.event-box > ul {
+  display: flex;
+}
 
+.event-btn {
+  width: 20%;
+  margin-left: 76%;
+  border-radius: 15px;
+}
+
+.event-ban > img {
+  padding-top: 6%;
+}
   
 }
