@@ -55,3 +55,15 @@
     left: 4%;
   }
 }
+
+
+
+@media screen and (max-width: 450px) {
+  .evt-title {
+    margin-top: 28%;
+  }
+  .event-info {
+    bottom: 11%;
+    left: 43%;
+  }
+}

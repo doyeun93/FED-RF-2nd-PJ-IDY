@@ -217,7 +217,7 @@ input:focus{
   }
   
 }
-@media screen and  (max-width:480px) {
+@media screen and  (max-width:450px) {
   .top-gnb{
     display: none;
   }
@@ -229,13 +229,17 @@ input:focus{
   }
 
 .logo {	
-  width: 27%; }
+  position: static;
+   }
 
 .logo img{
-  padding: 6% 10%; }
+  padding: 11% 10%; }
 
 #gnb{
   width: 0%;
+}
+.log {
+  top: 26%;
 }
 
 .log > ul >li:first-child{
@@ -245,9 +249,9 @@ input:focus{
   margin-right: -41px;
 }
 
-.searchingGnb {	
-  left: -100%;
-	top: -13px;
+.searchingGnb {
+  left: -169px;
+  top: -6px;
 }
 
   
