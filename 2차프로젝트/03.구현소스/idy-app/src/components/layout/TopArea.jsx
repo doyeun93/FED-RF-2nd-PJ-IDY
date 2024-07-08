@@ -2,17 +2,23 @@ import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
 import { gnbData } from '../data/gnb';
-import "../../css/top_area.scss";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import "../../css/top_area.scss";
 
 import $ from 'jquery';
+import { ShowMenu } from '../modules/Showmenu';
 
 
 function TopArea(props) {
 
   const goNav = useNavigate();
 
+  // 햄버거버튼
+  const ShowMenu = (e) => {
+    $(".ham").toggleClass("on");
+      $(e.target).show()
+  }
 
    // 1. 검색창 보이기 함수
    const showSearch = (e) => {
@@ -37,7 +43,6 @@ function TopArea(props) {
   }; /////// enterKey ///////////////////
 
   const goSearch = txt => {
-    console.log("나는 검색하러 간다");
     goNav("search",{state:{keyword:txt}})
   }; /////////////// goSearch //////////
 
@@ -68,13 +73,15 @@ function TopArea(props) {
                   }
                 </li>)}
               </ul>
+              <button className="ham" type="button" onClick={ShowMenu}></button>
+              {/* <ShowMenu /> */}
             </nav>
             <div className="log">
               <ul>
                 <li>
-                  <a href="#">로그인</a>
+                  <Link to="/login">로그인</Link>
                 </li>
-                <li style={{marginLeft:"auto", marginRight:"25px"}}>
+                <li style={{color:"#15a775"}}>
                 {/* 검색입력박스 */}
                 <div className="searchingGnb" >
                   {/* 검색버튼 돋보기 아이콘 */}

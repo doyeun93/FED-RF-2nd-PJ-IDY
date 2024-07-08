@@ -8,9 +8,12 @@ import Main from "./components/pages/main";
 import Layout from "./components/layout/Layout";
 import CookGuide from "./components/pages/CookGuide";
 import CookLab from "./components/pages/CookLab";
+import CookSol from "./components/pages/CookSol";
 import CookCook from "./components/pages/CookCook";
+import CookQnA from "./components/pages/CookQnA";
 import CookEvent from "./components/pages/CookEvent";
 import SearchPage from "./components/pages/SearchPage";
+import Member from "./components/pages/Member";
 
 
 
@@ -31,11 +34,13 @@ export default function MainComponent(props) {
           <Route index element={<Main />} />
           <Route path="cookguide" element={<CookGuide />} />
           <Route path="cooklab" element={<CookLab />} />
-          <Route path="cooklabsol" element={<CookLab />} />
+          <Route path="cooksol" element={<CookSol />} />
           <Route path="cookcook" element={<CookCook />} />
-          <Route path="cookquestion" element={<CookCook />} />
+          <Route path="cookqna" element={<CookQnA />} />
           <Route path="cookevent" element={<CookEvent />} />
           <Route path="search" element={<SearchPage />} />
+          <Route path="member" element={<Member />}/>
+          
 
         </Route>
         {/* Layout 루트 Route로 하위 Route를 감싼다! */}

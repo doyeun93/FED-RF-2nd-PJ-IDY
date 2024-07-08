@@ -14,12 +14,15 @@ import { Link } from 'react-router-dom';
 function Main(props) {
     
   useLayoutEffect(() => {
-    headerFn();
+    headerFn(); 
   }, []);
+
+  
 
   // 코드 리턴구역 ////////////
     return (
         <>
+        
         {/* <!-- 요리초보가이드 --> */}
         <header id="header-area">
           <div className="header-top">
@@ -85,8 +88,8 @@ function Main(props) {
               <img src={process.env.PUBLIC_URL+`/image/samie2.png`} alt="새미이미지"/>
               <div className="cook-food">
                 <p>나만의 요리를 올려주세요!</p>
-                <Link to ="/login">작성하기
-                  <img src={process.env.PUBLIC_URL+"/image/ic_write.png"} alt="연필그림"/>
+                <Link to="/login">작성하기
+                  <img src={process.env.PUBLIC_URL+`/image/ic_write.png`} alt="연필그림"/>
                 </Link>
               </div>
             </div>
@@ -102,7 +105,7 @@ function Main(props) {
               <li>이벤트</li>
             </ul>
             <button className="event-btn">
-              <Link to ="/cookevent">더보기 〉</Link>
+              <Link to="/cookevent">더보기 〉</Link>
             </button>
           </div>
           <div className="event-ban">

@@ -117,12 +117,13 @@
     right: 3%;
   }
 }
+
 @media screen and  (max-width:450px) {
   #footer-area {
-    display: block;
-   }
- 
-   .info-area {
+   display: block;
+  }
+
+  .info-area {
     padding: 2% 6%;
     margin-left: 4%;
   }
@@ -142,7 +143,7 @@
   .footer-sns ul {
     display: flex;
     align-items: center;
-    gap: 4%;
+    gap: 0%;
   }
 
   .btn-top {
@@ -153,5 +154,7 @@
   .btn-top a > img {
     animation: none;
   }
- 
+
+
+  
 }

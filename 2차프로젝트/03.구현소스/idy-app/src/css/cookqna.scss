@@ -1,13 +1,13 @@
+/* 게시판 모듈용 CSS - cookqna.scss  */
 
 
-.cookcook-top{
-    height: 210vh;
-    background-image: url("../../public/image/bg_pattern_pink.png");
-    background-color: #fff3f363;
+.cookqna-top{
+    height: 160vh;
+    // background-image: url("../../public/image/bg_pattern_pink.png");
+    // background-color: #fff3f363;
 }
 
-
-.cookcook-title{
+.cookqna-title{
     height: 250px;
     padding-bottom: 5%;
     span{
@@ -18,43 +18,43 @@
     }
 }
 
-.cookcook-text {
-    position: relative;
-    border: solid 1px #e5e5e5;
-  
-    border-radius: 3.0625rem; 
-  }     
-  
-  .cookcook-text::after {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 1px;
-    height: 100%;
-    background-color: #e5e5e5;
-    content: '';
-  }
-  
-  .cookcook-text > ul {
-    display: flex;
-    justify-content: space-evenly;
-  }
-  .cookcook-text > ul >li{
-    font-size: 1.6rem;
-    display: block;
-    width: 100%;
-    padding: 1rem 0;
-    color: #999;
-    text-align: center;
-  }
-  .cookcook-text > ul >li::before{ 
-    content: "";
-    display: inline-block;
-    width: 1.4rem;
-    height: 2rem;
-    background: url(../../public/image/ic_star_pink.png) no-repeat center / auto 100%;
-  
-  }
+.cookqna-text {
+  position: relative;
+  border: solid 1px #e5e5e5;
+
+  border-radius: 3.0625rem; 
+}     
+
+.cookqna-text::after {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 1px;
+  height: 100%;
+  background-color: #e5e5e5;
+  content: '';
+}
+
+.cookqna-text > ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+.cookqna-text > ul >li{
+  font-size: 1.6rem;
+  display: block;
+  width: 100%;
+  padding: 1rem 0;
+  color: #999;
+  text-align: center;
+}
+.cookqna-text > ul >li::before{ 
+  content: "";
+  display: inline-block;
+  width: 1.4rem;
+  height: 2rem;
+  background: url(../../public/image/ic_star_pink.png) no-repeat center / auto 100%;
+
+}
 
 /* 검색옵션박스 */
 .selbx {
@@ -100,6 +100,14 @@
   .dtbl td,
   .dtbl th {
     padding: 13px;
+    /*위아래, 양쪽*/
+    /*
+        padding은 안쪽 공간-> 기존박스가 커짐
+        padding: 위 오른 아래 왼;(4개)
+        padding: 위 오른왼 아래;(3개)
+        padding: 위아래 오른왼;(2개)
+        padding: 모든방향;(1개)
+     */
   }
   
   /* 보드 메인리스트 a요소 말줄임표시하기 */
@@ -149,7 +157,7 @@
   .dtbl tbody tr td:nth-child(2) {
     text-align: left;
   }
-
+  
   /*짝수번째 배경색 넣기*/
   .dtbl tbody tr:nth-child(even) td {
     /*even 짝수, odd 홀수*/
@@ -246,4 +254,3 @@
     }
   }
   
-
