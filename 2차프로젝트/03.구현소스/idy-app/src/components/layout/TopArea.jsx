@@ -7,7 +7,7 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import "../../css/top_area.scss";
 
 import $ from 'jquery';
-import { ShowMenu } from '../modules/Showmenu';
+
 
 
 function TopArea(props) {

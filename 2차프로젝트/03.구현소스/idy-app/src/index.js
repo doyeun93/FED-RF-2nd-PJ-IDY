@@ -14,6 +14,7 @@ import CookQnA from "./components/pages/CookQnA";
 import CookEvent from "./components/pages/CookEvent";
 import SearchPage from "./components/pages/SearchPage";
 import Member from "./components/pages/Member";
+import Intro from "./components/pages/Intro";
 
 
 
@@ -32,6 +33,7 @@ export default function MainComponent(props) {
         -> path설정대신 index키워드를 쓰면 첫페이지로 구성됨 -> MainArea 컴포넌트 <Outlet/>에 출력된다!*/}
         
           <Route index element={<Main />} />
+          <Route path="intro" element={<Intro />} />
           <Route path="cookguide" element={<CookGuide />} />
           <Route path="cooklab" element={<CookLab />} />
           <Route path="cooksol" element={<CookSol />} />
