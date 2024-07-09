@@ -121,8 +121,8 @@
   .ham::before {
     content: '≡';
   }
-  .hbox{
-    width: 450px;
+  .ham.on .hbox{
+    max-width: 450px;
     height: auto;
     background-color: #fff;
   }
