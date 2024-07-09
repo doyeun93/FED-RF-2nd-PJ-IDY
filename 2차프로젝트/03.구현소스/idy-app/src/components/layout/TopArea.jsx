@@ -74,8 +74,11 @@ function TopArea(props) {
                   }
                 </li>)}
               </ul>
-              <button className="ham" type="button" onClick={ShowMenu}></button>
-              {/* <ShowMenu /> */}
+              <button className="ham" type="button" onClick={(e)=> {
+                e.preventDefault();
+                ShowMenu();
+                }}></button>
+              
             </nav>
             <div className="log">
               <ul>
