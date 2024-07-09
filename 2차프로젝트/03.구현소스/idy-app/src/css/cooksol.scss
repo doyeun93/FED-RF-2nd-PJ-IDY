@@ -46,6 +46,11 @@
     color: #999;
     text-align: center;
   }
+
+  
+.cooksol-text > ul > li.on {
+  background-color: #fff9e2;
+}
   .cooksol-text > ul >li::before{ 
     content: "";
     display: inline-block;
