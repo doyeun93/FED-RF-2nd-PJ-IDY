@@ -1,8 +1,23 @@
-
-
 .intro-top{
     height: 220vh;
     background: url(../../public/image/introduce.png) no-repeat;
 }
+.intro-tit{
+    position: absolute;
+    max-width: 1920px;
+    top: 46rem;
+    left: 37%;
+    font-size: 2.5rem;
+}
+.intro-header{
+    position: absolute;
+    top: 53rem;
+    height: auto;
+    margin: 0 auto;
+}
+.intro-title{
+}
+.intro-text{
+    float: left;
 
-
+}
