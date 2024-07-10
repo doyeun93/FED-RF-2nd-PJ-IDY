@@ -33,7 +33,7 @@ export const headerdata = [
     {
         idx: "6",
         imgName: "top6",
-        title:" 아무도 알려주지 않은 양념 차이점 용도별 사용법 모두 알려드려요! ",
+        title:" 아무도 알려주지 않은 양념 차이점 *용도별 사용법 모두 알려드려요! ",
     },
     
     {
