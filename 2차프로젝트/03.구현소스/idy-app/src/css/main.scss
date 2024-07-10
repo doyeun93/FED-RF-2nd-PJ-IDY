@@ -17,6 +17,7 @@ body {
   padding: 6% 8%;
   gap: 1.1%;
   box-sizing: content-box;
+  white-space: nowrap;
 
   img {
     position: relative;
@@ -41,8 +42,8 @@ body {
   content: "";
   display: inline-block;
   position: relative;
-  right: 22%;
-  bottom: 89%;
+  right: 122%;
+  bottom: -39%;
   width: 150%;
   height: 120%;
   background-color: #15a77446;
@@ -208,6 +209,7 @@ body {
   p {
     font-size: 1.3rem;
     padding: 5%;
+    white-space: nowrap;
   }
 }
 
@@ -217,8 +219,8 @@ body {
   padding-top: 16%;
 
   span {
-    padding: 0.7%;
-    border-radius: 13px;
+    padding: 2%;
+    border-radius: 20px;
   }
 }
 .lab-type {
