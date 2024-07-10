@@ -174,7 +174,7 @@ body {
   line-height: 3.2;
 }
 
-// 이미드 슬라이드 구역 //
+// 이미지 슬라이드 구역 //
 .lab-img {
   position: absolute;
   width: auto;
@@ -412,6 +412,8 @@ body {
     left: 18%;
   }
 
+  
+
   .lab-top > ul > li:nth-child(2) > img {
     left: 21%;
     margin-top: -4%;
@@ -476,6 +478,10 @@ body {
   .header-slide span {
     top: 72%;
     left: 17%;
+  }
+
+  .header-img {
+    padding-top: 25%;
   }
   .lab-top > ul > li:nth-child(2) > img {
     left: 37%;
