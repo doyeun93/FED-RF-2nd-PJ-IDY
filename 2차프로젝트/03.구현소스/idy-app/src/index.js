@@ -14,6 +14,7 @@ import CookQnA from "./components/pages/CookQnA";
 import CookEvent from "./components/pages/CookEvent";
 import SearchPage from "./components/pages/SearchPage";
 import Member from "./components/pages/Member";
+import Login from "./components/pages/Login";
 import Intro from "./components/pages/Intro";
 
 
@@ -42,6 +43,7 @@ export default function MainComponent(props) {
           <Route path="cookevent" element={<CookEvent />} />
           <Route path="search" element={<SearchPage />} />
           <Route path="member" element={<Member />}/>
+          <Route path="login" element={<Login />}/>
           
 
         </Route>
