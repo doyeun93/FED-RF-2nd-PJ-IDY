@@ -22,10 +22,6 @@ export default function CookLab() {
   const labBar = () => {
     setLbar(!lbar);
   }
- 
-  // const labBar = (e)=> {
-  //   $(e.currentTarget).toggleClass("on");
-  // };
 
   //// 코드 리턴 구역
   return (
@@ -50,9 +46,7 @@ export default function CookLab() {
               name="lsel"
               id="lsel"
               className="lsel"
-              // 값을 변경할 때 이벤트 발생
               onChange={(e) => {
-                // 정렬기준 상태변수 업데이트
                 setSort(e.target.value);
               }}
             >
