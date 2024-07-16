@@ -275,19 +275,14 @@ padding: 0% 10%; }
 width: 0%;
 }
 .log {
-top: 26%;
+right: 51%;
 }
-
-.log > ul >li:first-child{
-display: none;
-}
-.log > ul >li:last-child{
-margin-right: -41px;
+.log > ul {
+gap: 8%;
 }
 
 .searchingGnb {
-left: -169px;
-top: -6px;
+left: 59px;
 }
 
 }
