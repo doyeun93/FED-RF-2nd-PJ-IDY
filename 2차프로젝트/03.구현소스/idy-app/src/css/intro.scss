@@ -1,23 +1,78 @@
+.intro-box{
+    height: 410vh;
+}
+
+
 .intro-top{
-    height: 220vh;
+    height: 300vh;
     background: url(../../public/image/introduce.png) no-repeat;
 }
 .intro-tit{
     position: absolute;
     max-width: 1920px;
-    top: 46rem;
+    top: 107%;
     left: 37%;
-    font-size: 2.5rem;
+    font-size: 2.8rem;
 }
 .intro-header{
-    position: absolute;
-    top: 53rem;
-    height: auto;
-    margin: 0 auto;
+    position: relative;
+    top: 40%;    
 }
-.intro-title{
-}
-.intro-text{
-    float: left;
+.intro-header::before{
+    content: '';
+    display: inline-block;
+    width: 1000px;
+    margin-left: 20%;
+    border: 0.8px solid #c4c3c3;
+
 
 }
+.intro-title{
+    position: relative;
+    width: 100%;
+    height: auto;
+    // transform: translate(50%, 50%);
+    top: 50%;
+    left: 13%;
+    padding-top: 7%;
+    
+}
+.intro-text1,.intro-text2,.intro-text3{
+    float: left;  
+    width: 30%;
+    line-height: 1.4;
+  span{
+    text-align: center;
+    font-size: 2rem;
+  }
+  p{
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: "Noto Sans KR", sans-serif;
+}
+}
+
+.intro-mv{
+    position: relative;
+    top: 45%;
+}
+
+.intro-mid {
+    position: relative;
+    bottom: -49%;
+    height: 100vh;
+    
+}
+
+.intro-mtit {
+    max-width: 800px;
+    min-height: 700px;
+    padding: 15px;
+    padding-top: 6%;
+    border: 1px solid #dfdfdf;
+    margin: 0 auto;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: "Noto Sans KR", sans-serif;
+}
+

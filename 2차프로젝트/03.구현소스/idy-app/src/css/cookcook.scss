@@ -1,7 +1,7 @@
 
 
 .cookcook-top{
-    height: 210vh;
+    height: 190vh;
     background-image: url("../../public/image/bg_pattern_pink.png");
     background-color: #fff3f363;
 }
@@ -59,6 +59,52 @@
     background-color: #fff9e2;
   }
   
+
+  .cook-write {
+    width: 78%;
+    height: 5.8%;
+    margin-left: 10.9%;
+    margin-top: 7%;
+    border-radius: 29px;
+    background-color: #fbb9bf;
+  }
+  .cook-write > img {
+    position: absolute;
+    margin-top: -1.7%;
+    margin-left: 3.7%;
+  }
+ 
+  .cook-cbox{
+    position: relative;
+  }
+  
+  .cook-cbox > li:first-child {
+    display: inline-block;
+    margin-top: 1.4%;
+    margin-left: 17%;
+    color: white;
+    font-size: 1.7rem;
+  }
+  .cook-cbox > li:last-child {
+    margin-left: 17%;
+    color: white;
+    font-size: 1.4rem;
+  }
+  .cook-cook > a {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-top: -3.3%;
+    color: white;
+    font-size: 1.7rem;
+    justify-content: flex-end;
+    margin-right: 4%;
+  }
+  .cook-cook > a::before {
+    content: " ｜ ";
+    display: inline-block;
+    margin-right: 24px;
+  }
 
 /* 검색옵션박스 */
 .selbx {
