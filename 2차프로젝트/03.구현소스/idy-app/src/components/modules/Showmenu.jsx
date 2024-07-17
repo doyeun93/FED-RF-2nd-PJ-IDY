@@ -1,15 +1,12 @@
 import React, { useState } from 'react';
+import { gnbData } from '../data/gnb';
+import { Link } from 'react-router-dom';
 
 
 export function ShowMenu() {
 
   const goSub = (e) => {
-
-
-    document.querySelector(".ham").click();
-
-
-    
+    document.querySelector(".ham").click();  
   };
 
   const hideBox = () => {
@@ -22,17 +19,20 @@ export function ShowMenu() {
         <button className='cbtn' onClick={hideBox}>×</button>
         <nav className="hlist">
           <ul className="htit">
-            <li onClick={goSub}>새미네소개</li>
-            <li onClick={goSub}>요리초보가이드</li>
-            <ul className="htext">
-              <li onClick={goSub}>레시피</li>
-              <li onClick={goSub}>솔루션</li>
-            </ul>
-            <ul className="htext">
-              <li onClick={goSub}>요리해요</li>
-              <li onClick={goSub}>질문있어요</li>
-            </ul>
-            <li onClick={goSub}>WOW이벤트</li>
+          {gnbData.map((v, i) => (
+                <li key={i}>
+                  {v.sub ? <a href="#">{v.txt}</a> : <Link to={v.link}>{v.txt}</Link>}
+                  {v.sub && (
+                    <ul className="htext">
+                      {v.sub.map((v, i) => (
+                        <li key={i}>
+                          <Link to={v.link}>{v.txt}</Link>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </li>
+              ))}
           </ul>
         </nav>
       </div>
