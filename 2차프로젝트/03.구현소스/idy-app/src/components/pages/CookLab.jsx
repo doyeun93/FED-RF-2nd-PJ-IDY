@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import "../../css/cooklab.scss";
-import { recipeData } from "../data/sub2_1";
+import { rDetailData } from "../data/sub2_1_detail";
 import { Link } from "react-router-dom";
 import $ from "jquery";
 
@@ -11,9 +11,9 @@ export default function CookLab() {
   const [sort, setSort] = useState("asc");
 
   if (sort == "asc") {
-    recipeData.sort((a, b) => (a.title > b.title ? 1 : a.title < b.title ? -1 : 0));
+    rDetailData.sort((a, b) => (a.title > b.title ? 1 : a.title < b.title ? -1 : 0));
   } else if (sort == "desc") {
-    recipeData.sort((a, b) => (a.title > b.title ? -1 : a.title < b.title ? 1 : 0));
+    rDetailData.sort((a, b) => (a.title > b.title ? -1 : a.title < b.title ? 1 : 0));
   }
 
   
@@ -57,16 +57,26 @@ export default function CookLab() {
         </div>
         <div className="lab-mid">
           <ul>
-            {recipeData.map((v, i) => (
+            {rDetailData.map((v, i) => (
               <li key={i}>
                 <div className="lab-imgbox">
                   <img src={`./image/sub2/${v.imgName}.jpg`} alt={v.title} />
                   <div className="lab-info">
-                    <p>{v.type1}</p>
                     <p>{v.type2}</p>
+                    <p>{v.type3}</p>
                   </div>
                 </div>
-                <span>{v.title}</span>
+                <Link to="/detail"
+                  state={{
+                  imgName: v.imgName, 
+                  title: v.title, 
+                  text: v.text, 
+                  type: v.type1, 
+                  type: v.type2, 
+                }}
+                >
+                  <span>{v.title}</span>
+                </Link>
               </li>
             ))}
           </ul>
