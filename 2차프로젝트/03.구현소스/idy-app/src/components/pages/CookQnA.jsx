@@ -424,7 +424,7 @@ const ListMode = ({ bindList, pagingList }) => {
           <table className="dtbl" id="board">
             <thead>
               <tr>
-                <th>Number</th>
+                <th>번호</th>
                 <th>제목</th>
                 <th>작성자</th>
                 <th>날짜</th>

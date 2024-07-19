@@ -57,6 +57,7 @@ export const TopArea = memo(({loginMsg,loginSts,logoutFn,goPage}) =>{
               }}
             />
           </a>
+          <div className="logmsg">{loginMsg}</div>
           <nav id="gnb">
             <ul className="top-gnb">
               {gnbData.map((v, i) => (
