@@ -57,7 +57,7 @@ function LabDetail() {
               locals.push({
                 idx: state.idx,
                 title: state.title,
-                text: state.text,
+                kind: state.kind,
                 imgName: state.imgName,
               });
 
@@ -70,7 +70,7 @@ function LabDetail() {
             // 카트리스트 생성 상태값 변경
              myCon.setScrapSts(true);
 
-             
+
           }}
         >
           <FontAwesomeIcon
@@ -87,7 +87,7 @@ function LabDetail() {
         </button>
         {/* 레시피 상세정보 제목 */}
         <div className="ldetail-top">
-          <h2>레시피</h2>
+          <h2>{state.kind}</h2>
           <span>{state.title}</span>
         </div>
         {/* 레시피 상세정보 소제목 */}
