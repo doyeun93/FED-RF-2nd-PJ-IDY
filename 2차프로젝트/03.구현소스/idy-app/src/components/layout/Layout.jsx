@@ -6,8 +6,30 @@ import MainArea from "./MainArea";
 import FooterArea from "./FooterArea";
 
 import { dCon } from "../modules/dCon";
+import Scrap from "../modules/Scrap";
 
 function Layout() {
+
+  // 스크랩 변수
+  
+  let cartTemp = false;
+
+  // 로컬스 카트 데이터 상태변수 
+  const [localsScrap, setLocalsScrap] = useState(localStorage.getItem("scrap-data"));
+
+  // 로컬스 카트 데이터 존재 여부에 따라 상태값 변경
+  if(localsScrap){
+    // 데이터가 있으면 cartTemp값 true로 변경
+    // 데이터 개수가 0이 아니여야 함
+    let cartCnt = JSON.parse(localsScrap).length;
+    
+
+    if(cartCnt > 0) cartTemp = true; 
+    
+  } // 카트 존재여부 if ////////////////
+
+  const [scrapSts, setScrapSts] = useState(cartTemp);
+
   
     // 상태관리 변수 ///
     // 1. 로그인 상태관리 변수 -> 초기값으로 세션스토리지 "minfo"를 할당함
@@ -58,13 +80,17 @@ function Layout() {
 
 
   return (
-    <dCon.Provider value={{loginSts, setLoginSts,loginMsg,setLoginMsg,goPage,makeMsg,logoutFn}}>
+    <dCon.Provider value={{loginSts, setLoginSts,loginMsg,setLoginMsg,goPage,makeMsg,logoutFn, setLocalsScrap, setScrapSts, localsScrap,}}>
       {/* 1.상단영역 */}
       <TopArea loginMsg={loginMsg} loginSts={loginSts} logoutFn={logoutFn} goPage={goPage}/>
       {/* 2.메인영역 */}
       <MainArea />
       {/* 3.하단영역 */}
       <FooterArea />
+
+      
+      {scrapSts && <Scrap /> }
+
     </dCon.Provider>
   );
 }

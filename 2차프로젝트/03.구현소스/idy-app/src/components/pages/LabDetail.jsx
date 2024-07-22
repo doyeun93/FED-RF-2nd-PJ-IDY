@@ -10,9 +10,9 @@ import detail_letter from "../func/detail_letter";
 
 function LabDetail() {
 
-  useEffect(()=> {
-    detail_letter();
-  },[])
+  // useEffect(()=> {
+  //   detail_letter();
+  // },[])
 
   const {state} = useLocation();
 //   const imgName = loc.state.imgName;
@@ -69,6 +69,8 @@ function LabDetail() {
 
             // 카트리스트 생성 상태값 변경
              myCon.setScrapSts(true);
+
+             
           }}
         >
           <FontAwesomeIcon
