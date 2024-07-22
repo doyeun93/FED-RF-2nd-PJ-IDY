@@ -44,6 +44,8 @@
 .cooklab-text > ul >li::before{ 
   content: "";
   display: inline-block;
+  position: relative;
+  top: 12%;
   width: 1.4rem;
   height: 2rem;
   background: url(../../public/image/ic_star_pink.png) no-repeat center / auto 100%;
@@ -53,6 +55,7 @@
 .cooklab-text > ul > li.on {
   background-color: #fff9e2;
 }
+
 
 
 
@@ -146,7 +149,7 @@
     padding-top: 7%;
   }
   .lab-mid {
-    padding-top: 10%;
+    padding-top: 15%;
   }
 
   .lab-info {
