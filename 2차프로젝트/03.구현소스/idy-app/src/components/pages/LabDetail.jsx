@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import "../../css/cooklab_detail.scss";
 import $ from "jquery";
 import { dCon } from "../modules/dCon";
@@ -6,8 +6,14 @@ import { dCon } from "../modules/dCon";
 import { useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookmark } from "@fortawesome/free-regular-svg-icons";
+import detail_letter from "../func/detail_letter";
 
 function LabDetail() {
+
+  useEffect(()=> {
+    detail_letter();
+  },[])
+
   const {state} = useLocation();
 //   const imgName = loc.state.imgName;
 //   const title = loc.state.title;
@@ -59,17 +65,17 @@ function LabDetail() {
             localStorage.setItem("scrap-data", JSON.stringify(locals));
 
             // 로컬스 카트데이터 상태값 변경
-            // myCon.setLocalsCart(localStorage.getItem("scrap-data"));
+             myCon.setLocalsScrap(localStorage.getItem("scrap-data"));
 
-            // // 카트리스트 생성 상태값 변경
-            // myCon.setCartSts(true);
+            // 카트리스트 생성 상태값 변경
+             myCon.setScrapSts(true);
           }}
         >
           <FontAwesomeIcon
             style={{
               position: "fixed",
               bottom: "56%",
-              left: "80%",
+              left: "85%",
               color: "#15a775",
               fontSize: "40px",
               // border: '1px solid #f5f5f5',
@@ -129,10 +135,10 @@ function LabDetail() {
         </div>
         {/* 레시피 상세정보 레시피 순서 */}
         <div className="ldetail-seq">            
-        <ul>
-              <li>{state.type7}</li>
-              <li>{state.type8}</li>
-              <li>{state.type9}</li>
+        <ul className="rdetail-seq">
+              <li className="rdetail-seq1">{state.type7}</li>
+              <li className="rdetail-seq2">{state.type8}</li>
+              <li className="rdetail-seq3">{state.type9}</li>
             </ul>
         </div>
       </div>

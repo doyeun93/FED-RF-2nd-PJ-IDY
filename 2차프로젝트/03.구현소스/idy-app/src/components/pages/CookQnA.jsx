@@ -31,7 +31,7 @@ export default function CookQnA() {
 
   const pgPgNum = useRef(1);
 
-  const unitSize = 8;
+  const unitSize = 6;
   // 페이징의 페이징 개수 : 한번에 보여줄 페이징 개수
   const pgPgSize = 5;
 
@@ -329,7 +329,7 @@ export default function CookQnA() {
                   // 4. 수정 상태일 경우
                   mode == "M" && (
                     <>
-                      <button onClick={clickButton}>제출</button>
+                      <button onClick={clickButton}>수정</button>
                       <button onClick={clickButton}>삭제</button>
                       <button onClick={clickButton}>목록</button>
                     </>
