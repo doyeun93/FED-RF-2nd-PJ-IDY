@@ -78,39 +78,6 @@
   }
 }
 
-.ldetail-txt1 > ul > li:first-child::before {
-  content: "";
-  display: inline-block;
-  background: url("../../public/image/re_icon1.png") no-repeat;
-  position: absolute;
-  top: 168.5%;
-  left: 32%;
-  width: 4%;
-  height: 5%;
-}
-
-.ldetail-txt1 > ul > li:nth-child(2)::before {
-  content: "";
-  display: inline-block;
-  background: url("../../public/image/re_icon2.png") no-repeat;
-  position: absolute;
-  top: 168.5%;
-  left: 44%;
-  width: 4%;
-  height: 5.1%;
-}
-
-.ldetail-txt1 > ul > li:last-child::before {
-  content: "";
-  display: inline-block;
-  background: url("../../public/image/re_icon3.png") no-repeat;
-  position: absolute;
-  top: 168.5%;
-  left: 56.2%;
-  width: 4%;
-  height: 5.1%;
-}
-
 .ldetail-img {
   gap: 2%;
   padding-top: 10%;
@@ -164,21 +131,7 @@
 
 /****************** 미디어쿼리 ******************/
 @media screen and (max-width: 1470px) {
-  .ldetail-txt1 > ul > li:first-child::before {
-    top: 214.5%;
-    left: 27%;
-    height: 7%;
-  }
-  .ldetail-txt1 > ul > li:nth-child(2)::before {
-    top: 214.5%;
-    left: 42%;
-    height: 7.1%;
-  }
-  .ldetail-txt1 > ul > li:last-child::before {
-    top: 214.5%;
-    left: 57.2%;
-    height: 7.1%;
-  }
+  
 
   .ldetail-img {
     margin-left: 0;
@@ -199,24 +152,6 @@
   .ldetail-top span {
     top: 43%;
     left: 2%;
-  }
-
-  .ldetail-txt1 > ul > li:first-child::before {
-    top: 148.5%;
-    left: 11%;
-    width: 11%;
-  }
-
-  .ldetail-txt1 > ul > li:nth-child(2)::before {
-    top: 148.5%;
-    left: 44%;
-    width: 11%;
-  }
-
-  .ldetail-txt1 > ul > li:last-child::before {
-    top: 148.5%;
-    left: 76%;
-    width: 11%;
   }
 
   .ldetail-txt .ldetail-txt2 {

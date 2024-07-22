@@ -25,6 +25,7 @@ function LabDetail() {
   const matchFolder = {
     sub: "sub1",
     re_: "sub2",
+    sol: "sub2",
     coo: "sub3",
     eve: "sub4",
   };
