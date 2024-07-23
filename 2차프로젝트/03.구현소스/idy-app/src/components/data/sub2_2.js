@@ -75,6 +75,28 @@ export const solutionData = [
     
     },
    
+    {
+        idx: "8",
+        imgName: "sol_detail8",
+        title: "국 vs 찌개 vs 짜글이 ",
+        text : "내가 끓인 국물요리의 정체는?",
+        type1: "# 국물",
+        type2: "# 찌개",
+        kind : "솔루션",
+    
+    },
+   
+    {
+        idx: "9",
+        imgName: "sol_detail9",
+        title: "스테이크 부위 완벽 정복 ",
+        text : "스테이크로 주로 먹는 3가지 부위 차이점",
+        type1: "# 스테이크",
+        type2: "# 고기",
+        kind : "솔루션",
+    
+    },
+   
     
 
 ]
