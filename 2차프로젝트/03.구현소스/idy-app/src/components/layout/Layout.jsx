@@ -11,10 +11,8 @@ import Scrap from "../modules/Scrap";
 function Layout() {
 
   // 스크랩 변수
-  
   let cartTemp = false;
-
-  // 로컬스 카트 데이터 상태변수 
+  // 로컬스 스크랩 데이터 상태변수 
   const [localsScrap, setLocalsScrap] = useState(localStorage.getItem("scrap-data"));
 
   // 로컬스 카트 데이터 존재 여부에 따라 상태값 변경
@@ -23,7 +21,6 @@ function Layout() {
     // 데이터 개수가 0이 아니여야 함
     let cartCnt = JSON.parse(localsScrap).length;
     
-
     if(cartCnt > 0) cartTemp = true; 
     
   } // 카트 존재여부 if ////////////////
