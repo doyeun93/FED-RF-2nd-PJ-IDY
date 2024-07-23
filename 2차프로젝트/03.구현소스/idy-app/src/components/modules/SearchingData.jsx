@@ -30,11 +30,12 @@ function SearchingData({ dt }) {
               <li key={i}>
                 
                 <Link
-                  to="/detail"
+                  to="/"
                   /* state로 3가지 값을 넘겨준다! */
                   state={{
                     title: v.title, // 제목
                     text: v.text, // 설명
+                    imgName: v.imgName, //
                   }}
                 >
                   <img src={`./image/${route[v.imgName.substr(0,3)]}/${v.imgName}.jpg`} alt={v.imgName} />
