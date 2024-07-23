@@ -79,6 +79,15 @@ export const recipeData = [
         kind : "레시피",
        
     },
+    {
+        idx: "9",
+        imgName: "recipe9",
+        title: "전기밥솥 누룽지 닭백숙 ",
+        type1: "준비시간 : 10분",
+        type2: "조리시간 : 100분",
+        kind : "레시피",
+       
+    },
     
 
 
