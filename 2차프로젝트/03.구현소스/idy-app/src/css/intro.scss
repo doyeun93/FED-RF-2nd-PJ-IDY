@@ -1,164 +1,177 @@
 .intro-box {
-    height: 410vh;
+  height: 410vh;
+}
+
+.intro-top {
+  height: 300vh;
+  width: auto;
+}
+.intro-img {
+  position: absolute;
+  top: 9%;
+  height: auto;
+}
+.intro-tit {
+  position: absolute;
+  max-width: 1920px;
+  top: 107%;
+  left: 37%;
+  font-size: 2.8rem;
+}
+.intro-header {
+  position: relative;
+  top: 40%;
+}
+.intro-header::before {
+  content: "";
+  display: inline-block;
+  width: 1000px;
+  margin-left: 20%;
+  border: 0.8px solid #c4c3c3;
+}
+.intro-title {
+  position: relative;
+  width: 100%;
+  height: auto;
+  // transform: translate(50%, 50%);
+  top: 50%;
+  left: 13%;
+  padding-top: 7%;
+}
+
+.intro-text1,
+.intro-text2,
+.intro-text3 {
+  float: left;
+  width: 30%;
+  line-height: 1.4;
+  opacity: 0;
+
+  span {
+    text-align: center;
+    font-size: 2rem;
   }
-  
-  .intro-top {
-    height: 300vh;
-    width: auto;
+  p {
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: "Noto Sans KR", sans-serif;
   }
-  .intro-img {
-    position: absolute;
-    top: 9%;
-    height: auto;
-  }
+}
+
+.intro-text1.on {
+  opacity: 1;
+  transition: 1s ease-in-out;
+  scale: 1.1;
+}
+.intro-text2.on {
+  opacity: 1;
+  transition: 1.6s ease-in-out;
+  scale: 1.1;
+}
+.intro-text3.on {
+  opacity: 1;
+  transition: 2.1s ease-in-out;
+  scale: 1.1;
+}
+
+.intro-mv {
+  position: relative;
+  top: 47%;
+}
+
+.intro-mid {
+  position: relative;
+  bottom: -53%;
+  height: 100vh;
+}
+
+.intro-mtit {
+  max-width: 800px;
+  min-height: 700px;
+  padding: 15px;
+  padding-top: 3%;
+  border: 1px solid #dfdfdf;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.intro-mtit > ul > li:nth-child(odd)::first-letter {
+  font-weight: bold;
+  color: #15a775;
+  font-size: 1.6rem;
+}
+.intro-mtit > ul:last-child {
+  text-align: center;
+  padding-top: 10%;
+}
+.intro-mtit > ul:last-child::before {
+  content: "";
+  display: inline-block;
+  width: 400px;
+  border: 0.8px solid #c4c3c3;
+}
+.intro-mtit > ul:last-child::after {
+  content: "";
+  display: inline-block;
+  width: 400px;
+  border: 0.8px solid #c4c3c3;
+}
+
+/****************** 미디어쿼리 ******************/
+@media screen and (max-width: 1470px) {
   .intro-tit {
-    position: absolute;
-    max-width: 1920px;
-    top: 107%;
-    left: 37%;
-    font-size: 2.8rem;
+    top: 96%;
+  }
+
+  .intro-header {
+    top: 37%;
+  }
+
+  .intro-mv {
+    top: 45%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .intro-box {
+    height: 330vh;
+  }
+  .intro-top {
+    height: 220vh;
   }
   .intro-header {
-    position: relative;
-    top: 40%;
+    padding-top: 0%;
+  }
+
+  .intro-tit {
+    left: 2%;
+    top: 48%;
+    text-align: center;
   }
   .intro-header::before {
-    content: "";
-    display: inline-block;
-    width: 1000px;
-    margin-left: 20%;
-    border: 0.8px solid #c4c3c3;
+    margin-left: 0%;
   }
+
   .intro-title {
-    position: relative;
-    width: 100%;
-    height: auto;
-    // transform: translate(50%, 50%);
-    top: 50%;
-    left: 13%;
-    padding-top: 7%;
+    left: 4%;
   }
-  
+
   .intro-text1,
   .intro-text2,
   .intro-text3 {
-    float: left;
-    width: 30%;
-    line-height: 1.4;
-    opacity: 0;
-  
-    span {
-      text-align: center;
-      font-size: 2rem;
-    }
-    p {
-      font-size: 1rem;
-      font-weight: 500;
-      font-family: "Noto Sans KR", sans-serif;
-    }
+    margin-left: -1%;
   }
-  
   .intro-text1.on {
-    opacity: 1;
-    transition: 1s ease-in-out;
-    scale: 1.1;
-  }
-  .intro-text2.on {
-    opacity: 1;
-    transition: 1.6s ease-in-out;
-    scale: 1.1;
-  }
-  .intro-text3.on {
-    opacity: 1;
-    transition: 2.1s ease-in-out;
-    scale: 1.1;
-  }
-  
-  .intro-mv {
-    position: relative;
-    top: 47%;
-  }
-  
-  .intro-mid {
-    position: relative;
-    bottom: -53%;
-    height: 100vh;
-  }
-  
-  .intro-mtit {
-    max-width: 800px;
-    min-height: 700px;
-    padding: 15px;
-    padding-top: 3%;
-    border: 1px solid #dfdfdf;
-    margin: 0 auto;
-    font-size: 1.1rem;
-    font-weight: 500;
-    font-family: "Noto Sans KR", sans-serif;   
-  }
-  .intro-mtit > ul >li:nth-child(odd)::first-letter {
-    font-weight: bold;
-    color: #15a775;
-    font-size: 1.6rem;
-  }
-  .intro-mtit > ul:last-child{
-    text-align: center;
+    scale: 0.95;
     padding-top: 10%;
   }
-  .intro-mtit > ul:last-child::before{
-    content: "";
-    display: inline-block;
-    width: 400px;
-    border: 0.8px solid #c4c3c3;
-
+  .intro-text2.on {
+    scale: 0.95;
+    padding-top: 10%;
   }
-  .intro-mtit > ul:last-child::after{
-    content: "";
-    display: inline-block;
-    width: 400px;
-    border: 0.8px solid #c4c3c3;
-
+  .intro-text3.on {
+    scale: 0.95;
+    padding-top: 10%;
   }
-  
-  /****************** 미디어쿼리 ******************/
-  @media screen and (max-width: 1470px) {
-  }
-  
-  @media screen and (max-width: 450px) {
-  
-      .intro-box {
-          height: 373vh;
-      } 
-      .intro-top {
-          height: 315vh;
-      }
-      .intro-header {
-          padding-top: 15%;
-      }
-  
-    .intro-tit {
-      left: 2%;
-      top: 48%;
-      text-align: center;
-    }
-    .intro-header::before {
-      margin-left: 0%;
-    }
-  
-    .intro-title {
-      left: 4%;
-    }
-    .intro-text1.on {
-      scale: .95;
-      padding-top: 10%;
-    }
-    .intro-text2.on {
-      scale: .95;
-      padding-top: 10%;
-    }
-    .intro-text3.on {
-      scale: .95;
-      padding-top: 10%;
-    }
-  }
-  
+}
