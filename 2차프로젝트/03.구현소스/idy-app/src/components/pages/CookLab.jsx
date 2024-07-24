@@ -59,7 +59,7 @@ export default function CookLab() {
             {rDetailData.map((v, i) => (
               <li key={i}>
                 <div className="lab-imgbox">
-                  <img src={`./image/sub2/${v.imgName}.jpg`} alt={v.title} />
+                  <img src={process.env.PUBLIC_URL+`/image/sub2/${v.imgName}.jpg`} alt={v.title} />
                   <div className="lab-info">
                     <p>{v.type2}</p>
                     <p>{v.type3}</p>

@@ -12,12 +12,12 @@ export default function CookEvent() {
         <div className="evt-title">
           <ul>
             <li>
-              <img src="./image/samie_txt.png" alt="wow" />
+              <img src={process.env.PUBLIC_URL +`/image/samie_txt.png`} alt="wow" />
             </li>
             <li>이벤트</li>
           </ul>
         </div>
-        <video src="./image/mv.mp4" style={{width:"100%",height:"70%",objectFit:"cover"}}
+        <video src= {process.env.PUBLIC_URL +`/image/mv.mp4`} style={{width:"100%",height:"70%",objectFit:"cover"}}
         muted loop autoPlay />
       </section>
 

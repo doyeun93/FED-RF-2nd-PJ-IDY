@@ -47,7 +47,7 @@ export default function CookGuide() {
                 {guideData.map((v,i) =>(
                     <li key={i} >
                         <div className="guide-imgbox" >
-                            <img src={`./image/sub1/${v.imgName}.jpg`} alt={v.title} />
+                            <img src={process.env.PUBLIC_URL+`/image/sub1/${v.imgName}.jpg`} alt={v.title} />
                             <div className="guide-info">
                               <p>{v.text1}</p>
                               <p>{v.text2}</p>

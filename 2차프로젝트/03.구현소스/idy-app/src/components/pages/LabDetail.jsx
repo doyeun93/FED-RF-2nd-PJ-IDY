@@ -124,15 +124,15 @@ function LabDetail() {
         {/* 레시피 상세정보 레시피 이미지 3개*/}
         <div className="ldetail-img">
           <img
-            src={`./image/${matchFolder[state.imgName.substr(0, 3)]}/${state.imgName}_1.jpg`}
+            src={process.env.PUBLIC_URL+`/image/${matchFolder[state.imgName.substr(0, 3)]}/${state.imgName}_1.jpg`}
             alt={state.title}
           />
           <img
-            src={`./image/${matchFolder[state.imgName.substr(0, 3)]}/${state.imgName}_2.jpg`}
+            src={process.env.PUBLIC_URL+`/image/${matchFolder[state.imgName.substr(0, 3)]}/${state.imgName}_2.jpg`}
             alt={state.title}
           />
           <img
-            src={`./image/${matchFolder[state.imgName.substr(0, 3)]}/${state.imgName}_3.jpg`}
+            src={process.env.PUBLIC_URL+`/image/${matchFolder[state.imgName.substr(0, 3)]}/${state.imgName}_3.jpg`}
             alt={state.title}
           />
         </div>

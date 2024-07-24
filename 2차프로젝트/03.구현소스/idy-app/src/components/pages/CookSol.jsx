@@ -54,7 +54,7 @@ export default function CookSol() {
             {sDetailData.map((v, i) => (
               <li key={i}>
                 <div className="sol-imgbox">
-                  <img src={`./image/sub2/${v.imgName}.jpg`} alt={v.title} />
+                  <img src={process.env.PUBLIC_URL+`/image/sub2/${v.imgName}.jpg`} alt={v.title} />
                   <div className="sol-info">
                     <p>{v.type2}</p>
                     <p>{v.type3}</p>

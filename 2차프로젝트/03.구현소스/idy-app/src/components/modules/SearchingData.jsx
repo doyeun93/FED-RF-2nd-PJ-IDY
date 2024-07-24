@@ -36,7 +36,7 @@ function SearchingData({ dt }) {
                   state={v}
                 >
                   <img
-                    src={`./image/${route[v.imgName.substr(0, 3)]}/${
+                    src={process.env.PUBLIC_URL+`/image/${route[v.imgName.substr(0, 3)]}/${
                       v.imgName
                     }.jpg`}
                     alt={v.imgName}
