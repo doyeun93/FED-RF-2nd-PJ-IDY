@@ -1,20 +1,19 @@
 {
   "files": {
-    "main.css": "/FED-RF-2nd-PJ-IDY/2%EC%B0%A8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/03.%EA%B5%AC%ED%98%84%EC%86%8C%EC%8A%A4/idy-app/build/static/css/main.48c2b05d.css",
-    "main.js": "/FED-RF-2nd-PJ-IDY/2%EC%B0%A8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/03.%EA%B5%AC%ED%98%84%EC%86%8C%EC%8A%A4/idy-app/build/static/js/main.952d0e0e.js",
+    "main.css": "/FED-RF-2nd-PJ-IDY/2%EC%B0%A8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/03.%EA%B5%AC%ED%98%84%EC%86%8C%EC%8A%A4/idy-app/build/static/css/main.4329b679.css",
+    "main.js": "/FED-RF-2nd-PJ-IDY/2%EC%B0%A8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/03.%EA%B5%AC%ED%98%84%EC%86%8C%EC%8A%A4/idy-app/build/static/js/main.ec2cf9ac.js",
     "static/media/DoHyeon-Regular.woff": "/FED-RF-2nd-PJ-IDY/2%EC%B0%A8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/03.%EA%B5%AC%ED%98%84%EC%86%8C%EC%8A%A4/idy-app/build/static/media/DoHyeon-Regular.e6625971835bbc1bda75.woff",
-    "static/media/introduce.png": "/FED-RF-2nd-PJ-IDY/2%EC%B0%A8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/03.%EA%B5%AC%ED%98%84%EC%86%8C%EC%8A%A4/idy-app/build/static/media/introduce.1679cff6593efa925ef6.png",
     "static/media/bg_pattern.png": "/FED-RF-2nd-PJ-IDY/2%EC%B0%A8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/03.%EA%B5%AC%ED%98%84%EC%86%8C%EC%8A%A4/idy-app/build/static/media/bg_pattern.d539959836c553884345.png",
     "static/media/bg_pattern_pink.png": "/FED-RF-2nd-PJ-IDY/2%EC%B0%A8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/03.%EA%B5%AC%ED%98%84%EC%86%8C%EC%8A%A4/idy-app/build/static/media/bg_pattern_pink.596f89254b86afd6e134.png",
     "static/media/bg_pattern_green.png": "/FED-RF-2nd-PJ-IDY/2%EC%B0%A8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/03.%EA%B5%AC%ED%98%84%EC%86%8C%EC%8A%A4/idy-app/build/static/media/bg_pattern_green.2f4434a6a410ff4f6589.png",
     "static/media/mv_btns.png": "/FED-RF-2nd-PJ-IDY/2%EC%B0%A8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/03.%EA%B5%AC%ED%98%84%EC%86%8C%EC%8A%A4/idy-app/build/static/media/mv_btns.1eef2593b6cbc9dcfce2.png",
     "static/media/samie7.png": "/FED-RF-2nd-PJ-IDY/2%EC%B0%A8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/03.%EA%B5%AC%ED%98%84%EC%86%8C%EC%8A%A4/idy-app/build/static/media/samie7.f6271870ca03e350765f.png",
     "index.html": "/FED-RF-2nd-PJ-IDY/2%EC%B0%A8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/03.%EA%B5%AC%ED%98%84%EC%86%8C%EC%8A%A4/idy-app/build/index.html",
-    "main.48c2b05d.css.map": "/FED-RF-2nd-PJ-IDY/2%EC%B0%A8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/03.%EA%B5%AC%ED%98%84%EC%86%8C%EC%8A%A4/idy-app/build/static/css/main.48c2b05d.css.map",
-    "main.952d0e0e.js.map": "/FED-RF-2nd-PJ-IDY/2%EC%B0%A8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/03.%EA%B5%AC%ED%98%84%EC%86%8C%EC%8A%A4/idy-app/build/static/js/main.952d0e0e.js.map"
+    "main.4329b679.css.map": "/FED-RF-2nd-PJ-IDY/2%EC%B0%A8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/03.%EA%B5%AC%ED%98%84%EC%86%8C%EC%8A%A4/idy-app/build/static/css/main.4329b679.css.map",
+    "main.ec2cf9ac.js.map": "/FED-RF-2nd-PJ-IDY/2%EC%B0%A8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/03.%EA%B5%AC%ED%98%84%EC%86%8C%EC%8A%A4/idy-app/build/static/js/main.ec2cf9ac.js.map"
   },
   "entrypoints": [
-    "static/css/main.48c2b05d.css",
-    "static/js/main.952d0e0e.js"
+    "static/css/main.4329b679.css",
+    "static/js/main.ec2cf9ac.js"
   ]
 }
