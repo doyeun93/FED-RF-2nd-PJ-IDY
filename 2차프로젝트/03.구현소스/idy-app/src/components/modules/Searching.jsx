@@ -7,8 +7,8 @@ import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import "../../css/searching.scss";
 
 import { guideData } from "../data/sub1";
-import { recipeData } from "../data/sub2_1";
-import { solutionData } from "../data/sub2_2";
+import { rDetailData } from "../data/sub2_1_detail";
+import { sDetailData } from "../data/sub2_2_detail";
 import { cookingData } from "../data/sub3";
 import SearchingData from "./SearchingData";
 
@@ -21,11 +21,11 @@ function Searching({ kword }) {
   const [chk,setChk] = useState([true,true]);
 
   console.log(guideData);
-  console.log(recipeData);
-  console.log([...guideData,...recipeData,...solutionData,...cookingData]);
+  console.log(rDetailData);
+  console.log([...guideData,...rDetailData,...sDetailData,...cookingData]);
 
 
-  const selData = [...guideData,...recipeData,...solutionData,...cookingData];
+  const selData = [...guideData,...rDetailData,...sDetailData,...cookingData];
 
   const beforeKword = useRef(kword);
   

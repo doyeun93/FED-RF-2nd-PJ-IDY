@@ -231,6 +231,15 @@ export default function CookQnA() {
     } ///// else if
   }; ///// submitFn ///////
 
+  
+  const moveFn = () => {
+    if (sts){
+      $("html,body").animate({ scrollTop: $(".selbx").offset().top + "px" }, 500);
+      $(".btngrp button").trigger("click");
+    }
+    else myCon.goPage("/login");
+  };
+
   return (
     <>
       <section className="cookqna-top">
@@ -254,10 +263,13 @@ export default function CookQnA() {
               <li>요리에 대한 모든 고민</li>
               <li>고민이 있으세요? 지금 고민을 남기고 함께 해결방안을 찾아봐요!</li>
             </ul>
-            <Link to="/login">
+            <a href="#" onClick={moveFn}>
               작성하기
-              <img src={process.env.PUBLIC_URL + `/image/ic_write.png`} alt="연필그림" />
-            </Link>
+              <img
+                src={process.env.PUBLIC_URL + `/image/ic_write.png`}
+                alt="연필그림"
+              />
+            </a>
           </div>
         </div>
 

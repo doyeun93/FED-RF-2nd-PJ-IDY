@@ -233,6 +233,14 @@ export default function CookCook() {
     } ///// else if
   }; ///// submitFn ///////
 
+  const moveFn = () => {
+    if (sts){
+      $("html,body").animate({ scrollTop: $(".selbx").offset().top + "px" }, 500);
+      $(".btngrp button").trigger("click");
+    }
+    else myCon.goPage("/login");
+  };
+
   ////////////////////// 코드 리턴 구역  ////////////////////////////////////////
   return (
     <>
@@ -251,19 +259,25 @@ export default function CookCook() {
           </ul>
         </div>
         <div className="cook-write">
-          <img src={process.env.PUBLIC_URL + `/image/samie2.png`} alt="새미이미지" />
+          <img
+            src={process.env.PUBLIC_URL + `/image/samie2.png`}
+            alt="새미이미지"
+          />
           <div className="cook-cook">
             <ul className="cook-cbox">
               <li>나만의 요리를 올려주세요!</li>
               <li>
-                나만의 요리법, 재밌는 플레이팅, 요리 꿀팁 등 다양한 이야기를 새미네부엌에서 함께
-                나눠 주세요!
+                나만의 요리법, 재밌는 플레이팅, 요리 꿀팁 등 다양한 이야기를
+                새미네부엌에서 함께 나눠 주세요!
               </li>
             </ul>
-            <Link to="/login">
+            <a href="#" onClick={moveFn}>
               작성하기
-              <img src={process.env.PUBLIC_URL + `/image/ic_write.png`} alt="연필그림" />
-            </Link>
+              <img
+                src={process.env.PUBLIC_URL + `/image/ic_write.png`}
+                alt="연필그림"
+              />
+            </a>
           </div>
         </div>
         {
@@ -302,7 +316,9 @@ export default function CookCook() {
               <td>
                 {
                   // 1. 글쓰기 버튼은 로그인상태이고 L이면 출력
-                  mode == "L" && sts && <button onClick={clickButton}>글쓰기</button>
+                  mode == "L" && sts && (
+                    <button onClick={clickButton}>글쓰기</button>
+                  )
                 }
                 {
                   // 2. 읽기 상태일 경우
@@ -315,9 +331,11 @@ export default function CookCook() {
                       // 현재글은 selRecord 참조변수에 저장됨
                       // 글정보 항목 중 uid가 사용자 아이디임
                       // 로그인 상태 정보하위의 sts.uid와 비교함
-                      mode == "R" && sts && JSON.parse(sts).uid == selRecord.current.uid && (
-                        <button onClick={clickButton}>수정</button>
-                      )
+                      mode == "R" &&
+                        sts &&
+                        JSON.parse(sts).uid == selRecord.current.uid && (
+                          <button onClick={clickButton}>수정</button>
+                        )
                     }
                   </>
                 }
@@ -353,7 +371,15 @@ export default function CookCook() {
                 리스트 모드 서브 컴포넌트  
  **********************************************************/
 
-const ListMode = ({ bindList, totalCount, unitSize, pageNum, setPageNum, pgPgNum, pgPgSize }) => {
+const ListMode = ({
+  bindList,
+  totalCount,
+  unitSize,
+  pageNum,
+  setPageNum,
+  pgPgNum,
+  pgPgSize,
+}) => {
   return (
     <>
       <main className="cont">
@@ -434,7 +460,12 @@ const ReadMode = ({ selRecord, sts }) => {
   // (3) 로그인한 사용자의 글이면 isRec값을 true처리
   // sts가 true면 즉, 로그인한 사용하지면 처리
   if (sts) {
-    console.log("선택글 아이디 : ", data.uid, "로그인 사용자 아이디:", JSON.parse(sts).uid);
+    console.log(
+      "선택글 아이디 : ",
+      data.uid,
+      "로그인 사용자 아이디:",
+      JSON.parse(sts).uid
+    );
     // 글쓴이 아이디와 로그인 사용자 아이디가 같은가?
     if (data.uid == JSON.parse(sts).uid) {
       // 글번호 저장과 조회수 증가를 하지 않도록 isRec값을 true로 변경한다
@@ -475,13 +506,25 @@ const ReadMode = ({ selRecord, sts }) => {
           <tr>
             <td>작성자</td>
             <td>
-              <input type="text" className="name" size="20" readOnly value={data.unm} />
+              <input
+                type="text"
+                className="name"
+                size="20"
+                readOnly
+                value={data.unm}
+              />
             </td>
           </tr>
           <tr>
             <td>제목</td>
             <td>
-              <input type="text" className="subject" size="60" readOnly value={data.tit} />
+              <input
+                type="text"
+                className="subject"
+                size="60"
+                readOnly
+                value={data.tit}
+              />
             </td>
           </tr>
           <tr>
@@ -586,19 +629,35 @@ const ModifyMode = ({ selRecord }) => {
           <tr>
             <td>작성자</td>
             <td>
-              <input type="text" className="name" size="20" readOnly value={data.unm} />
+              <input
+                type="text"
+                className="name"
+                size="20"
+                readOnly
+                value={data.unm}
+              />
             </td>
           </tr>
           <tr>
             <td>제목</td>
             <td>
-              <input type="text" className="subject" size="60" defaultValue={data.tit} />
+              <input
+                type="text"
+                className="subject"
+                size="60"
+                defaultValue={data.tit}
+              />
             </td>
           </tr>
           <tr>
             <td>내용</td>
             <td>
-              <textarea className="content" cols="60" rows="10" defaultValue={data.cont}></textarea>
+              <textarea
+                className="content"
+                cols="60"
+                rows="10"
+                defaultValue={data.cont}
+              ></textarea>
             </td>
           </tr>
           <tr>
@@ -611,7 +670,14 @@ const ModifyMode = ({ selRecord }) => {
   );
 }; ////// ModifyMode //////////////////////////
 
-const PagingList = ({ totalCount, unitSize, pageNum, setPageNum, pgPgNum, pgPgSize }) => {
+const PagingList = ({
+  totalCount,
+  unitSize,
+  pageNum,
+  setPageNum,
+  pgPgNum,
+  pgPgSize,
+}) => {
   // 전체 페이징 개수 : 전체레코드수 / 페이지당 개수
   // 유의점 : 나머지가 있는지 검사해서 있으면 +1
 
@@ -660,7 +726,7 @@ const PagingList = ({ totalCount, unitSize, pageNum, setPageNum, pgPgNum, pgPgSi
       <Fragment key={i}>
         {
           // 페이징번호와 현재페이지번호 일치시 b요소
-          i + 1 === pageNum  ? (
+          i + 1 === pageNum ? (
             <b>{i + 1}</b>
           ) : (
             <a

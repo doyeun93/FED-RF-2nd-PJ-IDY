@@ -100,7 +100,7 @@ function LabDetail() {
         {/* 레시피 상세정보 이미지 */}
         <div className="ldetail-pic">
           <img style={{width:"100%", height:"100", objectFit:"cover"}}
-            src={`./image/${matchFolder[state.imgName.substr(0, 3)]}/${state.imgName}.jpg`}
+            src={process.env.PUBLIC_URL+`/image/${matchFolder[state.imgName.substr(0, 3)]}/${state.imgName}.jpg`}
             alt={state.title}
           />
         </div>
