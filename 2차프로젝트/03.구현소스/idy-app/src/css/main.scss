@@ -557,7 +557,7 @@ body {
   }
   .header-text > li:last-child::after {
     width: 120%;
-    right: 105%;
+    right: 107%;
     bottom: -51%;
   }
   .header-title {
@@ -577,9 +577,9 @@ body {
     height: auto;
     display: block;
   }
-.lab-top > ul > li:first-child{
-  margin-left: 3%;
-}
+  .lab-top > ul > li:first-child{
+    margin-left: 3%;
+  }
   .lab-top > ul > li:nth-child(2) > img {
     left: 57%;
     margin-top: -21%;
