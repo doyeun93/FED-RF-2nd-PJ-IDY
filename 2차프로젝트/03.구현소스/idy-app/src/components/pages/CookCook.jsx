@@ -29,7 +29,6 @@ export default function CookCook() {
   const [mode, setMode] = useState("L");
 
   const [keyword, setKeyword] = useState(["", ""]);
-  console.log("[기준,키워드]", keyword);
 
   const [sort, setSort] = useState(1);
 
