@@ -81,7 +81,7 @@
 
 .intro-mid {
   position: relative;
-  bottom: -53%;
+  bottom: -50%;
   height: 100vh;
 }
 
@@ -103,14 +103,20 @@
 }
 .intro-mtit > ul:last-child {
   text-align: center;
-  padding-top: 10%;
+  padding-top: 7%;
 }
+
+.intro-mtit > ul:last-child > li:first-child{
+  padding-top: 4%;
+}
+
 .intro-mtit > ul:last-child::before {
   content: "";
   display: inline-block;
   width: 400px;
   border: 0.8px solid #c4c3c3;
 }
+
 .intro-mtit > ul:last-child::after {
   content: "";
   display: inline-block;

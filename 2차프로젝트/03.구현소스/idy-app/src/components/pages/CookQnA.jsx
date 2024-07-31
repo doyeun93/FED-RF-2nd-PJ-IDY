@@ -1020,7 +1020,7 @@ const PagingList = ({ totalCount, unitSize, pageNum, setPageNum, pgPgNum, pgPgSi
 
 // 업로드 모듈을 리턴하는 서브컴포넌트 ////////
 const AttachBox = ({ saveFile }) => {
-  // saveFile 프롭스펑션다운!
+
   // [상태관리변수] //////////////
   // 1.드래그 또는 파일을 첨부할때 활성화 여부관리 변수
   // 값: true 이면 활성화, false이면 비활성화
@@ -1079,7 +1079,7 @@ const AttachBox = ({ saveFile }) => {
     // target은 이벤트타겟!
     // 파일정보 읽어오기
     const fileInfo = target.files[0];
-    console.log("클릭파일:", fileInfo);
+
 
     // 파일정보셋팅 메서드 호출!
     setFileInfo(fileInfo);
@@ -1091,13 +1091,7 @@ const AttachBox = ({ saveFile }) => {
     saveFile(fileInfo);
   }; /////////// changeUpload 함수 ///////////
 
-  /* 
-    [드래그 관련이벤트 구분]
-      onDragEnter : 드래그 대상 영역 안으로 들어갈때
-      onDragLeave : 드래그 대상 영역 밖으로 나갈때
-      onDragOver : 드래그 대상 영역 위에 있을때
-      onDrop : 드래그 대상 영역 안에 드롭될때
-  */
+ 
   // 리턴 코드 //////////////////////
   return (
     <label
@@ -1129,11 +1123,6 @@ const AttachBox = ({ saveFile }) => {
   );
 }; ///////////// AttachBox 컴포넌트 //////////
 
-/* 
-Object.keys(obj) – 객체의 키만 담은 배열을 반환합니다.
-Object.values(obj) – 객체의 값만 담은 배열을 반환합니다.
-Object.entries(obj) – [키, 값] 쌍을 담은 배열을 반환합니다.
-*/
 
 // 파일정보를 보여주는 파일정보 컴포넌트 ////////
 const FileInfo = ({ uploadedInfo }) => (
