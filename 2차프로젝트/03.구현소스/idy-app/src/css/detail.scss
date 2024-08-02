@@ -145,13 +145,13 @@
 
   .ldetail-top h2 {
     top: 40%;
-    left: 3%;
+    left: 10%;
     width: 17%;
   }
 
   .ldetail-top span {
     top: 43%;
-    left: 2%;
+    left: 5%;
   }
 
   .ldetail-txt .ldetail-txt2 {
@@ -164,6 +164,11 @@
 
   .ldetail-img {
     display: block;
+  }
+
+  .ldetail-seq::before {
+    max-width: 400px;
+    margin-left: 4%;
   }
 
   .ldetail-seq {
