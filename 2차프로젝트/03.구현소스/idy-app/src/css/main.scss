@@ -583,6 +583,7 @@ body {
   .lab-top > ul > li:nth-child(2) > img {
     left: 60%;
     margin-top: -21%;
+    display: none;
   }
 
   .lab-top > ul > li:last-child {
@@ -603,7 +604,7 @@ body {
     justify-content: normal;
   }
   .cook-title > li:first-child img {
-    margin-left: 0%;
+    display: none;
   }
 
   .cook-title > li:nth-child(2) {
@@ -611,7 +612,7 @@ body {
   }
 
   .cook-title > li:last-child {
-    width: 23%;
+    width: 27%;
     margin-right: 0%;
   }
   .cook-img {
@@ -625,7 +626,8 @@ body {
     margin-left: 0.4%;
   }
   .cook-bottom > img {
-    margin-top: -31.7%;
+     // margin-top: -31.7%;
+     margin-top: -29.9%;
   }
 
   .cook-food {

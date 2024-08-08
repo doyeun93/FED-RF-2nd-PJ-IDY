@@ -131,7 +131,14 @@
 
 /****************** 미디어쿼리 ******************/
 @media screen and (max-width: 1470px) {
-  
+  .ldetail-top {
+    h2 {
+      left: 26.3%;
+   }
+     span {
+      left: 26%;
+     }
+   }
 
   .ldetail-img {
     margin-left: 0;
