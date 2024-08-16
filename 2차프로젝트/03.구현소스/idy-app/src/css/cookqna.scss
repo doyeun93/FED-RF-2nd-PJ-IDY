@@ -1,9 +1,7 @@
-/* 게시판 모듈용 CSS - cookqna.scss  */
+
 
 .cookqna-top {
   height: 220vh;
-  // background-image: url("../../public/image/bg_pattern_pink.png");
-  // background-color: #fff3f363;
 }
 
 .cookqna-title {
@@ -57,6 +55,7 @@
 }
 .cookqna-text > ul > li.on {
   background-color: #fff9e2;
+  border-radius: 0 3.0625rem 3.0625rem 0;
 }
 
 .cook-Qna {
@@ -166,7 +165,6 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  /* 가로크기 지정(최대361px) */
   width: min(361px, 40vw);
 }
 
@@ -190,13 +188,11 @@
 .dtbl tbody tr td {
   /*본문 td 밑줄*/
   border-bottom: 1px solid #ccc;
-  /*두종색*/
 }
 
 .dtbl thead tr th {
   /*머리줄 th 윗줄*/
   border-top: 2px solid #999;
-  /*두종색*/
   border-bottom: 1px solid #999;
 }
 
@@ -218,20 +214,16 @@
 /* tfoot의 td에 padding 및 글자중앙 적용하기 */
 .dtbl tfoot td {
   text-align: center;
-  /*글자중앙정렬*/
   padding: 80px 0px;
-  /*위아래,우좌 padding설정*/
 }
 
 /* 내용보기 */
 .dtblview {
-  // font-family: "Ubuntu Condensed", sans-serif;
   font-size: 34px;
   border-collapse: collapse;
   width: 750px;
   margin: 20px auto;
   border-top: 2px solid #999;
-  /*두종색*/
   border-bottom: 2px solid #999;
 }
 
@@ -279,8 +271,6 @@
   padding: 8px 40px;
   background-color: #fff;
   color: #000;
-  // font-weight: bold;
-  // font-family: "Ubuntu Condensed", sans-serif;
   font-size: 15px;
   transition: 0.3s;
   margin-top: 20px;
@@ -297,6 +287,13 @@
 }
 
 @media screen and (max-width: 1470px) {
+  .cookqna-top {
+    height: 232vh;
+  }
+  .cookqna-text {
+    width: 1200px;
+    margin-left: 10%;
+  } 
   .cook-Qna > img {
     //맥북 margin-top: -5%;
     margin-top: -3.4%;
@@ -312,7 +309,11 @@
 
   .cookqna-title span {
     top: 58%;
-}
+  }
+  .cookqna-text {
+    width: auto;
+    margin-left: auto;
+  }
   .cook-Qna {
     width: 96%;
     margin-left: 0.9%;

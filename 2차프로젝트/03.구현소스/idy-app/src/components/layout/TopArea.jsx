@@ -15,16 +15,21 @@ export const TopArea = memo(({loginMsg,loginSts,logoutFn,goPage}) =>{
 
   // 햄버거버튼
   const showMenuFn = () => {
-    // console.log("여기~!");
     $(".hbox").css({left:"0"});
   };
 
-  // 1. 검색창 보이기 함수
+  // 검색창 보이기 함수
   const showSearch = (e) => {
     e.preventDefault();
     $(".searchingGnb").show();
     $("#schinGnb").focus();
   }; /////// showSearch /////////////////////////////////
+
+   //  검색창 숨기기 함수
+   const hideSearch = (e) => {
+    e.preventDefault();
+    $(".searchingGnb").hide();
+  }
 
   const enterKey = (e) => {
     console.log(e.key, e.keyCode);
@@ -143,6 +148,11 @@ export const TopArea = memo(({loginMsg,loginSts,logoutFn,goPage}) =>{
                     placeholder="어떤 요리가 궁금하신가요?"
                     onKeyUp={enterKey}
                   />
+                  <div className="schhbtn"
+                  onClick={hideSearch}>✕</div>
+                  {/* <button 
+                  style={{marginLeft:"-3%"}}
+                  ></button> */}
                 </div>
                 {/* 검색기능링크 - 클릭시 검색창 보이기 */}
                 <a href="#" onClick={showSearch}>

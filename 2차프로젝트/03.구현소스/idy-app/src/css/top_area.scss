@@ -280,6 +280,12 @@ cursor: pointer;
 margin-top: 9px;
 margin-left: 10px;
 }
+.schhbtn{
+  margin-top: -17%;
+  margin-left: 90%;
+  cursor: pointer;
+  font-size: 20px;
+}
 
 
 
@@ -299,6 +305,7 @@ margin-left: 10px;
   right: 3%;
 }
 .searchingGnb {
+  // left: 48px;
   left: 48px;
 }
 }
@@ -339,27 +346,34 @@ margin-left: 10px;
 @media screen and  (max-width:450px) {
 
 .logo {	
-position: static;
+  position: static;
+  // width: 6%;
  }
 
 .logo img{
+  // padding: 0% 10%; 
+  // width: 94%;
   padding: 4% 2%;
  }
 
 #gnb{
-width: 0%;
+  width: 0%;
 }
 .log {
-right: 51%;
+  right: 51%;
+  // right: 62%;
 }
 .log > ul {
-gap: 8%;
+  gap: 8%;
 }
 
 .searchingGnb {
-left: 59px;
+  left: 54px;
+  width: 230px;
 }
-
+.schhbtn{
+  margin-top: -18%;
+}
 // .ham {
 //   right: 142px; }
 

@@ -1,7 +1,6 @@
-/* 스크랩  CSS */
+
 
 /* 스크롤바 디자인 클래스 */
-/* 클래스명 scbar */
 .scbar::-webkit-scrollbar{
   /* 전체 스크롤바 크기변경 */
   width: 7px;
@@ -87,14 +86,14 @@
   top: 50%;
   left: calc(100% - 70px);
   transform: translate(0, -50%);
-  background-color: lightblue;
+  background-color: #efefef;
   border-radius: 10px 0 0 10px;
   padding: 10px;
   transition: 0.4s ease-in 2s;
 }
 /* 원본 이미지 크기 */
 #myScrap img {
-  width: 300px;
+  width: 150px;
 }
 /* 변경 이미지 크기 */
 #myScrap.on img {
@@ -106,12 +105,12 @@
   text-align: center;
   font-size: 20px;
   font-weight: bold;
-  color: blue;
+  color: #15a775;
   opacity: 0;
 }
 #myScrap.on .cntBx {
   opacity: 1;
-  transition: 0.4s 3s;
+  transition: 0.4s 2.5s;
 }
 
 /* 수량증감 박스 */
