@@ -1,6 +1,3 @@
-// import iceList from "./subpage.js";
-// iceList();
-//  import  * as icData from "../data/ic_data.js";
 
 
 const qs = (x) => document.querySelector(x);
@@ -20,8 +17,7 @@ const qsa = (x) => document.querySelectorAll(x);
   /**************************** 마우스 효과 ****************************/
 
   function loadFn() {
-    // 1. 대상선정 :
-    // 1-1. 이벤트 대상 : 전체화면
+    // 이벤트 대상 : 전체화면
     const wrap = document.querySelector(".wrap");
     const moving = document.querySelector(".pointer");
 

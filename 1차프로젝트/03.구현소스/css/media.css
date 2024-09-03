@@ -150,23 +150,22 @@
  
 
 /* 비베네핏 영역 */
-.benefit-area, .ban-area, .footer-area {
-  height: auto;
-}
-.be-header {
-  padding-top: 20px;
-}
-.beslider li img{
-  width: 100%;  
-}
-.beslider{
+  .benefit-area, .ban-area, .footer-area {
+    height: auto;
+  }
+  .be-header {
+    padding-top: 20px;
+  }
+  .beslider li img{
+    width: 100%;  
+  }
+  .beslider{
     grid-template-columns: repeat(3,2fr);
     gap: 10 10px;
   };
 
-  /*  */
   .ban-first-box {
-   left: 0%;
+    left: 0%;
   }
   .ban-first-title, .ban-second-title {
     font-size: 0.9rem;        
