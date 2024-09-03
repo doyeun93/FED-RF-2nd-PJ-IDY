@@ -8,6 +8,7 @@ const qsa = (x) => document.querySelectorAll(x);
 
 
 const iceList = qs('.main-item-list');
+// const iceList = document.querySelector('.main-item-list');
 console.log(iceList);
 
 iceList.innerHTML = 
@@ -19,3 +20,4 @@ icMenuData.map(v=>`
         </a>
     </li>
 `).join('');
+

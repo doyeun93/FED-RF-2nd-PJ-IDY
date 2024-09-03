@@ -32,3 +32,34 @@ menu-area(30px) main-new(1964px) sub-new(418px)
 12. footer영역 미디어쿼리시 높이값 삭제하기
 
 13. 뉴아이템 미디어쿼리시 이미지 조절하기(ex:100vw)
+
+
+
+
+
+
+
+
+====================================================
+    <!-- <script>
+      // 대상 : .main-item
+      const mainItem =  document.querySelector(".main-item"); 
+      // 데이터 : ic_data.js의  icMenuData 배열
+      const imData = icData.icMenuData;
+
+      let hcode = `<ul>`;
+        imData.forEach((v) => {
+          hcode += `
+          <li>
+            <figure>
+              <img src="./images/sub/${v.imgName}.png" alt="${v.title}">
+            <figcaption>${v.title}</figcaption>
+            <figure>
+          </li>
+          `;          
+        }); //////////////// foreach 문 ///////////
+
+        hcode += '</ul>';
+        console.log(hcode);
+        mainItem.innerHTML = hcode;
+    </script> -->
